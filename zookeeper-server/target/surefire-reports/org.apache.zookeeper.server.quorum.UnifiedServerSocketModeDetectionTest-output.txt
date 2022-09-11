@@ -1,0 +1,194 @@
+2022-09-11 09:18:09,679 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:09,727 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-09-11 09:18:09,972 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 7/8 using ports from 27379 - 30071.
+2022-09-11 09:18:09,988 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27380 from range 27379 - 30071.
+2022-09-11 09:18:10,274 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,288 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,289 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27381 from range 27379 - 30071.
+2022-09-11 09:18:10,295 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,301 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsInputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,302 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27382 from range 27379 - 30071.
+2022-09-11 09:18:10,380 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsInputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,383 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsInputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,384 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27383 from range 27379 - 30071.
+2022-09-11 09:18:10,386 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsInputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,390 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalSocketAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,391 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27384 from range 27379 - 30071.
+2022-09-11 09:18:10,472 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalSocketAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,476 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalSocketAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,477 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27385 from range 27379 - 30071.
+2022-09-11 09:18:10,478 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalSocketAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,481 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,482 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27386 from range 27379 - 30071.
+2022-09-11 09:18:10,541 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,546 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,548 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27387 from range 27379 - 30071.
+2022-09-11 09:18:10,552 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,557 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testClose(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,559 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27388 from range 27379 - 30071.
+2022-09-11 09:18:10,618 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testClose(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,620 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testClose(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,621 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27389 from range 27379 - 30071.
+2022-09-11 09:18:10,623 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testClose(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,626 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,627 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27390 from range 27379 - 30071.
+2022-09-11 09:18:10,675 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,677 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,678 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27391 from range 27379 - 30071.
+2022-09-11 09:18:10,680 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,683 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,684 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27392 from range 27379 - 30071.
+2022-09-11 09:18:10,725 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,727 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,728 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27393 from range 27379 - 30071.
+2022-09-11 09:18:10,730 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,732 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,734 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27394 from range 27379 - 30071.
+2022-09-11 09:18:10,773 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,777 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,777 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27395 from range 27379 - 30071.
+2022-09-11 09:18:10,779 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTrafficClass(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,782 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownInput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,783 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27396 from range 27379 - 30071.
+2022-09-11 09:18:10,834 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownInput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,836 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownInput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,837 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27397 from range 27379 - 30071.
+2022-09-11 09:18:10,839 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownInput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,841 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,843 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27398 from range 27379 - 30071.
+2022-09-11 09:18:10,896 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,897 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,898 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27399 from range 27379 - 30071.
+2022-09-11 09:18:10,900 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReceiveBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,903 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsOutputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,904 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27400 from range 27379 - 30071.
+2022-09-11 09:18:10,945 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsOutputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,947 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsOutputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,948 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27401 from range 27379 - 30071.
+2022-09-11 09:18:10,949 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsOutputShutdown(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,951 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,952 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27402 from range 27379 - 30071.
+2022-09-11 09:18:10,990 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,992 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:10,993 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27403 from range 27379 - 30071.
+2022-09-11 09:18:10,995 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,000 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,002 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27404 from range 27379 - 30071.
+2022-09-11 09:18:11,044 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,048 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,048 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27405 from range 27379 - 30071.
+2022-09-11 09:18:11,050 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,052 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,053 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27406 from range 27379 - 30071.
+2022-09-11 09:18:11,092 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,094 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,095 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27407 from range 27379 - 30071.
+2022-09-11 09:18:11,096 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,100 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,101 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27408 from range 27379 - 30071.
+2022-09-11 09:18:11,143 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,144 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,145 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27409 from range 27379 - 30071.
+2022-09-11 09:18:11,147 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetTcpNoDelay(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,149 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,151 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27410 from range 27379 - 30071.
+2022-09-11 09:18:11,190 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,192 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,193 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27411 from range 27379 - 30071.
+2022-09-11 09:18:11,195 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetLocalPort(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,197 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,198 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27412 from range 27379 - 30071.
+2022-09-11 09:18:11,238 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,265 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,266 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27413 from range 27379 - 30071.
+2022-09-11 09:18:11,274 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,277 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsConnected(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,278 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27414 from range 27379 - 30071.
+2022-09-11 09:18:11,330 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsConnected(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,332 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsConnected(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,333 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27415 from range 27379 - 30071.
+2022-09-11 09:18:11,334 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsConnected(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,339 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsClosed(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,340 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27416 from range 27379 - 30071.
+2022-09-11 09:18:11,386 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsClosed(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,387 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsClosed(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,388 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27417 from range 27379 - 30071.
+2022-09-11 09:18:11,389 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsClosed(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,394 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,395 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27418 from range 27379 - 30071.
+2022-09-11 09:18:11,442 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,444 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,444 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27419 from range 27379 - 30071.
+2022-09-11 09:18:11,446 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetReuseAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,448 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,449 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27420 from range 27379 - 30071.
+2022-09-11 09:18:11,496 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,498 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,499 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27421 from range 27379 - 30071.
+2022-09-11 09:18:11,500 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,506 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,508 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27422 from range 27379 - 30071.
+2022-09-11 09:18:11,557 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,561 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,562 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27423 from range 27379 - 30071.
+2022-09-11 09:18:11,564 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetKeepAlive(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,573 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInetAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,577 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27424 from range 27379 - 30071.
+2022-09-11 09:18:11,653 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInetAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,655 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInetAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,656 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27425 from range 27379 - 30071.
+2022-09-11 09:18:11,659 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInetAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,662 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetOutputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,663 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27426 from range 27379 - 30071.
+2022-09-11 09:18:11,704 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetOutputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,706 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetOutputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,707 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27427 from range 27379 - 30071.
+2022-09-11 09:18:11,709 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetOutputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,712 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,712 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27428 from range 27379 - 30071.
+2022-09-11 09:18:11,766 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,769 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,770 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27429 from range 27379 - 30071.
+2022-09-11 09:18:11,772 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoTimeout(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,775 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownOutput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,777 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27430 from range 27379 - 30071.
+2022-09-11 09:18:11,830 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownOutput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,833 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownOutput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,833 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27431 from range 27379 - 30071.
+2022-09-11 09:18:11,836 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testShutdownOutput(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,839 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,841 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27432 from range 27379 - 30071.
+2022-09-11 09:18:11,882 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,884 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,885 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27433 from range 27379 - 30071.
+2022-09-11 09:18:11,887 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSendBufferSize(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,889 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsBound(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,890 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27434 from range 27379 - 30071.
+2022-09-11 09:18:11,951 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsBound(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,953 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsBound(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,953 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27435 from range 27379 - 30071.
+2022-09-11 09:18:11,955 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testIsBound(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,957 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:11,961 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27436 from range 27379 - 30071.
+2022-09-11 09:18:12,008 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,009 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,010 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27437 from range 27379 - 30071.
+2022-09-11 09:18:12,016 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testSetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,019 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,020 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27438 from range 27379 - 30071.
+2022-09-11 09:18:12,094 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,096 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,098 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27439 from range 27379 - 30071.
+2022-09-11 09:18:12,100 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetSoLinger(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,102 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,103 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27440 from range 27379 - 30071.
+2022-09-11 09:18:12,177 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,181 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,183 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27441 from range 27379 - 30071.
+2022-09-11 09:18:12,184 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetInputStream(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,187 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetRemoteSocketAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,188 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27442 from range 27379 - 30071.
+2022-09-11 09:18:12,266 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetRemoteSocketAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,269 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetRemoteSocketAddress(boolean) throws java.lang.Exception]
+2022-09-11 09:18:12,272 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 27443 from range 27379 - 30071.
+2022-09-11 09:18:12,278 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.UnifiedServerSocketModeDetectionTest.testGetRemoteSocketAddress(boolean) throws java.lang.Exception]

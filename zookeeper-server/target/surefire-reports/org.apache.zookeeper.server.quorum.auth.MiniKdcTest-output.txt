@@ -1,0 +1,47 @@
+2022-09-11 09:18:41,372 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@225] - Configuration:
+2022-09-11 09:18:41,383 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@226] - ---------------------------------------------------------------
+2022-09-11 09:18:41,384 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.renewable.lifetime: 604800000
+2022-09-11 09:18:41,386 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   instance: DefaultKrbServer
+2022-09-11 09:18:41,386 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   debug: false
+2022-09-11 09:18:41,388 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.bind.address: localhost
+2022-09-11 09:18:41,388 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.ticket.lifetime: 86400000
+2022-09-11 09:18:41,388 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   transport: TCP
+2022-09-11 09:18:41,388 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.name: EXAMPLE
+2022-09-11 09:18:41,389 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.domain: COM
+2022-09-11 09:18:41,389 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.port: 0
+2022-09-11 09:18:41,389 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   min.ticket.lifetime: 3600000
+2022-09-11 09:18:41,389 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@230] - ---------------------------------------------------------------
+2022-09-11 09:18:41,663 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@284] - MiniKdc stated.
+2022-09-11 09:18:41,786 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.auth.MiniKdcTest.testKeytabGen() throws java.lang.Exception]
+2022-09-11 09:18:41,883 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.auth.MiniKdcTest.testKeytabGen() throws java.lang.Exception]
+2022-09-11 09:18:41,905 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.auth.MiniKdcTest.testMiniKdcStart()]
+2022-09-11 09:18:41,908 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.auth.MiniKdcTest.testMiniKdcStart()]
+2022-09-11 09:18:41,914 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.auth.MiniKdcTest.testKerberosLogin() throws java.lang.Exception]
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test11002592131511958095.junit.dir/foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+2022-09-11 09:18:47,997 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:18:48,002 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+2022-09-11 09:18:48,138 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662859128135,foo@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator false KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test11002592131511958095.junit.dir/foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2022-09-11 09:18:48,157 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.auth.MiniKdcTest.testKerberosLogin() throws java.lang.Exception]
+2022-09-11 09:18:48,169 [myid:] - INFO  [main:o.a.k.k.k.s.i.DefaultInternalKdcServerImpl@102] - Default Internal kdc server stopped.
+2022-09-11 09:18:49,190 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@350] - MiniKdc stopped.

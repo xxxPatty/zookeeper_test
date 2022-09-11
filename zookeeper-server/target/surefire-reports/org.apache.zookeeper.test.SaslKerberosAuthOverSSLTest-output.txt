@@ -1,0 +1,423 @@
+2022-09-11 09:12:24,353 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@225] - Configuration:
+2022-09-11 09:12:24,360 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@226] - ---------------------------------------------------------------
+2022-09-11 09:12:24,360 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.renewable.lifetime: 604800000
+2022-09-11 09:12:24,421 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   instance: DefaultKrbServer
+2022-09-11 09:12:24,422 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   debug: true
+2022-09-11 09:12:24,422 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.bind.address: localhost
+2022-09-11 09:12:24,422 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.ticket.lifetime: 86400000
+2022-09-11 09:12:24,425 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   transport: TCP
+2022-09-11 09:12:24,426 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.name: EXAMPLE
+2022-09-11 09:12:24,427 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.domain: COM
+2022-09-11 09:12:24,428 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.port: 0
+2022-09-11 09:12:24,429 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   min.ticket.lifetime: 3600000
+2022-09-11 09:12:24,430 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@230] - ---------------------------------------------------------------
+2022-09-11 09:12:25,119 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@284] - MiniKdc stated.
+2022-09-11 09:12:25,130 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 6/8 using ports from 24686 - 27378.
+2022-09-11 09:12:25,131 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 24687 from range 24686 - 27378.
+2022-09-11 09:12:25,223 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.test.SaslKerberosAuthOverSSLTest.testAuth() throws java.lang.Exception]
+2022-09-11 09:12:25,316 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-09-11 09:12:25,318 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 24688 from range 24686 - 27378.
+2022-09-11 09:12:25,781 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@520] - zookeeper.client.certReload=false
+2022-09-11 09:12:25,782 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@532] - zookeeper.client.portUnification=false
+2022-09-11 09:12:25,786 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@544] - zookeeper.netty.advancedFlowControl.enabled = false
+2022-09-11 09:12:25,787 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@107] - handshakeThrottlingEnabled = false, zookeeper.netty.server.outstandingHandshake.limit = -1
+2022-09-11 09:12:26,018 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NettyServerCnxnFactory as server connection factory
+Debug is  true storeKey true useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/382ce21d-ac8b-4121-a03a-57d3c49d47fe refreshKrb5Config is true principal is zkquorum/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Java config name: /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9247024340521562684.junit.dir/1662858744349/krb5.conf
+Loading krb5 profile at /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9247024340521562684.junit.dir/1662858744349/krb5.conf
+Loaded from Java config
+>>> KdcAccessibility: reset
+>>> KdcAccessibility: reset
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): zkquorum
+>>> KeyTabInputStream, readName(): localhost
+>>> KeyTab: load() entry length: 65; type: 17
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): zkquorum
+>>> KeyTabInputStream, readName(): localhost
+>>> KeyTab: load() entry length: 73; type: 16
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): zkclient
+>>> KeyTabInputStream, readName(): localhost
+>>> KeyTab: load() entry length: 65; type: 17
+>>> KeyTabInputStream, readName(): EXAMPLE.COM
+>>> KeyTabInputStream, readName(): zkclient
+>>> KeyTabInputStream, readName(): localhost
+>>> KeyTab: load() entry length: 73; type: 16
+Looking for keys for: zkquorum/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkquorum/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Looking for keys for: zkquorum/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkquorum/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Using builtin default etypes for default_tkt_enctypes
+default etypes for default_tkt_enctypes: 18 17 20 19.
+>>> KrbAsReq creating message
+>>> KrbKdcReq send: kdc=localhost TCP:63341, timeout=30000, number of retries =3, #bytes=147
+>>> KDCCommunication: kdc=localhost TCP:63341, timeout=30000,Attempt =1, #bytes=147
+2022-09-11 09:12:26,470 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:12:26,484 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+>>>DEBUG: TCPClient reading 162 bytes
+>>> KrbKdcReq send: #bytes read=162
+>>>Pre-Authentication Data:
+	 PA-DATA type = 19
+	 PA-ETYPE-INFO2 etype = 17, salt = null, s2kparams = null
+
+>>> KdcAccessibility: remove localhost:63341
+>>> KDCRep: init() encoding tag is 126 req type is 11
+>>>KRBError:
+	 sTime is Sun Sep 11 09:12:26 CST 2022 1662858746000
+	 suSec is 100
+	 error code is 25
+	 error Message is Additional pre-authentication required
+	 sname is zkquorum/localhost@EXAMPLE.COM
+	 eData provided.
+	 msgType is 30
+>>>Pre-Authentication Data:
+	 PA-DATA type = 19
+	 PA-ETYPE-INFO2 etype = 17, salt = null, s2kparams = null
+
+KRBError received: Additional pre-authentication required
+KrbAsReqBuilder: PREAUTH FAILED/REQ, re-send AS-REQ
+Using builtin default etypes for default_tkt_enctypes
+default etypes for default_tkt_enctypes: 18 17 20 19.
+Looking for keys for: zkquorum/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkquorum/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Looking for keys for: zkquorum/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkquorum/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Using builtin default etypes for default_tkt_enctypes
+default etypes for default_tkt_enctypes: 18 17 20 19.
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+>>> KrbAsReq creating message
+>>> KrbKdcReq send: kdc=localhost TCP:63341, timeout=30000, number of retries =3, #bytes=234
+>>> KDCCommunication: kdc=localhost TCP:63341, timeout=30000,Attempt =1, #bytes=234
+2022-09-11 09:12:26,986 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662858746981,zkquorum/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+>>>DEBUG: TCPClient reading 543 bytes
+>>> KrbKdcReq send: #bytes read=543
+>>> KdcAccessibility: remove localhost:63341
+Looking for keys for: zkquorum/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkquorum/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+>>> KrbAsRep cons in KrbAsReq.getReply zkquorum/localhost
+principal is zkquorum/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:12:27,037 [myid:] - INFO  [main:o.a.z.Login@320] - Server successfully logged in.
+2022-09-11 09:12:27,051 [myid:] - INFO  [Thread-1:o.a.z.Login$1@133] - TGT refresh thread started.
+2022-09-11 09:12:27,051 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:12:27,052 [myid:] - INFO  [Thread-1:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:12:26 CST 2022
+2022-09-11 09:12:27,052 [myid:] - INFO  [Thread-1:o.a.z.Login@343] - TGT expires:                  Mon Sep 12 09:12:26 CST 2022
+2022-09-11 09:12:27,052 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@631] - configure org.apache.zookeeper.server.NettyServerCnxnFactory@1951b871 secure: true on addr localhost/127.0.0.1:24688
+2022-09-11 09:12:27,053 [myid:] - INFO  [Thread-1:o.a.z.Login$1@199] - TGT refresh sleeping until: Mon Sep 12 04:29:51 CST 2022
+2022-09-11 09:12:27,066 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 124
+2022-09-11 09:12:27,599 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAAPeoFbv5sLvz1vcMjbOtAAABgyoa3maAAQB4
+2022-09-11 09:12:27,852 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:12:27,853 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:24688
+2022-09-11 09:12:27,853 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:24688
+2022-09-11 09:12:27,898 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:12:27,899 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
+2022-09-11 09:12:27,899 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
+2022-09-11 09:12:27,899 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2022-09-11 09:12:27,899 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2022-09-11 09:12:27,900 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2022-09-11 09:12:27,900 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2022-09-11 09:12:27,900 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               | |                     
+2022-09-11 09:12:27,900 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               |_|                     
+2022-09-11 09:12:27,900 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:12:27,907 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:12:27,908 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:host.name=localhost
+2022-09-11 09:12:27,908 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.version=18.0.2.1
+2022-09-11 09:12:27,908 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.vendor=Homebrew
+2022-09-11 09:12:27,909 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:12:27,909 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:12:27,910 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:12:27,911 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:12:27,911 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
+2022-09-11 09:12:27,912 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.name=Mac OS X
+2022-09-11 09:12:27,913 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.arch=x86_64
+2022-09-11 09:12:27,913 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.version=10.15.6
+2022-09-11 09:12:27,913 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.name=linxiangling
+2022-09-11 09:12:27,914 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.home=/Users/linxiangling
+2022-09-11 09:12:27,914 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:12:27,915 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.free=72MB
+2022-09-11 09:12:27,915 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.max=512MB
+2022-09-11 09:12:27,915 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.total=130MB
+2022-09-11 09:12:27,916 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@140] - zookeeper.enableEagerACLCheck = false
+2022-09-11 09:12:27,917 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@153] - zookeeper.digest.enabled = true
+2022-09-11 09:12:27,917 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@157] - zookeeper.closeSessionTxn.enabled = true
+2022-09-11 09:12:27,917 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1494] - zookeeper.flushDelay = 0 ms
+2022-09-11 09:12:27,918 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1503] - zookeeper.maxWriteQueuePollTime = 0 ms
+2022-09-11 09:12:27,918 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1512] - zookeeper.maxBatchSize=1000
+2022-09-11 09:12:27,919 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@275] - zookeeper.intBufferStartingSizeBytes = 1024
+2022-09-11 09:12:27,959 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:12:28,074 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:12:28,074 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:12:28,075 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:12:28,077 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:12:28,082 [myid:] - INFO  [main:o.a.z.s.BlueThrottle@141] - Weighed connection throttling is disabled
+2022-09-11 09:12:28,086 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:12:28,086 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:12:28,121 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:12:28,123 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:12:28,124 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:12:28,132 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:12:28,132 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:12:28,132 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:12:28,133 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:12:28,133 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:12:28,135 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:12:28,136 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:12:28,159 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = true
+2022-09-11 09:12:28,160 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = [sasl]
+2022-09-11 09:12:28,163 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@47] - ACL digest algorithm is: SHA1
+2022-09-11 09:12:28,164 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@61] - zookeeper.DigestAuthenticationProvider.enabled = true
+2022-09-11 09:12:28,181 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test12202147975866791208.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test12202147975866791208.junit.dir/version-2
+2022-09-11 09:12:28,181 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@720] - binding to port localhost/127.0.0.1:24688
+2022-09-11 09:12:28,589 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@725] - bound to port 24688
+2022-09-11 09:12:28,672 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:12:28,689 [myid:] - INFO  [main:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2022-09-11 09:12:28,689 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test12202147975866791208.junit.dir/version-2/snapshot.0
+2022-09-11 09:12:28,699 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 110 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:12:28,700 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test12202147975866791208.junit.dir/version-2/snapshot.0
+2022-09-11 09:12:28,714 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 14 ms
+2022-09-11 09:12:28,735 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:12:28,735 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
+2022-09-11 09:12:28,901 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 24688
+2022-09-11 09:12:28,902 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@100] - using secure socket
+Found KeyTab /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/382ce21d-ac8b-4121-a03a-57d3c49d47fe for zkquorum/localhost@EXAMPLE.COM
+Found ticket for zkquorum/localhost@EXAMPLE.COM to go to krbtgt/EXAMPLE.COM@EXAMPLE.COM expiring on Mon Sep 12 09:12:26 CST 2022
+2022-09-11 09:12:30,915 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.c.FourLetterCommands@223] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, -720899=telnet close, 1751217000=hash, 2003003507=wchs, 2003003504=wchp, 1684632179=dirs, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2022-09-11 09:12:30,916 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.c.FourLetterCommands@224] - The list of enabled four letter word commands is : [[wchs, stat, wchp, dirs, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, telnet close, crst, hash, cons]]
+2022-09-11 09:12:30,916 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.NettyServerCnxn@295] - Processing stat command from /127.0.0.1:63444
+2022-09-11 09:12:30,921 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:12:30,977 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:12:30,988 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:12:30,989 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port-1,name1=InMemoryDataTree
+2022-09-11 09:12:30,989 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:12:30,989 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port-1
+2022-09-11 09:12:30,990 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:12:30,997 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:12:30,998 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:host.name=localhost
+2022-09-11 09:12:30,998 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.version=18.0.2.1
+2022-09-11 09:12:30,998 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.vendor=Homebrew
+2022-09-11 09:12:30,998 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:12:30,999 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:12:30,999 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:12:30,999 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:12:31,000 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.compiler=<NA>
+2022-09-11 09:12:31,001 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.name=Mac OS X
+2022-09-11 09:12:31,001 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.arch=x86_64
+2022-09-11 09:12:31,001 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.version=10.15.6
+2022-09-11 09:12:31,001 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.name=linxiangling
+2022-09-11 09:12:31,002 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.home=/Users/linxiangling
+2022-09-11 09:12:31,003 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:12:31,004 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.free=17MB
+2022-09-11 09:12:31,005 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.max=512MB
+2022-09-11 09:12:31,005 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.total=60MB
+2022-09-11 09:12:31,009 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=localhost:24688 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@6b9c69a9
+2022-09-11 09:12:31,031 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:12:31,047 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/382ce21d-ac8b-4121-a03a-57d3c49d47fe refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Java config name: /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9247024340521562684.junit.dir/1662858744349/krb5.conf
+Loading krb5 profile at /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9247024340521562684.junit.dir/1662858744349/krb5.conf
+Loaded from Java config
+>>> KdcAccessibility: reset
+Looking for keys for: zkclient/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkclient/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Looking for keys for: zkclient/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkclient/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Using builtin default etypes for default_tkt_enctypes
+default etypes for default_tkt_enctypes: 18 17 20 19.
+>>> KrbAsReq creating message
+>>> KrbKdcReq send: kdc=localhost TCP:63341, timeout=30000, number of retries =3, #bytes=147
+>>> KDCCommunication: kdc=localhost TCP:63341, timeout=30000,Attempt =1, #bytes=147
+2022-09-11 09:12:31,064 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:12:31,065 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+>>>DEBUG: TCPClient reading 162 bytes
+>>> KrbKdcReq send: #bytes read=162
+>>>Pre-Authentication Data:
+	 PA-DATA type = 19
+	 PA-ETYPE-INFO2 etype = 17, salt = null, s2kparams = null
+
+>>> KdcAccessibility: remove localhost:63341
+>>> KDCRep: init() encoding tag is 126 req type is 11
+>>>KRBError:
+	 sTime is Sun Sep 11 09:12:31 CST 2022 1662858751000
+	 suSec is 100
+	 error code is 25
+	 error Message is Additional pre-authentication required
+	 sname is zkclient/localhost@EXAMPLE.COM
+	 eData provided.
+	 msgType is 30
+>>>Pre-Authentication Data:
+	 PA-DATA type = 19
+	 PA-ETYPE-INFO2 etype = 17, salt = null, s2kparams = null
+
+KRBError received: Additional pre-authentication required
+KrbAsReqBuilder: PREAUTH FAILED/REQ, re-send AS-REQ
+Using builtin default etypes for default_tkt_enctypes
+default etypes for default_tkt_enctypes: 18 17 20 19.
+Looking for keys for: zkclient/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkclient/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Looking for keys for: zkclient/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkclient/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+Using builtin default etypes for default_tkt_enctypes
+default etypes for default_tkt_enctypes: 18 17 20 19.
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+>>> KrbAsReq creating message
+>>> KrbKdcReq send: kdc=localhost TCP:63341, timeout=30000, number of retries =3, #bytes=234
+>>> KDCCommunication: kdc=localhost TCP:63341, timeout=30000,Attempt =1, #bytes=234
+2022-09-11 09:12:31,081 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662858751079,zkclient/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+>>>DEBUG: TCPClient reading 543 bytes
+>>> KrbKdcReq send: #bytes read=543
+>>> KdcAccessibility: remove localhost:63341
+Looking for keys for: zkclient/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkclient/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+>>> KrbAsRep cons in KrbAsReq.getReply zkclient/localhost
+principal is zkclient/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:12:31,085 [myid:localhost:24688] - INFO  [main-SendThread(localhost:24688):o.a.z.Login@320] - ClientUsingKerberos successfully logged in.
+2022-09-11 09:12:31,086 [myid:] - INFO  [Thread-2:o.a.z.Login$1@133] - TGT refresh thread started.
+2022-09-11 09:12:31,086 [myid:] - INFO  [Thread-2:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:12:31 CST 2022
+2022-09-11 09:12:31,086 [myid:] - INFO  [Thread-2:o.a.z.Login@343] - TGT expires:                  Mon Sep 12 09:12:31 CST 2022
+2022-09-11 09:12:31,087 [myid:] - INFO  [Thread-2:o.a.z.Login$1@199] - TGT refresh sleeping until: Mon Sep 12 04:53:37 CST 2022
+2022-09-11 09:12:31,109 [myid:localhost:24688] - INFO  [main-SendThread(localhost:24688):o.a.z.u.SecurityUtils$1@119] - Client will use GSSAPI as SASL mechanism.
+2022-09-11 09:12:31,113 [myid:localhost:24688] - INFO  [main-SendThread(localhost:24688):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:24688.
+2022-09-11 09:12:31,113 [myid:localhost:24688] - INFO  [main-SendThread(localhost:24688):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will attempt to SASL-authenticate using Login Context section 'ClientUsingKerberos'
+2022-09-11 09:12:31,127 [myid:] - INFO  [nioEventLoopGroup-5-1:o.a.z.ClientCnxnSocketNetty$ZKClientPipelineFactory@454] - SSL handler added for channel: [id: 0xe8eb0d52]
+Found KeyTab /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/382ce21d-ac8b-4121-a03a-57d3c49d47fe for zkquorum/localhost@EXAMPLE.COM
+Found ticket for zkquorum/localhost@EXAMPLE.COM to go to krbtgt/EXAMPLE.COM@EXAMPLE.COM expiring on Mon Sep 12 09:12:26 CST 2022
+2022-09-11 09:12:31,159 [myid:] - INFO  [nioEventLoopGroup-5-1:o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:63531, server: localhost/127.0.0.1:24688
+2022-09-11 09:12:31,198 [myid:] - INFO  [nioEventLoopGroup-5-1:o.a.z.ClientCnxnSocketNetty$1@184] - channel is connected: [id: 0xe8eb0d52, L:/127.0.0.1:63531 - R:localhost/127.0.0.1:24688]
+2022-09-11 09:12:31,319 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:12:31,406 [myid:] - INFO  [SyncThread:0:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2022-09-11 09:12:31,415 [myid:] - INFO  [nioEventLoopGroup-5-1:o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:24688, session id = 0x10000dd07b70000, negotiated timeout = 30000
+2022-09-11 09:12:31,420 [myid:] - INFO  [main:o.a.z.t.JMXEnv@116] - expect:0x10000dd07b70000
+2022-09-11 09:12:31,420 [myid:] - INFO  [main:o.a.z.t.JMXEnv@119] - found:0x10000dd07b70000 org.apache.ZooKeeperService:name0=StandaloneServer_port-1,name1=Connections,name2=127.0.0.1,name3=0x10000dd07b70000
+Found ticket for zkclient/localhost@EXAMPLE.COM to go to krbtgt/EXAMPLE.COM@EXAMPLE.COM expiring on Mon Sep 12 09:12:31 CST 2022
+Entered Krb5Context.initSecContext with state=STATE_NEW
+Found ticket for zkclient/localhost@EXAMPLE.COM to go to krbtgt/EXAMPLE.COM@EXAMPLE.COM expiring on Mon Sep 12 09:12:31 CST 2022
+Service ticket not found in the subject
+>>> Credentials serviceCredsSingle: same realm
+Using builtin default etypes for default_tgs_enctypes
+default etypes for default_tgs_enctypes: 18 17 20 19.
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+>>> CksumType: sun.security.krb5.internal.crypto.HmacSha1Aes128CksumType
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+>>> KrbKdcReq send: kdc=localhost TCP:63341, timeout=30000, number of retries =3, #bytes=586
+>>> KDCCommunication: kdc=localhost TCP:63341, timeout=30000,Attempt =1, #bytes=586
+2022-09-11 09:12:31,563 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.TgsRequest@117] - TGS_REQ ISSUE: authtime 1662858751561,zkclient/localhost@EXAMPLE.COM for zkquorum/localhost@EXAMPLE.COM
+>>>DEBUG: TCPClient reading 538 bytes
+>>> KrbKdcReq send: #bytes read=538
+>>> KdcAccessibility: remove localhost:63341
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+>>> TGS credentials serviceCredsSingle:
+>>> DEBUG: ----Credentials----
+	client: zkclient/localhost@EXAMPLE.COM
+	server: zkquorum/localhost@EXAMPLE.COM
+	ticket: sname: zkquorum/localhost@EXAMPLE.COM
+	endTime: 1662945151000
+        ----Credentials end----
+>>> KrbApReq: APOptions are 00000000 00000000 00000000 00000000
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+Krb5Context setting mySeqNumber to: 925010941
+Krb5Context setting peerSeqNumber to: 925010941
+Created InitSecContextToken:
+0000: 01 00 6E 82 01 E7 30 82   01 E3 A0 03 02 01 05 A1  ..n...0.........
+0010: 03 02 01 0E A2 07 03 05   00 00 00 00 00 A3 81 FE  ................
+0020: 61 81 FB 30 81 F8 A0 03   02 01 05 A1 0D 1B 0B 45  a..0...........E
+0030: 58 41 4D 50 4C 45 2E 43   4F 4D A2 20 30 1E A0 03  XAMPLE.COM. 0...
+0040: 02 01 00 A1 17 30 15 1B   08 7A 6B 71 75 6F 72 75  .....0...zkquoru
+0050: 6D 1B 09 6C 6F 63 61 6C   68 6F 73 74 A3 81 BF 30  m..localhost...0
+0060: 81 BC A0 03 02 01 11 A1   03 02 01 01 A2 81 AF 04  ................
+0070: 81 AC 6D 31 62 04 1F 2A   50 86 BB E7 A2 A6 3A 01  ..m1b..*P.....:.
+0080: 20 6A AC 26 6F 3B B1 85   FC 57 9E 8B FF 63 D7 90   j.&o;...W...c..
+0090: FA 9A 1C A6 DE EE AB A6   70 CE 01 A9 E5 14 40 C6  ........p.....@.
+00A0: 35 14 56 4F FF BB 45 92   AD D0 A6 19 18 F2 14 E6  5.VO..E.........
+00B0: EA CD 4D 0E BC 03 C8 87   1D E3 45 C6 82 C5 92 20  ..M.......E.... 
+00C0: C8 FD 37 74 3F C5 C9 C0   20 D2 89 0F 3F C0 83 D3  ..7t?... ...?...
+00D0: 79 C6 E9 DC 47 6A 9A 33   8E AB DD 92 68 AD DF 78  y...Gj.3....h..x
+00E0: 81 F7 A0 E2 A1 46 49 C6   4E A6 CD 95 5B 57 B5 C8  .....FI.N...[W..
+00F0: 06 73 22 19 2C 75 FB 14   27 17 90 9E 60 0B 63 30  .s".,u..'...`.c0
+0100: 6D E6 7B 98 C1 DE CC 13   05 90 88 B3 66 7A 2A D0  m...........fz*.
+0110: AA F3 AF F7 FB 33 7C BA   10 54 C7 A0 A8 3B A4 81  .....3...T...;..
+0120: CC 30 81 C9 A0 03 02 01   11 A2 81 C1 04 81 BE BB  .0..............
+0130: B7 17 86 2D 49 14 E2 D8   EF 61 14 36 C6 C8 53 49  ...-I....a.6..SI
+0140: 94 8A 25 36 28 1A 8E C2   AA 99 76 1A 81 25 72 58  ..%6(.....v..%rX
+0150: B7 E8 5D 14 0E 4D 92 F1   BC 44 24 DB 1D 70 FD 6A  ..]..M...D$..p.j
+0160: 1C 8D 26 80 D3 7E 42 2F   D9 A8 8D 59 12 ED 55 A2  ..&...B/...Y..U.
+0170: 9F FA 80 06 5C 20 77 52   CD 46 EC D5 0D D9 EC 88  ....\ wR.F......
+0180: 16 70 09 DE 63 00 45 18   3B 51 05 3C B1 4D F5 4B  .p..c.E.;Q.<.M.K
+0190: A2 46 4A 10 C6 BB 07 4C   F4 92 08 A4 73 A4 F3 31  .FJ....L....s..1
+01A0: D0 92 0C 15 D3 B6 07 3E   FC 56 D1 1F 61 85 B7 4B  .......>.V..a..K
+01B0: 38 E9 50 F6 BD CD A5 8C   03 BA BF 68 6D 87 8D 0A  8.P........hm...
+01C0: 10 9C 3F 99 46 44 70 64   88 A8 8E C2 BC AB 88 76  ..?.FDpd.......v
+01D0: 73 AC D4 43 3B 76 D6 11   35 A2 C4 25 01 A8 FA CA  s..C;v..5..%....
+01E0: 00 49 F5 BE EB 40 3D 32   2E 53 9C 72 7F           .I...@=2.S.r.
+
+Entered Krb5Context.acceptSecContext with state=STATE_NEW
+Looking for keys for: zkquorum/localhost@EXAMPLE.COM
+Found unsupported keytype (16) for zkquorum/localhost@EXAMPLE.COM
+Added key: 17, version: 1
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+Using builtin default etypes for permitted_enctypes
+default etypes for permitted_enctypes: 18 17 20 19.
+>>> EType: sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType
+MemoryCache: add 1662858751/576070/01278C281599623AB60F15E632FA15AD2C7D31301C2BF53894300F478ECBD138/zkclient/localhost@EXAMPLE.COM to zkclient/localhost@EXAMPLE.COM|zkquorum/localhost@EXAMPLE.COM
+>>> KrbApReq: authenticate succeed.
+Krb5Context setting peerSeqNumber to: 925010941
+Krb5Context setting mySeqNumber to: 925010941
+Krb5Context.wrap: data=[01 01 00 00 ]
+Krb5Context.wrap: token=[05 04 01 ff 00 0c 00 00 00 00 00 00 37 22 8b fd 01 01 00 00 94 f7 9c 52 62 3c a4 1c ed 88 d2 47 ]
+Krb5Context.unwrap: token=[05 04 01 ff 00 0c 00 00 00 00 00 00 37 22 8b fd 01 01 00 00 94 f7 9c 52 62 3c a4 1c ed 88 d2 47 ]
+Krb5Context.unwrap: data=[01 01 00 00 ]
+Krb5Context.wrap: data=[01 00 00 00 7a 6b 63 6c 69 65 6e 74 2f 6c 6f 63 61 6c 68 6f 73 74 40 45 58 41 4d 50 4c 45 2e 43 4f 4d ]
+Krb5Context.wrap: token=[05 04 00 ff 00 0c 00 00 00 00 00 00 37 22 8b fd 01 00 00 00 7a 6b 63 6c 69 65 6e 74 2f 6c 6f 63 61 6c 68 6f 73 74 40 45 58 41 4d 50 4c 45 2e 43 4f 4d 91 2d 88 b9 8d 7a a1 68 24 2f d9 3e ]
+Krb5Context.unwrap: token=[05 04 00 ff 00 0c 00 00 00 00 00 00 37 22 8b fd 01 00 00 00 7a 6b 63 6c 69 65 6e 74 2f 6c 6f 63 61 6c 68 6f 73 74 40 45 58 41 4d 50 4c 45 2e 43 4f 4d 91 2d 88 b9 8d 7a a1 68 24 2f d9 3e ]
+Krb5Context.unwrap: data=[01 00 00 00 7a 6b 63 6c 69 65 6e 74 2f 6c 6f 63 61 6c 68 6f 73 74 40 45 58 41 4d 50 4c 45 2e 43 4f 4d ]
+2022-09-11 09:12:31,625 [myid:] - INFO  [nioEventLoopGroup-4-2:o.a.z.s.a.SaslServerCallbackHandler@119] - Successfully authenticated client: authenticationID=zkclient/localhost@EXAMPLE.COM;  authorizationID=zkclient/localhost@EXAMPLE.COM.
+2022-09-11 09:12:31,625 [myid:] - INFO  [nioEventLoopGroup-4-2:o.a.z.s.a.SaslServerCallbackHandler@135] - Setting authorizedID: zkclient/localhost@EXAMPLE.COM
+2022-09-11 09:12:31,626 [myid:] - INFO  [nioEventLoopGroup-4-2:o.a.z.s.ZooKeeperServer@1722] - Session 0x10000dd07b70000: adding SASL authorization for authorizationID: zkclient/localhost@EXAMPLE.COM
+2022-09-11 09:12:32,694 [myid:] - INFO  [main:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:12:32,696 [myid:] - INFO  [nioEventLoopGroup-5-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@469] - channel is disconnected: [id: 0xe8eb0d52, L:/127.0.0.1:63531 ! R:localhost/127.0.0.1:24688]
+2022-09-11 09:12:32,696 [myid:] - WARN  [Thread-2:o.a.z.Login$1@203] - TGT renewal thread has been interrupted and will exit.
+2022-09-11 09:12:32,696 [myid:] - INFO  [nioEventLoopGroup-5-1:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:12:32,697 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000dd07b70000
+2022-09-11 09:12:32,697 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000dd07b70000 closed
+2022-09-11 09:12:32,706 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:12:32,707 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:12:32,707 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@672] - shutdown called /127.0.0.1:24688
+2022-09-11 09:12:32,708 [myid:] - WARN  [Thread-1:o.a.z.Login$1@203] - TGT renewal thread has been interrupted and will exit.
+2022-09-11 09:12:32,713 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:12:32,713 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:12:32,713 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:12:32,713 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:12:32,713 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:12:32,714 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:12:32,714 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:12:32,714 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:12:32,714 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:12:32,714 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:12:32,717 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 24688
+2022-09-11 09:12:32,717 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@100] - using secure socket
+2022-09-11 09:12:32,719 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:12:32,724 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 130 at start it was 124
+2022-09-11 09:12:32,725 [myid:] - INFO  [main:o.a.z.t.ClientBase@609] - sleeping for 20 secs
+2022-09-11 09:12:32,745 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.test.SaslKerberosAuthOverSSLTest.testAuth() throws java.lang.Exception]
+2022-09-11 09:12:32,779 [myid:] - INFO  [main:o.a.k.k.k.s.i.DefaultInternalKdcServerImpl@102] - Default Internal kdc server stopped.
+2022-09-11 09:12:33,291 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:12:33,780 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@350] - MiniKdc stopped.

@@ -1,0 +1,4 @@
+2022-09-11 09:16:33,663 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatcherOrBitSetTest.testWatcherSet()]
+2022-09-11 09:16:33,778 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatcherOrBitSetTest.testWatcherSet()]
+2022-09-11 09:16:33,811 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatcherOrBitSetTest.testBitSet()]
+2022-09-11 09:16:33,818 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatcherOrBitSetTest.testBitSet()]

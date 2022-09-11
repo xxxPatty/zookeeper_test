@@ -1,0 +1,2 @@
+2022-09-11 09:16:04,883 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.ZooKeeperThreadTest.testUncaughtException() throws java.lang.Exception]
+2022-09-11 09:16:05,011 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.ZooKeeperThreadTest.testUncaughtException() throws java.lang.Exception]

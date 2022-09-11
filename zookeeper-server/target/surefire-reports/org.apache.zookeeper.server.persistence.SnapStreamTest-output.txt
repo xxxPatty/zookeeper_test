@@ -1,0 +1,5 @@
+2022-09-11 09:16:10,338 [myid:] - INFO  [main:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2022-09-11 09:16:10,630 [myid:] - ERROR [main:o.a.z.s.p.SnapStream@251] - Read incorrect number of bytes from snapshot.180000e3a2.gz
+2022-09-11 09:16:10,714 [myid:] - ERROR [main:o.a.z.s.p.SnapStream@251] - Read incorrect number of bytes from snapshot.180000e3a2.gz
+2022-09-11 09:16:10,717 [myid:] - ERROR [main:o.a.z.s.p.SnapStream@277] - Read incorrect number of bytes from snapshot.180000e3a2.snappy
+2022-09-11 09:16:10,771 [myid:] - ERROR [main:o.a.z.s.p.SnapStream@277] - Read incorrect number of bytes from snapshot.180000e3a2.snappy

@@ -1,0 +1,38 @@
+2022-09-11 09:16:32,507 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testDeadWatcherMetrics()]
+2022-09-11 09:16:32,764 [myid:] - INFO  [main:o.a.z.s.w.WatcherCleaner@86] - watcherCleanThreshold=1, watcherCleanIntervalInSeconds=1, watcherCleanThreadsNum=1, maxInProcessingDeadWatchers=1
+2022-09-11 09:16:32,765 [myid:] - INFO  [Thread-0:o.a.z.s.w.WatcherCleaner@157] - Processing 1 dead watchers
+2022-09-11 09:16:32,766 [myid:] - WARN  [main:o.a.z.s.RateLogger@87] - Message:Waiting for dead watchers cleaning Value:null
+2022-09-11 09:16:32,789 [myid:] - INFO  [DeadWatcherCleannerThread-1:o.a.z.s.w.WatcherCleaner$1@164] - Takes 23 to process 1 watches
+2022-09-11 09:16:32,791 [myid:] - INFO  [Thread-0:o.a.z.s.w.WatcherCleaner@157] - Processing 1 dead watchers
+2022-09-11 09:16:32,812 [myid:] - INFO  [DeadWatcherCleannerThread-1:o.a.z.s.w.WatcherCleaner$1@164] - Takes 21 to process 1 watches
+2022-09-11 09:16:32,813 [myid:] - INFO  [Thread-0:o.a.z.s.w.WatcherCleaner@157] - Processing 1 dead watchers
+2022-09-11 09:16:32,838 [myid:] - INFO  [DeadWatcherCleannerThread-1:o.a.z.s.w.WatcherCleaner$1@164] - Takes 24 to process 1 watches
+2022-09-11 09:16:32,875 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testDeadWatcherMetrics()]
+2022-09-11 09:16:32,895 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testProcessDeadWatchersBasedOnTime()]
+2022-09-11 09:16:32,897 [myid:] - INFO  [main:o.a.z.s.w.WatcherCleaner@86] - watcherCleanThreshold=10, watcherCleanIntervalInSeconds=1, watcherCleanThreadsNum=1, maxInProcessingDeadWatchers=10
+2022-09-11 09:16:33,899 [myid:] - INFO  [Thread-1:o.a.z.s.w.WatcherCleaner@157] - Processing 1 dead watchers
+2022-09-11 09:16:33,900 [myid:] - INFO  [DeadWatcherCleannerThread-1:o.a.z.s.w.WatcherCleaner$1@164] - Takes 0 to process 1 watches
+2022-09-11 09:16:35,906 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testProcessDeadWatchersBasedOnTime()]
+2022-09-11 09:16:35,910 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testProcessDeadWatchersBasedOnThreshold()]
+2022-09-11 09:16:35,912 [myid:] - INFO  [main:o.a.z.s.w.WatcherCleaner@86] - watcherCleanThreshold=3, watcherCleanIntervalInSeconds=60, watcherCleanThreadsNum=1, maxInProcessingDeadWatchers=10
+2022-09-11 09:16:35,913 [myid:] - INFO  [Thread-2:o.a.z.s.w.WatcherCleaner@157] - Processing 3 dead watchers
+2022-09-11 09:16:35,913 [myid:] - INFO  [DeadWatcherCleannerThread-1:o.a.z.s.w.WatcherCleaner$1@164] - Takes 0 to process 3 watches
+2022-09-11 09:16:35,914 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testProcessDeadWatchersBasedOnThreshold()]
+2022-09-11 09:16:35,917 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testMaxInProcessingDeadWatchers()]
+2022-09-11 09:16:35,918 [myid:] - INFO  [main:o.a.z.s.w.WatcherCleaner@86] - watcherCleanThreshold=1, watcherCleanIntervalInSeconds=60, watcherCleanThreadsNum=1, maxInProcessingDeadWatchers=1
+2022-09-11 09:16:35,919 [myid:] - INFO  [Thread-3:o.a.z.s.w.WatcherCleaner@157] - Processing 1 dead watchers
+2022-09-11 09:16:35,919 [myid:] - WARN  [main:o.a.z.s.RateLogger@87] - Message:Waiting for dead watchers cleaning Value:null
+2022-09-11 09:16:36,020 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,122 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,224 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,326 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,427 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,530 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,631 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,732 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,836 [myid:] - WARN  [main:o.a.z.s.RateLogger@57] - Message: Waiting for dead watchers cleaning
+2022-09-11 09:16:36,921 [myid:] - INFO  [DeadWatcherCleannerThread-1:o.a.z.s.w.WatcherCleaner$1@164] - Takes 1002 to process 1 watches
+time used 1003
+2022-09-11 09:16:36,922 [myid:] - INFO  [Thread-3:o.a.z.s.w.WatcherCleaner@157] - Processing 1 dead watchers
+2022-09-11 09:16:37,923 [myid:] - INFO  [DeadWatcherCleannerThread-1:o.a.z.s.w.WatcherCleaner$1@164] - Takes 1000 to process 1 watches
+2022-09-11 09:16:37,923 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatcherCleanerTest.testMaxInProcessingDeadWatchers()]

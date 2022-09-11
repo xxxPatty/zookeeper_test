@@ -1,0 +1,13 @@
+2022-09-11 09:22:03,881 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 1/8 using ports from 11221 - 13913.
+2022-09-11 09:22:04,066 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 2/8 using ports from 13914 - 16606.
+2022-09-11 09:22:04,075 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 3/8 using ports from 16607 - 19299.
+2022-09-11 09:22:04,079 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 4/8 using ports from 19300 - 21992.
+2022-09-11 09:22:04,117 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 5/8 using ports from 21993 - 24685.
+2022-09-11 09:22:04,136 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 6/8 using ports from 24686 - 27378.
+2022-09-11 09:22:04,141 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 7/8 using ports from 27379 - 30071.
+2022-09-11 09:22:04,174 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 8/8 using ports from 30072 - 32764.
+2022-09-11 09:22:04,178 [myid:] - INFO  [main:o.a.z.PortAssignment@159] - Single test process using ports from 11221 - 32767.
+2022-09-11 09:22:04,210 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 1/2 using ports from 11221 - 21993.
+2022-09-11 09:22:04,221 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 2/2 using ports from 21994 - 32766.
+2022-09-11 09:22:04,252 [myid:] - INFO  [main:o.a.z.PortAssignment@159] - Single test process using ports from 11221 - 32767.
+2022-09-11 09:22:04,258 [myid:] - INFO  [main:o.a.z.PortAssignment@159] - Single test process using ports from 11221 - 32767.

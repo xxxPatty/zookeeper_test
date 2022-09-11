@@ -1,0 +1,175 @@
+2022-09-11 09:19:34,850 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogProposalIteratorClosure() throws java.lang.Exception]
+2022-09-11 09:19:34,877 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:19:34,877 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
+2022-09-11 09:19:34,878 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
+2022-09-11 09:19:34,878 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2022-09-11 09:19:34,878 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2022-09-11 09:19:34,879 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2022-09-11 09:19:34,879 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2022-09-11 09:19:34,880 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               | |                     
+2022-09-11 09:19:34,881 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               |_|                     
+2022-09-11 09:19:34,881 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:19:34,901 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:19:34,902 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:host.name=localhost
+2022-09-11 09:19:34,902 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.version=18.0.2.1
+2022-09-11 09:19:34,902 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.vendor=Homebrew
+2022-09-11 09:19:34,904 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:19:34,905 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:19:34,905 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:19:34,906 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:19:34,906 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
+2022-09-11 09:19:34,906 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.name=Mac OS X
+2022-09-11 09:19:34,906 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.arch=x86_64
+2022-09-11 09:19:34,907 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.version=10.15.6
+2022-09-11 09:19:34,907 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.name=linxiangling
+2022-09-11 09:19:34,907 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.home=/Users/linxiangling
+2022-09-11 09:19:34,907 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:19:34,908 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.free=113MB
+2022-09-11 09:19:34,908 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.max=512MB
+2022-09-11 09:19:34,908 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.total=130MB
+2022-09-11 09:19:34,909 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@140] - zookeeper.enableEagerACLCheck = false
+2022-09-11 09:19:34,909 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@153] - zookeeper.digest.enabled = true
+2022-09-11 09:19:34,909 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@157] - zookeeper.closeSessionTxn.enabled = true
+2022-09-11 09:19:34,910 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1494] - zookeeper.flushDelay = 0 ms
+2022-09-11 09:19:34,910 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1503] - zookeeper.maxWriteQueuePollTime = 0 ms
+2022-09-11 09:19:34,910 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1512] - zookeeper.maxBatchSize=1000
+2022-09-11 09:19:34,911 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@275] - zookeeper.intBufferStartingSizeBytes = 1024
+2022-09-11 09:19:34,916 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:34,916 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:34,917 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:34,917 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:36,808 [myid:] - INFO  [main:o.a.z.s.q.LearnerMaster@47] - zookeeper.leader.maxConcurrentSnapSyncs = 10
+2022-09-11 09:19:36,808 [myid:] - INFO  [main:o.a.z.s.q.LearnerMaster@50] - zookeeper.leader.maxConcurrentDiffSyncs = 100
+2022-09-11 09:19:36,809 [myid:] - INFO  [main:o.a.z.s.q.Leader@87] - TCP NoDelay set to: true
+2022-09-11 09:19:36,809 [myid:] - INFO  [main:o.a.z.s.q.Leader@108] - zookeeper.leader.ackLoggingFrequency = 1000
+2022-09-11 09:19:36,810 [myid:] - INFO  [main:o.a.z.s.q.Leader@1369] - zookeeper.leader.maxTimeToWaitForEpoch = -1ms
+2022-09-11 09:19:36,918 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@75] - zookeeper.leader.closeSocketAsync = false
+2022-09-11 09:19:36,926 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,927 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,927 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:36,927 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:36,930 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:36,930 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x7 peerLastZxid=0x4
+2022-09-11 09:19:36,945 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogProposalIteratorClosure() throws java.lang.Exception]
+2022-09-11 09:19:36,959 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testEmptyCommittedLog() throws java.lang.Exception]
+2022-09-11 09:19:36,961 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,961 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,961 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:36,962 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:36,965 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:36,965 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x1 peerLastZxid=0x3
+2022-09-11 09:19:36,967 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:36,967 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x1 peerLastZxid=0x1
+2022-09-11 09:19:36,968 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@850] - Sending DIFF zxid=0x1 for peer sid: 0
+2022-09-11 09:19:36,970 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@347] - On disk txn sync disabled
+2022-09-11 09:19:36,970 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x1 peerLastZxid=0x0
+2022-09-11 09:19:36,970 [myid:] - WARN  [main:o.a.z.s.q.LearnerHandler@908] - Unhandled scenario for peer sid: 0 maxCommittedLog=0x1 minCommittedLog=0x1 lastProcessedZxid=0x1 peerLastZxid=0x0 txnLogSyncEnabled=false
+2022-09-11 09:19:36,971 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testEmptyCommittedLog() throws java.lang.Exception]
+2022-09-11 09:19:36,975 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testNewEpochZxid() throws java.lang.Exception]
+2022-09-11 09:19:36,976 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,977 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,977 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:36,977 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:36,980 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:36,981 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x100000002 minCommittedLog=0x100000001 lastProcessedZxid=0x200000000 peerLastZxid=0x0
+2022-09-11 09:19:36,982 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:36,982 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x100000002 minCommittedLog=0x100000001 lastProcessedZxid=0x200000000 peerLastZxid=0x100000000
+2022-09-11 09:19:36,982 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:36,983 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@988] - Sending DIFF zxid=0x100000002  for peer sid: 0
+2022-09-11 09:19:36,984 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:36,984 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x100000002 minCommittedLog=0x100000001 lastProcessedZxid=0x200000000 peerLastZxid=0x200000000
+2022-09-11 09:19:36,984 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@850] - Sending DIFF zxid=0x200000000 for peer sid: 0
+2022-09-11 09:19:36,985 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testNewEpochZxid() throws java.lang.Exception]
+2022-09-11 09:19:36,989 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testCrossEpochTrunc() throws java.lang.Exception]
+2022-09-11 09:19:36,991 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,991 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:36,992 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:36,992 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:36,995 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:36,995 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x600000000 peerLastZxid=0x300000001
+2022-09-11 09:19:36,995 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:36,996 [myid:] - WARN  [main:o.a.z.s.q.LearnerHandler@1001] - Cannot send TRUNC to peer sid: 0 peer zxid is from different epoch
+2022-09-11 09:19:36,996 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@886] - Detected gap between end of txnlog: 0x300000001 and start of committedLog: 0x600000000
+2022-09-11 09:19:36,997 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testCrossEpochTrunc() throws java.lang.Exception]
+2022-09-11 09:19:37,002 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogWithNegativeZxid() throws java.lang.Exception]
+2022-09-11 09:19:37,003 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,004 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,005 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:37,005 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:37,010 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,010 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0xf00000008 minCommittedLog=0xf00000006 lastProcessedZxid=0xf00000009 peerLastZxid=0xf00000004
+2022-09-11 09:19:37,011 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,011 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@1005] - Sending TRUNC zxid=0xf00000003  for peer sid: 0
+2022-09-11 09:19:37,012 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,012 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0xf00000008 minCommittedLog=0xf00000006 lastProcessedZxid=0xf00000009 peerLastZxid=0xf00000003
+2022-09-11 09:19:37,013 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,013 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@977] - Sending DIFF zxid=0xf00000008  for peer sid: 0
+2022-09-11 09:19:37,018 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogWithNegativeZxid() throws java.lang.Exception]
+2022-09-11 09:19:37,024 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogOnly() throws java.lang.Exception]
+2022-09-11 09:19:37,025 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,025 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,026 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:37,026 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:37,030 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,030 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x7 peerLastZxid=0x4
+2022-09-11 09:19:37,030 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,030 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@1005] - Sending TRUNC zxid=0x3  for peer sid: 0
+2022-09-11 09:19:37,031 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,032 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x7 peerLastZxid=0x2
+2022-09-11 09:19:37,032 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,032 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@977] - Sending DIFF zxid=0x7  for peer sid: 0
+2022-09-11 09:19:37,034 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,034 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x0 minCommittedLog=0x0 lastProcessedZxid=0x7 peerLastZxid=0x1
+2022-09-11 09:19:37,035 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogOnly() throws java.lang.Exception]
+2022-09-11 09:19:37,039 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testDuplicatedTxn() throws java.lang.Exception]
+2022-09-11 09:19:37,040 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,041 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,042 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:37,043 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:37,048 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,048 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x100000002 minCommittedLog=0x100000001 lastProcessedZxid=0x200000000 peerLastZxid=0x100000000
+2022-09-11 09:19:37,049 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,049 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@988] - Sending DIFF zxid=0x100000002  for peer sid: 0
+2022-09-11 09:19:37,050 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testDuplicatedTxn() throws java.lang.Exception]
+2022-09-11 09:19:37,053 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testCommittedLog() throws java.lang.Exception]
+2022-09-11 09:19:37,054 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,055 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,055 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:37,055 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:37,059 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,060 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x5 minCommittedLog=0x2 lastProcessedZxid=0x6 peerLastZxid=0x4
+2022-09-11 09:19:37,061 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@869] - Using committedLog for peer sid: 0
+2022-09-11 09:19:37,061 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@1005] - Sending TRUNC zxid=0x3  for peer sid: 0
+2022-09-11 09:19:37,062 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,062 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x5 minCommittedLog=0x2 lastProcessedZxid=0x6 peerLastZxid=0x2
+2022-09-11 09:19:37,062 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@869] - Using committedLog for peer sid: 0
+2022-09-11 09:19:37,062 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@977] - Sending DIFF zxid=0x5  for peer sid: 0
+2022-09-11 09:19:37,063 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@347] - On disk txn sync disabled
+2022-09-11 09:19:37,063 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x5 minCommittedLog=0x2 lastProcessedZxid=0x6 peerLastZxid=0x1
+2022-09-11 09:19:37,064 [myid:] - WARN  [main:o.a.z.s.q.LearnerHandler@908] - Unhandled scenario for peer sid: 0 maxCommittedLog=0x5 minCommittedLog=0x2 lastProcessedZxid=0x6 peerLastZxid=0x1 txnLogSyncEnabled=false
+2022-09-11 09:19:37,065 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testCommittedLog() throws java.lang.Exception]
+2022-09-11 09:19:37,068 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogGap() throws java.lang.Exception]
+2022-09-11 09:19:37,069 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,069 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,070 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:37,070 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:37,072 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,072 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x8 minCommittedLog=0x7 lastProcessedZxid=0x8 peerLastZxid=0x3
+2022-09-11 09:19:37,073 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,073 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@977] - Sending DIFF zxid=0x8  for peer sid: 0
+2022-09-11 09:19:37,073 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@886] - Detected gap between end of txnlog: 0x4 and start of committedLog: 0x7
+2022-09-11 09:19:37,074 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLogGap() throws java.lang.Exception]
+2022-09-11 09:19:37,077 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLog() throws java.lang.Exception]
+2022-09-11 09:19:37,078 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,082 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:19:37,083 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:19:37,083 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:19:37,089 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,089 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x8 minCommittedLog=0x6 lastProcessedZxid=0x9 peerLastZxid=0x4
+2022-09-11 09:19:37,089 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,090 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@1005] - Sending TRUNC zxid=0x3  for peer sid: 0
+2022-09-11 09:19:37,090 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@345] - On disk txn sync enabled with snapshotSizeFactor 0.33
+2022-09-11 09:19:37,091 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@805] - Synchronizing with Learner sid: 0 maxCommittedLog=0x8 minCommittedLog=0x6 lastProcessedZxid=0x9 peerLastZxid=0x3
+2022-09-11 09:19:37,091 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@882] - Use txnlog and committedLog for peer sid: 0
+2022-09-11 09:19:37,091 [myid:] - INFO  [main:o.a.z.s.q.LearnerHandler@977] - Sending DIFF zxid=0x8  for peer sid: 0
+2022-09-11 09:19:37,092 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerHandlerTest.testTxnLog() throws java.lang.Exception]

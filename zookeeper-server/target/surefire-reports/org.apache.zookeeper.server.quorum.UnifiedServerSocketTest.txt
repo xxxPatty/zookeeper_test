@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.zookeeper.server.quorum.UnifiedServerSocketTest
+-------------------------------------------------------------------------------
+Tests run: 72, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 38.944 s <<< FAILURE! - in org.apache.zookeeper.server.quorum.UnifiedServerSocketTest
+testConnectWithoutSSLToStrictServer{X509KeyType, X509KeyType, Boolean, Integer}[1]  Time elapsed: 7.49 s  <<< ERROR!
+java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at org.apache.zookeeper.server.quorum.UnifiedServerSocketTest.testConnectWithoutSSLToStrictServer(UnifiedServerSocketTest.java:418)
+

@@ -1,0 +1,637 @@
+2022-09-11 09:22:02,590 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 4/8 using ports from 19300 - 21992.
+2022-09-11 09:22:02,666 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19301 from range 19300 - 21992.
+2022-09-11 09:22:02,774 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testListNoneRootPathSuccess() throws java.io.IOException,java.lang.InterruptedException,org.apache.zookeeper.KeeperException]
+2022-09-11 09:22:02,806 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 86
+2022-09-11 09:22:03,301 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjx+g+QuPpzFWHiGTl3AAABgyojpxiAAQB4
+2022-09-11 09:22:03,516 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:03,517 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19301
+2022-09-11 09:22:03,551 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:03,554 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:03,566 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:03,599 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19301
+2022-09-11 09:22:03,603 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19301
+2022-09-11 09:22:03,671 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:22:03,671 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
+2022-09-11 09:22:03,673 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
+2022-09-11 09:22:03,673 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2022-09-11 09:22:03,674 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2022-09-11 09:22:03,675 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2022-09-11 09:22:03,675 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2022-09-11 09:22:03,676 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               | |                     
+2022-09-11 09:22:03,676 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               |_|                     
+2022-09-11 09:22:03,677 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:22:03,687 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:22:03,688 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:host.name=localhost
+2022-09-11 09:22:03,690 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.version=18.0.2.1
+2022-09-11 09:22:03,705 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.vendor=Homebrew
+2022-09-11 09:22:03,705 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:22:03,706 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:22:03,708 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:22:03,712 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:22:03,712 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
+2022-09-11 09:22:03,713 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.name=Mac OS X
+2022-09-11 09:22:03,713 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.arch=x86_64
+2022-09-11 09:22:03,713 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.version=10.15.6
+2022-09-11 09:22:03,714 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.name=linxiangling
+2022-09-11 09:22:03,714 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.home=/Users/linxiangling
+2022-09-11 09:22:03,714 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:22:03,714 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.free=102MB
+2022-09-11 09:22:03,715 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.max=512MB
+2022-09-11 09:22:03,716 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.total=130MB
+2022-09-11 09:22:03,717 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@140] - zookeeper.enableEagerACLCheck = false
+2022-09-11 09:22:03,717 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@153] - zookeeper.digest.enabled = true
+2022-09-11 09:22:03,717 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@157] - zookeeper.closeSessionTxn.enabled = true
+2022-09-11 09:22:03,717 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1494] - zookeeper.flushDelay = 0 ms
+2022-09-11 09:22:03,718 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1503] - zookeeper.maxWriteQueuePollTime = 0 ms
+2022-09-11 09:22:03,718 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1512] - zookeeper.maxBatchSize=1000
+2022-09-11 09:22:03,718 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@275] - zookeeper.intBufferStartingSizeBytes = 1024
+2022-09-11 09:22:03,727 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:03,791 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:03,791 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:03,792 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:03,792 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:03,800 [myid:] - INFO  [main:o.a.z.s.BlueThrottle@141] - Weighed connection throttling is disabled
+2022-09-11 09:22:03,812 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:03,812 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:03,834 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:03,835 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:03,836 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:03,844 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:03,844 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:03,845 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:03,845 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:03,846 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:03,850 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:03,850 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:03,852 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:03,854 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:03,855 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6263909770387443404.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6263909770387443404.junit.dir/version-2
+2022-09-11 09:22:03,902 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:03,955 [myid:] - INFO  [main:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2022-09-11 09:22:03,956 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6263909770387443404.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,017 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 158 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:04,056 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6263909770387443404.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,061 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 5 ms
+2022-09-11 09:22:04,133 [myid:] - INFO  [ProcessThread(sid:0 cport:19301)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:04,137 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
+2022-09-11 09:22:04,167 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19301
+2022-09-11 09:22:04,179 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.FourLetterCommands@223] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, -720899=telnet close, 1751217000=hash, 2003003507=wchs, 2003003504=wchp, 1684632179=dirs, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2022-09-11 09:22:04,179 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.FourLetterCommands@224] - The list of enabled four letter word commands is : [[wchs, stat, wchp, dirs, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, telnet close, crst, hash, cons]]
+2022-09-11 09:22:04,180 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55560
+2022-09-11 09:22:04,185 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:04,187 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:04,229 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:04,230 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19301,name1=InMemoryDataTree
+2022-09-11 09:22:04,231 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:04,232 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19301
+2022-09-11 09:22:04,237 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:04,287 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:22:04,287 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:host.name=localhost
+2022-09-11 09:22:04,288 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.version=18.0.2.1
+2022-09-11 09:22:04,288 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.vendor=Homebrew
+2022-09-11 09:22:04,288 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:22:04,288 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:22:04,289 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:22:04,289 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:22:04,290 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.compiler=<NA>
+2022-09-11 09:22:04,290 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.name=Mac OS X
+2022-09-11 09:22:04,291 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.arch=x86_64
+2022-09-11 09:22:04,291 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.version=10.15.6
+2022-09-11 09:22:04,291 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.name=linxiangling
+2022-09-11 09:22:04,291 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.home=/Users/linxiangling
+2022-09-11 09:22:04,292 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:22:04,292 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.free=95MB
+2022-09-11 09:22:04,292 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.max=512MB
+2022-09-11 09:22:04,292 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.total=130MB
+2022-09-11 09:22:04,310 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:19301 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@5dd1c9f2
+2022-09-11 09:22:04,330 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-09-11 09:22:04,338 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:22:04,358 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:22:04,364 [myid:127.0.0.1:19301] - INFO  [main-SendThread(127.0.0.1:19301):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:19301.
+2022-09-11 09:22:04,364 [myid:127.0.0.1:19301] - INFO  [main-SendThread(127.0.0.1:19301):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:22:04,365 [myid:127.0.0.1:19301] - INFO  [main-SendThread(127.0.0.1:19301):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:55566, server: localhost/127.0.0.1:19301
+2022-09-11 09:22:04,373 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:22:04,402 [myid:] - INFO  [SyncThread:0:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2022-09-11 09:22:04,407 [myid:127.0.0.1:19301] - INFO  [main-SendThread(127.0.0.1:19301):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:19301, session id = 0x10000e5cf080000, negotiated timeout = 30000
+2022-09-11 09:22:04,413 [myid:] - INFO  [main:o.a.z.t.JMXEnv@116] - expect:0x10000e5cf080000
+2022-09-11 09:22:04,414 [myid:] - INFO  [main:o.a.z.t.JMXEnv@119] - found:0x10000e5cf080000 org.apache.ZooKeeperService:name0=StandaloneServer_port19301,name1=Connections,name2=127.0.0.1,name3=0x10000e5cf080000
+2022-09-11 09:22:04,495 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:04,613 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e5cf080000
+2022-09-11 09:22:04,614 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e5cf080000 closed
+2022-09-11 09:22:04,614 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:04,614 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:04,615 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19301:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:04,615 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:04,615 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:04,616 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:04,616 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:04,616 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:04,616 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:04,616 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:04,617 [myid:] - INFO  [ProcessThread(sid:0 cport:19301)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:04,617 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:04,617 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:04,617 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:04,619 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19301
+2022-09-11 09:22:04,620 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:04,625 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 93 at start it was 86
+2022-09-11 09:22:04,625 [myid:] - INFO  [main:o.a.z.t.ClientBase@609] - sleeping for 20 secs
+2022-09-11 09:22:04,627 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testListNoneRootPathSuccess() throws java.io.IOException,java.lang.InterruptedException,org.apache.zookeeper.KeeperException]
+2022-09-11 09:22:04,634 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19302 from range 19300 - 21992.
+2022-09-11 09:22:04,637 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testValidateFileInput() throws java.io.IOException]
+2022-09-11 09:22:04,639 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 93
+2022-09-11 09:22:04,641 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjxpSRCWb6866jiGTl3AAABgyojpxiADAB4
+2022-09-11 09:22:04,652 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:04,652 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19302
+2022-09-11 09:22:04,652 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:04,653 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:04,654 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:04,654 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19302
+2022-09-11 09:22:04,655 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19302
+2022-09-11 09:22:04,655 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:04,656 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:04,656 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:04,656 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:04,656 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:04,657 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:04,657 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:04,657 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:04,657 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:04,658 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:04,658 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:04,658 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:04,658 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:04,658 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:04,658 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:04,659 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:04,659 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:04,659 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:04,659 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:04,659 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9785653354597602141.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9785653354597602141.junit.dir/version-2
+2022-09-11 09:22:04,661 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:04,661 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9785653354597602141.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,662 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 1 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:04,662 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9785653354597602141.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,665 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:22:04,666 [myid:] - INFO  [ProcessThread(sid:0 cport:19302)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:04,667 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19302
+2022-09-11 09:22:04,668 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55575
+2022-09-11 09:22:04,668 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:04,669 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:04,672 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:04,672 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19302,name1=InMemoryDataTree
+2022-09-11 09:22:04,672 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:04,673 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19302
+2022-09-11 09:22:04,673 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:04,675 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:04,675 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:04,676 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19302:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:04,676 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:04,676 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:04,676 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:04,676 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:04,677 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:04,677 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:04,677 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:04,677 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:04,677 [myid:] - INFO  [ProcessThread(sid:0 cport:19302)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:04,677 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:04,678 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:04,678 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:04,678 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19302
+2022-09-11 09:22:04,679 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:04,684 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 93 at start it was 93
+2022-09-11 09:22:04,685 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testValidateFileInput() throws java.io.IOException]
+2022-09-11 09:22:04,688 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19303 from range 19300 - 21992.
+2022-09-11 09:22:04,698 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testUnreadableFileInput() throws java.lang.Exception]
+2022-09-11 09:22:04,700 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 93
+2022-09-11 09:22:04,702 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjxSP9Z+lbu5tjiGTl3AAABgyojpxiAFQB4
+2022-09-11 09:22:04,716 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:04,717 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19303
+2022-09-11 09:22:04,717 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:04,718 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:04,718 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:04,719 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19303
+2022-09-11 09:22:04,719 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19303
+2022-09-11 09:22:04,720 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:04,722 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:04,723 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:04,723 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:04,724 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:04,724 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:04,725 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:04,725 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:04,726 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:04,726 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:04,726 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:04,727 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:04,727 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:04,727 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:04,728 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:04,729 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:04,729 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:04,729 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:04,730 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:04,730 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13241488103825297825.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13241488103825297825.junit.dir/version-2
+2022-09-11 09:22:04,732 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:04,733 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13241488103825297825.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,737 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 5 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:04,737 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13241488103825297825.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,738 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 1 ms
+2022-09-11 09:22:04,740 [myid:] - INFO  [ProcessThread(sid:0 cport:19303)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:04,741 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19303
+2022-09-11 09:22:04,743 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55581
+2022-09-11 09:22:04,743 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:04,744 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:04,746 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:04,746 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19303,name1=InMemoryDataTree
+2022-09-11 09:22:04,747 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:04,747 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19303
+2022-09-11 09:22:04,747 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:04,800 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:04,800 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:04,801 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19303:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:04,801 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:04,801 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:04,801 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:04,802 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:04,802 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:04,802 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:04,803 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:04,803 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:04,803 [myid:] - INFO  [ProcessThread(sid:0 cport:19303)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:04,803 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:04,804 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:04,804 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:04,805 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19303
+2022-09-11 09:22:04,806 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:04,810 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 93 at start it was 93
+2022-09-11 09:22:04,811 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testUnreadableFileInput() throws java.lang.Exception]
+2022-09-11 09:22:04,813 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19304 from range 19300 - 21992.
+2022-09-11 09:22:04,816 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testDeleteRecursiveInAsyncMode() throws java.lang.Exception]
+2022-09-11 09:22:04,817 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 93
+2022-09-11 09:22:04,819 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjxbBHajA0MYYfiGTl3AAABgyojpxiAHgB4
+2022-09-11 09:22:04,831 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:04,832 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19304
+2022-09-11 09:22:04,832 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:04,832 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:04,833 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:04,833 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19304
+2022-09-11 09:22:04,833 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19304
+2022-09-11 09:22:04,834 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:04,835 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:04,835 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:04,836 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:04,837 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:04,837 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:04,837 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:04,838 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:04,838 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:04,838 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:04,838 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:04,839 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:04,839 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:04,839 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:04,839 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:04,840 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:04,840 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:04,844 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:04,844 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:04,845 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test5916679612191505701.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test5916679612191505701.junit.dir/version-2
+2022-09-11 09:22:04,846 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:04,847 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test5916679612191505701.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,849 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 2 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:04,849 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test5916679612191505701.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:04,851 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:22:04,852 [myid:] - INFO  [ProcessThread(sid:0 cport:19304)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:04,854 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19304
+2022-09-11 09:22:04,856 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55585
+2022-09-11 09:22:04,856 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:04,857 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:04,861 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:04,861 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19304,name1=InMemoryDataTree
+2022-09-11 09:22:04,861 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:04,862 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19304
+2022-09-11 09:22:04,862 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:04,863 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:19304 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@6d9f7a80
+2022-09-11 09:22:04,863 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:22:04,864 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:22:04,866 [myid:127.0.0.1:19304] - INFO  [main-SendThread(127.0.0.1:19304):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:19304.
+2022-09-11 09:22:04,866 [myid:127.0.0.1:19304] - INFO  [main-SendThread(127.0.0.1:19304):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:22:04,867 [myid:127.0.0.1:19304] - INFO  [main-SendThread(127.0.0.1:19304):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:55587, server: localhost/127.0.0.1:19304
+2022-09-11 09:22:04,868 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:22:04,889 [myid:127.0.0.1:19304] - INFO  [main-SendThread(127.0.0.1:19304):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:19304, session id = 0x10000e5d21a0000, negotiated timeout = 30000
+2022-09-11 09:22:04,891 [myid:] - INFO  [main:o.a.z.t.JMXEnv@116] - expect:0x10000e5d21a0000
+2022-09-11 09:22:04,891 [myid:] - INFO  [main:o.a.z.t.JMXEnv@119] - found:0x10000e5d21a0000 org.apache.ZooKeeperService:name0=StandaloneServer_port19304,name1=Connections,name2=127.0.0.1,name3=0x10000e5d21a0000
+2022-09-11 09:22:05,182 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:05,301 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e5d21a0000
+2022-09-11 09:22:05,301 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e5d21a0000 closed
+2022-09-11 09:22:05,301 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:05,302 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19304:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:05,302 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:05,302 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:05,303 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:05,303 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:05,303 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:05,303 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:05,303 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:05,304 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:05,304 [myid:] - INFO  [ProcessThread(sid:0 cport:19304)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:05,304 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:05,304 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:05,305 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:05,311 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19304
+2022-09-11 09:22:05,311 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:05,315 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 93 at start it was 93
+2022-09-11 09:22:05,316 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testDeleteRecursiveInAsyncMode() throws java.lang.Exception]
+2022-09-11 09:22:05,317 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19305 from range 19300 - 21992.
+2022-09-11 09:22:05,319 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testValidateFileInputDirectory() throws java.lang.Exception]
+2022-09-11 09:22:05,320 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 93
+2022-09-11 09:22:05,322 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjxsqZAwU1w7Y/iGTl3AAABgyojpxiAKAB4
+2022-09-11 09:22:05,331 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:05,331 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19305
+2022-09-11 09:22:05,331 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:05,332 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:05,332 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:05,332 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19305
+2022-09-11 09:22:05,333 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19305
+2022-09-11 09:22:05,333 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:05,334 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:05,334 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:05,335 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:05,335 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:05,335 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:05,335 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:05,336 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:05,336 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:05,336 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:05,336 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:05,336 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:05,337 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:05,337 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:05,337 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:05,337 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:05,338 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:05,338 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:05,338 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:05,338 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9491273419614877823.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9491273419614877823.junit.dir/version-2
+2022-09-11 09:22:05,339 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:05,340 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9491273419614877823.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:05,341 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 2 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:05,341 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9491273419614877823.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:05,343 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:22:05,351 [myid:] - INFO  [ProcessThread(sid:0 cport:19305)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:05,354 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19305
+2022-09-11 09:22:05,358 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55602
+2022-09-11 09:22:05,358 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:05,359 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:05,362 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:05,363 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19305,name1=InMemoryDataTree
+2022-09-11 09:22:05,363 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:05,363 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19305
+2022-09-11 09:22:05,363 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:05,365 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:05,366 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:05,366 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:05,366 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:05,366 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19305:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:05,366 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:05,367 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:05,367 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:05,367 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:05,367 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:05,367 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:05,368 [myid:] - INFO  [ProcessThread(sid:0 cport:19305)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:05,368 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:05,368 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:05,368 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:05,369 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19305
+2022-09-11 09:22:05,370 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:05,374 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 95 at start it was 93
+2022-09-11 09:22:05,374 [myid:] - INFO  [main:o.a.z.t.ClientBase@609] - sleeping for 20 secs
+2022-09-11 09:22:05,375 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testValidateFileInputDirectory() throws java.lang.Exception]
+2022-09-11 09:22:05,377 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19306 from range 19300 - 21992.
+2022-09-11 09:22:05,380 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testValidateFileInputNotExist()]
+2022-09-11 09:22:05,381 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 95
+2022-09-11 09:22:05,382 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjxaBv9vure5//iGTl3AAABgyojpxiAMgB4
+2022-09-11 09:22:05,394 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:05,396 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19306
+2022-09-11 09:22:05,397 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:05,397 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:05,397 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:05,398 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19306
+2022-09-11 09:22:05,399 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19306
+2022-09-11 09:22:05,400 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:05,401 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:05,402 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:05,403 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:05,404 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:05,404 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:05,405 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:05,405 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:05,405 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:05,405 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:05,405 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:05,406 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:05,406 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:05,407 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:05,407 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:05,407 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:05,408 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:05,408 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:05,408 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:05,408 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test11885719846300404021.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test11885719846300404021.junit.dir/version-2
+2022-09-11 09:22:05,415 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:05,418 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test11885719846300404021.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:05,423 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 9 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:05,424 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test11885719846300404021.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:05,426 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:22:05,428 [myid:] - INFO  [ProcessThread(sid:0 cport:19306)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:05,429 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19306
+2022-09-11 09:22:05,431 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55608
+2022-09-11 09:22:05,431 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:05,432 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:05,434 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:05,435 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19306,name1=InMemoryDataTree
+2022-09-11 09:22:05,435 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:05,436 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19306
+2022-09-11 09:22:05,436 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:05,438 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:05,438 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:05,438 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19306:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:05,439 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:05,439 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:05,439 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:05,439 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:05,439 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:05,439 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:05,439 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:05,440 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:05,440 [myid:] - INFO  [ProcessThread(sid:0 cport:19306)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:05,440 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:05,442 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:05,442 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:05,443 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19306
+2022-09-11 09:22:05,480 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:05,484 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 95 at start it was 95
+2022-09-11 09:22:05,484 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testValidateFileInputNotExist()]
+2022-09-11 09:22:05,486 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19307 from range 19300 - 21992.
+2022-09-11 09:22:05,488 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testDeleteRecursiveInSyncMode() throws java.lang.Exception]
+2022-09-11 09:22:05,488 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 95
+2022-09-11 09:22:05,490 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjxOnnRXNWo7UfiGTl3AAABgyojpxiAOwB4
+2022-09-11 09:22:05,500 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:05,501 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19307
+2022-09-11 09:22:05,501 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:05,501 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:05,502 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:05,502 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19307
+2022-09-11 09:22:05,503 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19307
+2022-09-11 09:22:05,503 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:05,504 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:05,504 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:05,504 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:05,504 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:05,505 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:05,505 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:05,505 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:05,505 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:05,505 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:05,506 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:05,506 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:05,506 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:05,506 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:05,507 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:05,507 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:05,507 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:05,507 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:05,508 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:05,508 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13592770535125561536.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13592770535125561536.junit.dir/version-2
+2022-09-11 09:22:05,509 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:05,510 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13592770535125561536.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:05,511 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 3 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:05,511 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test13592770535125561536.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:05,514 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:22:05,515 [myid:] - INFO  [ProcessThread(sid:0 cport:19307)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:05,516 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19307
+2022-09-11 09:22:05,517 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55614
+2022-09-11 09:22:05,517 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:05,518 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:05,520 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:05,520 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19307,name1=InMemoryDataTree
+2022-09-11 09:22:05,521 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:05,521 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19307
+2022-09-11 09:22:05,521 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:05,522 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:19307 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@49872d67
+2022-09-11 09:22:05,522 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:22:05,523 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:22:05,525 [myid:127.0.0.1:19307] - INFO  [main-SendThread(127.0.0.1:19307):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:19307.
+2022-09-11 09:22:05,525 [myid:127.0.0.1:19307] - INFO  [main-SendThread(127.0.0.1:19307):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:22:05,526 [myid:127.0.0.1:19307] - INFO  [main-SendThread(127.0.0.1:19307):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:55615, server: localhost/127.0.0.1:19307
+2022-09-11 09:22:05,527 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:22:05,551 [myid:127.0.0.1:19307] - INFO  [main-SendThread(127.0.0.1:19307):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:19307, session id = 0x10000e5d4b10000, negotiated timeout = 30000
+2022-09-11 09:22:05,553 [myid:] - INFO  [main:o.a.z.t.JMXEnv@116] - expect:0x10000e5d4b10000
+2022-09-11 09:22:05,553 [myid:] - INFO  [main:o.a.z.t.JMXEnv@119] - found:0x10000e5d4b10000 org.apache.ZooKeeperService:name0=StandaloneServer_port19307,name1=Connections,name2=127.0.0.1,name3=0x10000e5d4b10000
+2022-09-11 09:22:06,322 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:22:06,322 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:22:06,322 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:22:06,322 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:22:06,322 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:22:06,322 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:22:07,067 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:07,184 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e5d4b10000
+2022-09-11 09:22:07,184 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e5d4b10000 closed
+2022-09-11 09:22:07,185 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:07,185 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:07,185 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19307:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:07,185 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:07,186 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:07,186 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:07,186 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:07,186 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:07,186 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:07,186 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:07,187 [myid:] - INFO  [ProcessThread(sid:0 cport:19307)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:07,187 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:07,187 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:07,187 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:07,189 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19307
+2022-09-11 09:22:07,190 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:07,196 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 95 at start it was 95
+2022-09-11 09:22:07,197 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testDeleteRecursiveInSyncMode() throws java.lang.Exception]
+2022-09-11 09:22:07,198 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 19308 from range 19300 - 21992.
+2022-09-11 09:22:07,201 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.ZKUtilTest.testListRootPathSuccess() throws java.io.IOException,java.lang.InterruptedException,org.apache.zookeeper.KeeperException]
+2022-09-11 09:22:07,201 [myid:] - INFO  [main:o.a.z.t.ClientBase@486] - Initial fdcount is: 95
+2022-09-11 09:22:07,203 [myid:] - INFO  [main:o.a.z.t.JMXEnv@58] - connecting to addr service:jmx:rmi://127.0.0.1/stub/rO0ABXNyAC5qYXZheC5tYW5hZ2VtZW50LnJlbW90ZS5ybWkuUk1JU2VydmVySW1wbF9TdHViAAAAAAAAAAICAAB4cgAaamF2YS5ybWkuc2VydmVyLlJlbW90ZVN0dWLp/tzJi+FlGgIAAHhyABxqYXZhLnJtaS5zZXJ2ZXIuUmVtb3RlT2JqZWN002G0kQxhMx4DAAB4cHcyAApVbmljYXN0UmVmAAkxMjcuMC4wLjEAANjxfL2T0kNLbkziGTl3AAABgyojpxiARQB4
+2022-09-11 09:22:07,210 [myid:] - INFO  [main:o.a.z.t.ClientBase@514] - STARTING server
+2022-09-11 09:22:07,211 [myid:] - INFO  [main:o.a.z.t.ClientBase@423] - CREATING server instance 127.0.0.1:19308
+2022-09-11 09:22:07,212 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:22:07,213 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:22:07,213 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:22:07,214 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:19308
+2022-09-11 09:22:07,214 [myid:] - INFO  [main:o.a.z.t.ClientBase@395] - STARTING server instance 127.0.0.1:19308
+2022-09-11 09:22:07,215 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:22:07,215 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:07,216 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:22:07,216 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:22:07,216 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:22:07,216 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:22:07,216 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:22:07,217 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:22:07,217 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:22:07,217 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:22:07,217 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:22:07,217 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:22:07,217 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:22:07,218 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:22:07,218 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:22:07,218 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:22:07,218 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:22:07,218 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:22:07,218 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:22:07,219 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test7717238183544646281.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test7717238183544646281.junit.dir/version-2
+2022-09-11 09:22:07,220 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:22:07,220 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test7717238183544646281.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:07,221 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 1 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:22:07,221 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test7717238183544646281.junit.dir/version-2/snapshot.0
+2022-09-11 09:22:07,222 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 1 ms
+2022-09-11 09:22:07,224 [myid:] - INFO  [ProcessThread(sid:0 cport:19308)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:22:07,225 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19308
+2022-09-11 09:22:07,227 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:55652
+2022-09-11 09:22:07,227 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:22:07,228 [myid:] - INFO  [main:o.a.z.t.JMXEnv@219] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2022-09-11 09:22:07,230 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:InMemoryDataTree
+2022-09-11 09:22:07,230 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port19308,name1=InMemoryDataTree
+2022-09-11 09:22:07,230 [myid:] - INFO  [main:o.a.z.t.JMXEnv@235] - expect:StandaloneServer_port
+2022-09-11 09:22:07,230 [myid:] - INFO  [main:o.a.z.t.JMXEnv@239] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port19308
+2022-09-11 09:22:07,231 [myid:] - INFO  [main:o.a.z.t.ClientBase@501] - Client test setup finished
+2022-09-11 09:22:07,231 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:19308 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@53f0a4cb
+2022-09-11 09:22:07,232 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:22:07,233 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:22:07,234 [myid:127.0.0.1:19308] - INFO  [main-SendThread(127.0.0.1:19308):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:19308.
+2022-09-11 09:22:07,235 [myid:127.0.0.1:19308] - INFO  [main-SendThread(127.0.0.1:19308):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:22:07,235 [myid:127.0.0.1:19308] - INFO  [main-SendThread(127.0.0.1:19308):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:55654, server: localhost/127.0.0.1:19308
+2022-09-11 09:22:07,236 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:22:07,255 [myid:127.0.0.1:19308] - INFO  [main-SendThread(127.0.0.1:19308):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:19308, session id = 0x10000e5db5d0000, negotiated timeout = 30000
+2022-09-11 09:22:07,256 [myid:] - INFO  [main:o.a.z.t.JMXEnv@116] - expect:0x10000e5db5d0000
+2022-09-11 09:22:07,257 [myid:] - INFO  [main:o.a.z.t.JMXEnv@119] - found:0x10000e5db5d0000 org.apache.ZooKeeperService:name0=StandaloneServer_port19308,name1=Connections,name2=127.0.0.1,name3=0x10000e5db5d0000
+2022-09-11 09:22:07,307 [myid:] - INFO  [main:o.a.z.t.ClientBase@583] - tearDown starting
+2022-09-11 09:22:07,425 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e5db5d0000
+2022-09-11 09:22:07,425 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e5db5d0000 closed
+2022-09-11 09:22:07,425 [myid:] - INFO  [main:o.a.z.t.ClientBase@557] - STOPPING server
+2022-09-11 09:22:07,426 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:22:07,426 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:19308:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:22:07,426 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:22:07,426 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:22:07,427 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:22:07,427 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:22:07,427 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:22:07,427 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:22:07,427 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:22:07,427 [myid:] - INFO  [ProcessThread(sid:0 cport:19308)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:22:07,427 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:22:07,428 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:22:07,428 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:22:07,431 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 19308
+2022-09-11 09:22:07,432 [myid:] - INFO  [main:o.a.z.t.JMXEnv@142] - ensureOnly:[]
+2022-09-11 09:22:07,435 [myid:] - INFO  [main:o.a.z.t.ClientBase@607] - fdcount after test is: 95 at start it was 95
+2022-09-11 09:22:07,436 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.ZKUtilTest.testListRootPathSuccess() throws java.io.IOException,java.lang.InterruptedException,org.apache.zookeeper.KeeperException]

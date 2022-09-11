@@ -1,0 +1,9 @@
+2022-09-11 09:14:28,807 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testFileHasCorrectPath()]
+2022-09-11 09:14:28,837 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testFileHasCorrectPath()]
+2022-09-11 09:14:28,847 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testForNoWarningOnIntendedRelativePath()]
+2022-09-11 09:14:28,849 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testForNoWarningOnIntendedRelativePath()]
+2022-09-11 09:14:28,851 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testForWarningOnRelativePath()]
+2022-09-11 09:14:28,852 [myid:] - WARN  [main:o.a.z.s.u.VerifyingFileFactory@65] - a/relative/path is relative. Prepend ./ to indicate that you're sure!
+2022-09-11 09:14:28,853 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testForWarningOnRelativePath()]
+2022-09-11 09:14:28,859 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testForFailForNonExistingPath()]
+2022-09-11 09:14:28,862 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.util.VerifyingFileFactoryTest.testForFailForNonExistingPath()]

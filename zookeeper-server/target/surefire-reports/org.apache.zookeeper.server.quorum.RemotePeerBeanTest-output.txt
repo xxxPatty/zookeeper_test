@@ -1,0 +1,1 @@
+2022-09-11 09:20:20,314 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@798] - zookeeper.quorumCnxnTimeoutMs=-1

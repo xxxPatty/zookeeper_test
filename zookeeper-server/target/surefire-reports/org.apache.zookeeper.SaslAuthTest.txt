@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.zookeeper.SaslAuthTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 40.031 s <<< FAILURE! - in org.apache.zookeeper.SaslAuthTest
+testThreadsShutdownOnAuthFailed  Time elapsed: 30.739 s  <<< ERROR!
+java.util.concurrent.TimeoutException: Failed to connect to ZooKeeper server.
+	at org.apache.zookeeper.test.ClientBase$CountdownWatcher.waitForConnected(ClientBase.java:135)
+	at org.apache.zookeeper.SaslAuthTest.testThreadsShutdownOnAuthFailed(SaslAuthTest.java:219)
+

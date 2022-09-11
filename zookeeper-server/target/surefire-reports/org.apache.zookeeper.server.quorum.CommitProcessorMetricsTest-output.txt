@@ -1,0 +1,144 @@
+2022-09-11 09:18:01,914 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testPendingSessionQueueSize() throws java.lang.Exception]
+2022-09-11 09:18:01,928 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:01,960 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:01,961 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:02,012 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:02,053 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:02,053 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:02,054 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:02,055 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testPendingSessionQueueSize() throws java.lang.Exception]
+2022-09-11 09:18:02,066 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testCommitsQueued() throws java.lang.Exception]
+2022-09-11 09:18:02,067 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:02,068 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:02,069 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:02,069 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:02,072 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:02,072 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:02,072 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:02,073 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testCommitsQueued() throws java.lang.Exception]
+2022-09-11 09:18:02,078 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testCommitProcessTime() throws java.lang.Exception]
+2022-09-11 09:18:02,079 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:02,080 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:02,081 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:02,082 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:02,091 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:02,092 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:02,092 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:02,093 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testCommitProcessTime() throws java.lang.Exception]
+2022-09-11 09:18:02,098 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testCommitsQueuedInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:02,099 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:02,101 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:02,101 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:02,102 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:02,105 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:02,107 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:02,108 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:02,109 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testCommitsQueuedInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:02,111 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testLocalWriteCommittedTime() throws java.lang.Exception]
+2022-09-11 09:18:02,112 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:02,113 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:02,114 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:02,167 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:03,179 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:03,180 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:03,180 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:03,181 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testLocalWriteCommittedTime() throws java.lang.Exception]
+2022-09-11 09:18:03,185 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testWriteCommitProcTime() throws java.lang.Exception]
+2022-09-11 09:18:03,186 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:03,187 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:03,188 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:03,244 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:04,261 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:04,261 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:04,262 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:04,263 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testWriteCommitProcTime() throws java.lang.Exception]
+2022-09-11 09:18:04,267 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadCommitProcTime() throws java.lang.Exception]
+2022-09-11 09:18:04,268 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:04,269 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:04,270 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:04,324 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:05,367 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:05,367 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:05,371 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:05,374 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadCommitProcTime() throws java.lang.Exception]
+2022-09-11 09:18:05,377 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadFinalProcTime() throws java.lang.Exception]
+2022-09-11 09:18:05,378 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:05,379 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:05,379 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:05,434 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:06,438 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:06,438 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:06,439 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:06,439 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadFinalProcTime() throws java.lang.Exception]
+2022-09-11 09:18:06,443 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testServerWriteCommittedTime() throws java.lang.Exception]
+2022-09-11 09:18:06,444 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:06,445 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:06,446 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:06,497 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:06,499 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:06,500 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:06,501 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:06,502 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testServerWriteCommittedTime() throws java.lang.Exception]
+2022-09-11 09:18:06,508 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadsAfterWriteInSessionQueue() throws java.lang.Exception]
+2022-09-11 09:18:06,508 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:06,510 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:06,510 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:06,561 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:06,565 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:06,565 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:06,566 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:06,566 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadsAfterWriteInSessionQueue() throws java.lang.Exception]
+2022-09-11 09:18:06,569 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadsQueuedInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:06,569 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:06,572 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:06,572 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:06,626 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:06,629 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:06,629 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:06,630 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:06,630 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testReadsQueuedInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:06,633 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testConcurrentRequestProcessingInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:06,634 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:06,636 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:06,636 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:06,637 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 3
+2022-09-11 09:18:09,642 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:09,642 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:10,641 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:10,642 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testConcurrentRequestProcessingInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:10,644 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testTimeWaitingEmptyPoolInCommitProcessorRead() throws java.lang.Exception]
+2022-09-11 09:18:10,645 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:10,647 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:10,647 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:10,698 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 1
+2022-09-11 09:18:13,703 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:13,704 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:14,706 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:14,707 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testTimeWaitingEmptyPoolInCommitProcessorRead() throws java.lang.Exception]
+2022-09-11 09:18:14,709 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testRequestsInSessionQueue() throws java.lang.Exception]
+2022-09-11 09:18:14,709 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:14,711 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:14,711 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:14,762 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:14,766 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:14,767 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:14,767 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:14,768 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testRequestsInSessionQueue() throws java.lang.Exception]
+2022-09-11 09:18:14,771 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testWritesQueuedInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:14,771 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:14,773 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:14,774 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:14,827 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:14,831 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:14,831 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:14,832 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:14,833 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testWritesQueuedInCommitProcessor() throws java.lang.Exception]
+2022-09-11 09:18:14,835 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testWriteFinalProcTime() throws java.lang.Exception]
+2022-09-11 09:18:14,836 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@55] - setup
+2022-09-11 09:18:14,837 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@490] - Configuring CommitProcessor with readBatchSize -1 commitBatchSize 1
+2022-09-11 09:18:14,837 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@451] - Configuring CommitProcessor with 4 worker threads.
+2022-09-11 09:18:14,890 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest$TestCommitProcessor@113] - numWorkerThreads in Test is 0
+2022-09-11 09:18:15,898 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessorMetricsTest@71] - tearDown starting
+2022-09-11 09:18:15,898 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:18:15,899 [myid:] - INFO  [CommitProcessor:1:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:18:15,900 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorMetricsTest.testWriteFinalProcTime() throws java.lang.Exception]

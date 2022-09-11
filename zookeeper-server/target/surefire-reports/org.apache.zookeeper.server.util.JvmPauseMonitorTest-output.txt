@@ -1,0 +1,10 @@
+2022-09-11 09:14:41,086 [myid:] - INFO  [Thread-0:o.a.z.s.u.JvmPauseMonitor$JVMMonitor@185] - Starting JVM Pause Monitor with infoThresholdMs:0 warnThresholdMs:-1 and sleepTimeMs:100
+2022-09-11 09:14:41,269 [myid:] - WARN  [Thread-0:o.a.z.s.u.JvmPauseMonitor$JVMMonitor@201] - Detected pause in JVM or host machine (eg GC): pause of approximately 5 ms, total pause: info level: 0, warn level: 1 
+No GCs detected
+2022-09-11 09:14:41,320 [myid:] - INFO  [Thread-1:o.a.z.s.u.JvmPauseMonitor$JVMMonitor@185] - Starting JVM Pause Monitor with infoThresholdMs:-1 warnThresholdMs:0 and sleepTimeMs:100
+2022-09-11 09:14:41,423 [myid:] - WARN  [Thread-1:o.a.z.s.u.JvmPauseMonitor$JVMMonitor@201] - Detected pause in JVM or host machine (eg GC): pause of approximately 2 ms, total pause: info level: 0, warn level: 1 
+No GCs detected
+2022-09-11 09:14:41,525 [myid:] - INFO  [Thread-1:o.a.z.s.u.JvmPauseMonitor$JVMMonitor@204] - Detected pause in JVM or host machine (eg GC): pause of approximately 0 ms, total pause: info level: 1, warn level: 1 
+No GCs detected
+2022-09-11 09:14:41,631 [myid:] - WARN  [Thread-1:o.a.z.s.u.JvmPauseMonitor$JVMMonitor@201] - Detected pause in JVM or host machine (eg GC): pause of approximately 5 ms, total pause: info level: 1, warn level: 2 
+No GCs detected

@@ -1,0 +1,39 @@
+2022-09-11 09:21:16,305 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileChanges() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:16,362 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:21:17,363 [myid:] - INFO  [main:o.a.z.c.FileChangeWatcherTest@88] - Modifying file, attempt 1
+2022-09-11 09:21:19,352 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@72] - Got an update: ENTRY_MODIFY zk_test_4914233151676159584
+2022-09-11 09:21:19,355 [myid:] - INFO  [main:o.a.z.c.FileChangeWatcherTest@88] - Modifying file, attempt 2
+2022-09-11 09:21:21,352 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@72] - Got an update: ENTRY_MODIFY zk_test_4914233151676159584
+2022-09-11 09:21:21,352 [myid:] - INFO  [main:o.a.z.c.FileChangeWatcherTest@88] - Modifying file, attempt 3
+2022-09-11 09:21:23,352 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@72] - Got an update: ENTRY_MODIFY zk_test_4914233151676159584
+2022-09-11 09:21:23,353 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:21:23,362 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileChanges() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:23,373 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileDeleted() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:23,375 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:21:24,380 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@188] - Got an update: ENTRY_DELETE zk_test_4914233151676159584
+2022-09-11 09:21:24,381 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:21:24,382 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileDeleted() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:24,385 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackErrorDoesNotCrashWatcherThread() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:24,388 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:21:25,389 [myid:] - INFO  [main:o.a.z.c.FileChangeWatcherTest@240] - Modifying file
+2022-09-11 09:21:27,388 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@227] - Got an update: ENTRY_CREATE zk_test_4914233151676159584
+2022-09-11 09:21:27,388 [myid:] - INFO  [main:o.a.z.c.FileChangeWatcherTest@247] - Modifying file again
+2022-09-11 09:21:27,390 [myid:] - ERROR [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@223] - Error from callback
+java.lang.RuntimeException: This error should not crash the watcher thread
+	at org.apache.zookeeper.common.FileChangeWatcherTest.lambda$testCallbackErrorDoesNotCrashWatcherThread$4(FileChangeWatcherTest.java:234)
+	at org.apache.zookeeper.common.FileChangeWatcher$WatcherThread.runLoop(FileChangeWatcher.java:221)
+	at org.apache.zookeeper.common.FileChangeWatcher$WatcherThread.run(FileChangeWatcher.java:194)
+2022-09-11 09:21:29,388 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@227] - Got an update: ENTRY_MODIFY zk_test_4914233151676159584
+2022-09-11 09:21:29,389 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:21:29,390 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackErrorDoesNotCrashWatcherThread() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:29,393 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileAdded() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:29,395 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:21:32,396 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@154] - Got an update: ENTRY_CREATE zk_test_5620478204726069472
+2022-09-11 09:21:32,396 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:21:32,397 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileAdded() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:32,400 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileTouched() throws java.io.IOException,java.lang.InterruptedException]
+2022-09-11 09:21:32,402 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:21:33,404 [myid:] - INFO  [main:o.a.z.c.FileChangeWatcherTest@129] - Touching file
+2022-09-11 09:21:35,403 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcherTest@114] - Got an update: ENTRY_MODIFY zk_test_4914233151676159584
+2022-09-11 09:21:35,404 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:21:35,405 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.common.FileChangeWatcherTest.testCallbackWorksOnFileTouched() throws java.io.IOException,java.lang.InterruptedException]

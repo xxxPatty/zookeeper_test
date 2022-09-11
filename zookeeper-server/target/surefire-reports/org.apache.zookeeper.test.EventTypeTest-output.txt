@@ -1,0 +1,4 @@
+2022-09-11 09:09:51,588 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.test.EventTypeTest.testIntConversion()]
+2022-09-11 09:09:51,816 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.test.EventTypeTest.testIntConversion()]
+2022-09-11 09:09:51,835 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.test.EventTypeTest.testInvalidIntConversion()]
+2022-09-11 09:09:51,895 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.test.EventTypeTest.testInvalidIntConversion()]

@@ -1,0 +1,625 @@
+2022-09-11 09:18:18,498 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.shouldTryMultipleAddresses() throws java.lang.Exception]
+2022-09-11 09:18:18,510 [myid:] - INFO  [main:o.a.z.s.q.Learner@130] - leaderConnectDelayDuringRetryMs: 100
+2022-09-11 09:18:18,511 [myid:] - INFO  [main:o.a.z.s.q.Learner@131] - TCP NoDelay set to: true
+2022-09-11 09:18:18,511 [myid:] - INFO  [main:o.a.z.s.q.Learner@132] - zookeeper.learner.asyncSending = false
+2022-09-11 09:18:18,512 [myid:] - INFO  [main:o.a.z.s.q.Learner@133] - zookeeper.learner.closeSocketAsync = false
+2022-09-11 09:18:18,519 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@798] - zookeeper.quorumCnxnTimeoutMs=-1
+2022-09-11 09:18:18,525 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-09-11 09:18:18,527 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1742] - tickTime set to 2000
+2022-09-11 09:18:18,528 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1822] - initLimit set to 5
+2022-09-11 09:18:18,528 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@2009] - syncLimit set to 2
+2022-09-11 09:18:18,553 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:2222
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,553 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,553 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:3333
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,553 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:4444
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,656 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=1, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:2222
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,656 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=1, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,656 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=1, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:3333
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,656 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=1, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:4444
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,759 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=2, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:2222
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,760 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=2, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:4444
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,759 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=2, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:3333
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,759 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=2, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,864 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=3, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:2222
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,864 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=3, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:4444
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,865 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=3, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:3333
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,865 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=3, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,969 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@436] - Unexpected exception, retries exceeded. tries=4, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:3333
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,969 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@436] - Unexpected exception, retries exceeded. tries=4, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:2222
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,969 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@436] - Unexpected exception, retries exceeded. tries=4, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:4444
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,969 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@436] - Unexpected exception, retries exceeded. tries=4, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,970 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@388] - Failed connect to 0.0.0.0/0.0.0.0:2222
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,970 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@388] - Failed connect to 0.0.0.0/0.0.0.0:4444
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,970 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@388] - Failed connect to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,970 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@388] - Failed connect to 0.0.0.0/0.0.0.0:3333
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:18,987 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.shouldTryMultipleAddresses() throws java.lang.Exception]
+2022-09-11 09:18:19,001 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.multipleAddressesSomeAreFailing() throws java.lang.Exception]
+2022-09-11 09:18:19,003 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1742] - tickTime set to 2000
+2022-09-11 09:18:19,003 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1822] - initLimit set to 5
+2022-09-11 09:18:19,003 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@2009] - syncLimit set to 2
+2022-09-11 09:18:20,818 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:3333
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:20,819 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:4444
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:20,820 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:2222
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:20,823 [myid:] - INFO  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@380] - Successfully connected to leader, using address: 0.0.0.0/0.0.0.0:1111
+2022-09-11 09:18:20,921 [myid:] - INFO  [LeaderConnector-0.0.0.0/0.0.0.0:3333:o.a.z.s.q.Learner$LeaderConnector@382] - Connection to the leader is already established, close the redundant connection
+2022-09-11 09:18:20,921 [myid:] - INFO  [LeaderConnector-0.0.0.0/0.0.0.0:4444:o.a.z.s.q.Learner$LeaderConnector@382] - Connection to the leader is already established, close the redundant connection
+2022-09-11 09:18:20,922 [myid:] - INFO  [LeaderConnector-0.0.0.0/0.0.0.0:2222:o.a.z.s.q.Learner$LeaderConnector@382] - Connection to the leader is already established, close the redundant connection
+2022-09-11 09:18:20,928 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.multipleAddressesSomeAreFailing() throws java.lang.Exception]
+2022-09-11 09:18:20,934 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.truncFailTest() throws java.lang.Exception]
+2022-09-11 09:18:21,012 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:21,045 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:18:21,045 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
+2022-09-11 09:18:21,046 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
+2022-09-11 09:18:21,046 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2022-09-11 09:18:21,049 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2022-09-11 09:18:21,050 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2022-09-11 09:18:21,050 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2022-09-11 09:18:21,051 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               | |                     
+2022-09-11 09:18:21,051 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               |_|                     
+2022-09-11 09:18:21,051 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:18:21,066 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:18:21,066 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:host.name=localhost
+2022-09-11 09:18:21,067 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.version=18.0.2.1
+2022-09-11 09:18:21,067 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.vendor=Homebrew
+2022-09-11 09:18:21,067 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:18:21,068 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:18:21,069 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:18:21,069 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:18:21,070 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
+2022-09-11 09:18:21,070 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.name=Mac OS X
+2022-09-11 09:18:21,070 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.arch=x86_64
+2022-09-11 09:18:21,070 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.version=10.15.6
+2022-09-11 09:18:21,071 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.name=linxiangling
+2022-09-11 09:18:21,071 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.home=/Users/linxiangling
+2022-09-11 09:18:21,071 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:18:21,071 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.free=74MB
+2022-09-11 09:18:21,071 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.max=512MB
+2022-09-11 09:18:21,071 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.total=130MB
+2022-09-11 09:18:21,072 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@140] - zookeeper.enableEagerACLCheck = false
+2022-09-11 09:18:21,072 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@153] - zookeeper.digest.enabled = true
+2022-09-11 09:18:21,072 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@157] - zookeeper.closeSessionTxn.enabled = true
+2022-09-11 09:18:21,072 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1494] - zookeeper.flushDelay = 0 ms
+2022-09-11 09:18:21,073 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1503] - zookeeper.maxWriteQueuePollTime = 0 ms
+2022-09-11 09:18:21,073 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1512] - zookeeper.maxBatchSize=1000
+2022-09-11 09:18:21,073 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@275] - zookeeper.intBufferStartingSizeBytes = 1024
+2022-09-11 09:18:21,096 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:21,096 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:21,097 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:18:21,097 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:18:21,098 [myid:] - INFO  [main:o.a.z.s.BlueThrottle@141] - Weighed connection throttling is disabled
+2022-09-11 09:18:21,102 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 2000 ms
+2022-09-11 09:18:21,103 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 2000 ms
+2022-09-11 09:18:21,104 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:18:21,105 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:18:21,106 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:18:21,107 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:18:21,107 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:18:21,107 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:18:21,107 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:18:21,108 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:18:21,110 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:18:21,110 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:18:21,111 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:18:21,111 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:18:21,112 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 2000 ms minSessionTimeout 2000 ms maxSessionTimeout 2000 ms clientPortListenBacklog -1 datadir src/test/resources/data/test16155779822604830529.dir/version-2 snapdir src/test/resources/data/test16155779822604830529.dir/version-2
+2022-09-11 09:18:21,114 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@922] - Peer state changed: looking - trunc
+2022-09-11 09:18:21,114 [myid:] - WARN  [main:o.a.z.s.q.Learner@595] - Truncating log to get in sync with the leader 0x0
+2022-09-11 09:18:21,114 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:21,115 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:21,117 [myid:] - ERROR [main:o.a.z.s.p.FileTxnSnapLog@530] - Unable to truncate Txn log
+java.io.IOException: No log files found to truncate! This could happen if you still have snapshots from an old setup or log files were deleted accidentally or dataLogDir was changed in zoo.cfg.
+	at org.apache.zookeeper.server.persistence.FileTxnLog.truncate(FileTxnLog.java:460)
+	at org.apache.zookeeper.server.persistence.FileTxnSnapLog.truncateLog(FileTxnSnapLog.java:518)
+	at org.apache.zookeeper.server.ZKDatabase.truncateLog(ZKDatabase.java:602)
+	at org.apache.zookeeper.server.quorum.Learner.syncWithLeader(Learner.java:596)
+	at org.apache.zookeeper.server.quorum.LearnerTest.truncFailTest(LearnerTest.java:356)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+2022-09-11 09:18:21,118 [myid:] - ERROR [main:o.a.z.s.q.Learner@599] - Not able to truncate the log 0x0
+2022-09-11 09:18:21,147 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.truncFailTest() throws java.lang.Exception]
+2022-09-11 09:18:21,149 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.connectionRetryTimeoutTest() throws java.lang.Exception]
+2022-09-11 09:18:21,151 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1742] - tickTime set to 2000
+2022-09-11 09:18:21,153 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1822] - initLimit set to 5
+2022-09-11 09:18:21,154 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@2009] - syncLimit set to 2
+2022-09-11 09:18:21,157 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,258 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=1, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,362 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=2, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,463 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=3, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,567 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@436] - Unexpected exception, retries exceeded. tries=4, remaining init limit=10000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,567 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@388] - Failed connect to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,569 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.connectionRetryTimeoutTest() throws java.lang.Exception]
+2022-09-11 09:18:21,571 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.connectionInitLimitTimeoutTest() throws java.lang.Exception]
+2022-09-11 09:18:21,572 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1742] - tickTime set to 2000
+2022-09-11 09:18:21,572 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1822] - initLimit set to 5
+2022-09-11 09:18:21,572 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@2009] - syncLimit set to 2
+2022-09-11 09:18:21,573 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=6000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,674 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=1, remaining init limit=2000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,778 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@428] - Unexpected exception, connectToLeader exceeded. tries=2, remaining init limit=-2000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,778 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@388] - Failed connect to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,780 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.connectionInitLimitTimeoutTest() throws java.lang.Exception]
+2022-09-11 09:18:21,783 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.connectToLearnerMasterLimitTest() throws java.lang.Exception]
+2022-09-11 09:18:21,784 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1742] - tickTime set to 2000
+2022-09-11 09:18:21,784 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@1822] - initLimit set to 2
+2022-09-11 09:18:21,785 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@2009] - syncLimit set to 2
+2022-09-11 09:18:21,785 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@2024] - connectToLearnerMasterLimit set to 5
+2022-09-11 09:18:21,786 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=0, remaining init limit=6000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,887 [myid:] - WARN  [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@444] - Unexpected exception, tries=1, remaining init limit=2000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,991 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@428] - Unexpected exception, connectToLeader exceeded. tries=2, remaining init limit=-2000, connecting to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,991 [myid:] - ERROR [LeaderConnector-0.0.0.0/0.0.0.0:1111:o.a.z.s.q.Learner$LeaderConnector@388] - Failed connect to 0.0.0.0/0.0.0.0:1111
+java.io.IOException: Test injected Socket.connect() error.
+	at org.apache.zookeeper.server.quorum.LearnerTest$TestLearner.sockConnect(LearnerTest.java:125)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.connectToLeader(Learner.java:418)
+	at org.apache.zookeeper.server.quorum.Learner$LeaderConnector.run(Learner.java:376)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-09-11 09:18:21,992 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.connectToLearnerMasterLimitTest() throws java.lang.Exception]
+2022-09-11 09:18:21,995 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.syncTest() throws java.lang.Exception]
+2022-09-11 09:18:22,059 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:22,080 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:22,081 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:22,081 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:18:22,081 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:18:22,082 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 2000 ms
+2022-09-11 09:18:22,082 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 2000 ms
+2022-09-11 09:18:22,082 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:18:22,083 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:18:22,083 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:18:22,083 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:18:22,083 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:18:22,084 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:18:22,084 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:18:22,084 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:18:22,085 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:18:22,085 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:18:22,085 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:18:22,085 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:18:22,085 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 2000 ms minSessionTimeout 2000 ms maxSessionTimeout 2000 ms clientPortListenBacklog -1 datadir src/test/resources/data/test6953904127954858925.dir/version-2 snapdir src/test/resources/data/test6953904127954858925.dir/version-2
+2022-09-11 09:18:22,089 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeer@922] - Peer state changed: looking - snap
+2022-09-11 09:18:22,089 [myid:] - INFO  [main:o.a.z.s.q.Learner@572] - Getting a snapshot from leader 0x0
+2022-09-11 09:18:22,090 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:22,090 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:22,095 [myid:] - WARN  [main:o.a.z.s.q.Learner@633] - Got zxid 0x0 expected 0x1
+2022-09-11 09:18:22,096 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:22,096 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:22,096 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:18:22,096 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:18:22,096 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 2000 ms
+2022-09-11 09:18:22,096 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 2000 ms
+2022-09-11 09:18:22,097 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:18:22,097 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:18:22,097 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:18:22,097 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:18:22,098 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:18:22,099 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:18:22,099 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:18:22,099 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:18:22,100 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:18:22,100 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:18:22,100 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:18:22,100 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:18:22,101 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 2000 ms minSessionTimeout 2000 ms maxSessionTimeout 2000 ms clientPortListenBacklog -1 datadir src/test/resources/data/test6953904127954858925.dir/version-2 snapdir src/test/resources/data/test6953904127954858925.dir/version-2
+2022-09-11 09:18:22,118 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.LearnerTest.syncTest() throws java.lang.Exception]

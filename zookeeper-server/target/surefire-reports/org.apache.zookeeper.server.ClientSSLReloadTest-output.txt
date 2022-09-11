@@ -1,0 +1,658 @@
+2022-09-11 09:15:44,166 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.ClientSSLReloadTest.certficateReloadTest() throws java.lang.Exception]
+2022-09-11 09:15:45,807 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 3/8 using ports from 16607 - 19299.
+2022-09-11 09:15:45,823 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 16608 from range 16607 - 19299.
+2022-09-11 09:15:45,824 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 16609 from range 16607 - 19299.
+2022-09-11 09:15:45,893 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@57] - Current configuration is at /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6481202575004602910.junit.dir/zookeeper.configuration10741061642338792766.properties
+2022-09-11 09:15:45,903 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@177] - Reading configuration from: /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6481202575004602910.junit.dir/zookeeper.configuration10741061642338792766.properties
+2022-09-11 09:15:45,918 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@440] - clientPortAddress is 0.0.0.0:16608
+2022-09-11 09:15:45,918 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@453] - secureClientPortAddress is 0.0.0.0:16609
+2022-09-11 09:15:45,921 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-09-11 09:15:45,922 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@460] - observerMasterPort is not set
+2022-09-11 09:15:45,922 [myid:] - INFO  [main:o.a.z.s.q.QuorumPeerConfig@477] - metricsProvider.className is org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2022-09-11 09:15:45,927 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@60] - ServerID:-1
+2022-09-11 09:15:45,927 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@61] - DataDir:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6481202575004602910.junit.dir/data
+2022-09-11 09:15:45,928 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@62] - Servers:{}
+2022-09-11 09:15:45,928 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@63] - ElectionPort:2182
+2022-09-11 09:15:45,928 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@64] - SyncLimit:0
+2022-09-11 09:15:45,929 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@65] - PeerType:PARTICIPANT
+2022-09-11 09:15:45,929 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@66] - Distributed:false
+2022-09-11 09:15:45,929 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@67] - SyncEnabled:true
+2022-09-11 09:15:45,929 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@68] - MetricsProviderClassName:org.apache.zookeeper.metrics.impl.DefaultMetricsProvider
+2022-09-11 09:15:45,933 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@140] - Running ZK Server in single STANDALONE MODE
+2022-09-11 09:15:45,947 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2022-09-11 09:15:45,947 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2022-09-11 09:15:45,948 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@101] - Purge task is not scheduled.
+2022-09-11 09:15:45,956 [myid:] - INFO  [zkservermainrunner:o.a.z.s.e.ZooKeeperServerEmbeddedImpl$4@158] - ZK server starting
+2022-09-11 09:15:45,956 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServerMain@123] - Starting server
+2022-09-11 09:15:45,977 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ServerMetrics@64] - ServerMetrics initialized with provider org.apache.zookeeper.metrics.impl.DefaultMetricsProvider@35bf3d09
+2022-09-11 09:15:45,992 [myid:] - INFO  [zkservermainrunner:o.a.z.s.a.DigestAuthenticationProvider@47] - ACL digest algorithm is: SHA1
+2022-09-11 09:15:45,993 [myid:] - INFO  [zkservermainrunner:o.a.z.s.a.DigestAuthenticationProvider@61] - zookeeper.DigestAuthenticationProvider.enabled = true
+2022-09-11 09:15:46,088 [myid:] - INFO  [zkservermainrunner:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:15:46,098 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:15:46,098 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
+2022-09-11 09:15:46,098 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
+2022-09-11 09:15:46,098 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2022-09-11 09:15:46,098 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2022-09-11 09:15:46,098 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2022-09-11 09:15:46,099 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2022-09-11 09:15:46,099 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -                                               | |                     
+2022-09-11 09:15:46,099 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] -                                               |_|                     
+2022-09-11 09:15:46,099 [myid:] - INFO  [zkservermainrunner:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:15:46,103 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:15:46,103 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:host.name=localhost
+2022-09-11 09:15:46,104 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:java.version=18.0.2.1
+2022-09-11 09:15:46,104 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:java.vendor=Homebrew
+2022-09-11 09:15:46,104 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:15:46,104 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:15:46,104 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:os.name=Mac OS X
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:os.arch=x86_64
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:os.version=10.15.6
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:user.name=linxiangling
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:user.home=/Users/linxiangling
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:os.memory.free=65MB
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:os.memory.max=512MB
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.Environment@98] - Server environment:os.memory.total=130MB
+2022-09-11 09:15:46,105 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@140] - zookeeper.enableEagerACLCheck = false
+2022-09-11 09:15:46,106 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@153] - zookeeper.digest.enabled = true
+2022-09-11 09:15:46,106 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@157] - zookeeper.closeSessionTxn.enabled = true
+2022-09-11 09:15:46,106 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@1494] - zookeeper.flushDelay = 0 ms
+2022-09-11 09:15:46,106 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@1503] - zookeeper.maxWriteQueuePollTime = 0 ms
+2022-09-11 09:15:46,106 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@1512] - zookeeper.maxBatchSize=1000
+2022-09-11 09:15:46,106 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@275] - zookeeper.intBufferStartingSizeBytes = 1024
+2022-09-11 09:15:46,108 [myid:] - INFO  [zkservermainrunner:o.a.z.s.BlueThrottle@141] - Weighed connection throttling is disabled
+2022-09-11 09:15:46,110 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:15:46,110 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:15:46,111 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:15:46,111 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:15:46,112 [myid:] - INFO  [zkservermainrunner:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:15:46,112 [myid:] - INFO  [zkservermainrunner:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:15:46,112 [myid:] - INFO  [zkservermainrunner:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:15:46,113 [myid:] - INFO  [zkservermainrunner:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:15:46,113 [myid:] - INFO  [zkservermainrunner:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:15:46,113 [myid:] - INFO  [zkservermainrunner:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:15:46,114 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:15:46,115 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:15:46,115 [myid:] - INFO  [zkservermainrunner:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:15:46,116 [myid:] - INFO  [zkservermainrunner:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:15:46,116 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6481202575004602910.junit.dir/data/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6481202575004602910.junit.dir/data/version-2
+2022-09-11 09:15:46,260 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@520] - zookeeper.client.certReload=true
+2022-09-11 09:15:46,261 [myid:] - INFO  [zkservermainrunner:o.a.z.c.X509Util@608] - enabling cert file reloading
+2022-09-11 09:15:46,310 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:15:46,310 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@532] - zookeeper.client.portUnification=false
+2022-09-11 09:15:46,310 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:15:46,310 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@544] - zookeeper.netty.advancedFlowControl.enabled = false
+2022-09-11 09:15:46,311 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@107] - handshakeThrottlingEnabled = false, zookeeper.netty.server.outstandingHandshake.limit = -1
+2022-09-11 09:15:46,482 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NettyServerCnxnFactory as server connection factory
+2022-09-11 09:15:46,484 [myid:] - WARN  [zkservermainrunner:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:15:46,484 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@631] - configure org.apache.zookeeper.server.NettyServerCnxnFactory@621f5789 secure: false on addr 0.0.0.0/0.0.0.0:16608
+2022-09-11 09:15:46,484 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@720] - binding to port 0.0.0.0/0.0.0.0:16608
+2022-09-11 09:15:46,630 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@725] - bound to port 16608
+2022-09-11 09:15:46,669 [myid:] - INFO  [zkservermainrunner:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:15:46,669 [myid:] - INFO  [zkservermainrunner:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:15:46,670 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:15:46,670 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:15:46,685 [myid:] - INFO  [zkservermainrunner:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2022-09-11 09:15:46,687 [myid:] - INFO  [zkservermainrunner:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6481202575004602910.junit.dir/data/version-2/snapshot.0
+2022-09-11 09:15:46,705 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 35 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:15:46,707 [myid:] - INFO  [zkservermainrunner:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6481202575004602910.junit.dir/data/version-2/snapshot.0
+2022-09-11 09:15:46,710 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:15:46,751 [myid:] - INFO  [ProcessThread(sid:0 cport:16608)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:15:46,755 [myid:] - INFO  [zkservermainrunner:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
+2022-09-11 09:15:47,226 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@520] - zookeeper.client.certReload=true
+2022-09-11 09:15:47,227 [myid:] - INFO  [zkservermainrunner:o.a.z.c.X509Util@608] - enabling cert file reloading
+2022-09-11 09:15:47,228 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:15:47,232 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@184] - FileChangeWatcher thread started
+2022-09-11 09:15:47,233 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@532] - zookeeper.client.portUnification=false
+2022-09-11 09:15:47,234 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@544] - zookeeper.netty.advancedFlowControl.enabled = false
+2022-09-11 09:15:47,234 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@107] - handshakeThrottlingEnabled = false, zookeeper.netty.server.outstandingHandshake.limit = -1
+2022-09-11 09:15:47,238 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NettyServerCnxnFactory as server connection factory
+2022-09-11 09:15:47,238 [myid:] - WARN  [zkservermainrunner:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:15:47,239 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@631] - configure org.apache.zookeeper.server.NettyServerCnxnFactory@d7fb9f secure: true on addr 0.0.0.0/0.0.0.0:16609
+2022-09-11 09:15:47,239 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@720] - binding to port 0.0.0.0/0.0.0.0:16609
+2022-09-11 09:15:47,241 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@725] - bound to port 16609
+2022-09-11 09:15:47,250 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ContainerManager@84] - Using checkIntervalMs=60000 maxPerMinute=10000 maxNeverUsedIntervalMs=0
+2022-09-11 09:15:47,251 [myid:] - INFO  [zkservermainrunner:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2022-09-11 09:15:47,252 [myid:] - INFO  [zkservermainrunner:o.a.z.s.e.ZooKeeperServerEmbeddedImpl$3@144] - ZK Server started
+2022-09-11 09:15:47,254 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to localhost 16608
+2022-09-11 09:15:47,324 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.c.FourLetterCommands@223] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, -720899=telnet close, 1751217000=hash, 2003003507=wchs, 2003003504=wchp, 1684632179=dirs, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2022-09-11 09:15:47,324 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.c.FourLetterCommands@224] - The list of enabled four letter word commands is : [[wchs, stat, wchp, dirs, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, telnet close, crst, hash, cons]]
+2022-09-11 09:15:47,325 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.NettyServerCnxn@295] - Processing stat command from /127.0.0.1:51593
+2022-09-11 09:15:47,330 [myid:] - INFO  [nioEventLoopGroup-4-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:15:47,679 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:15:47,679 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:host.name=localhost
+2022-09-11 09:15:47,680 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.version=18.0.2.1
+2022-09-11 09:15:47,681 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.vendor=Homebrew
+2022-09-11 09:15:47,683 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:15:47,684 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:15:47,684 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:15:47,684 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:15:47,685 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.compiler=<NA>
+2022-09-11 09:15:47,685 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.name=Mac OS X
+2022-09-11 09:15:47,685 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.arch=x86_64
+2022-09-11 09:15:47,685 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.version=10.15.6
+2022-09-11 09:15:47,686 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.name=linxiangling
+2022-09-11 09:15:47,686 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.home=/Users/linxiangling
+2022-09-11 09:15:47,686 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:15:47,686 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.free=35MB
+2022-09-11 09:15:47,686 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.max=512MB
+2022-09-11 09:15:47,687 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.total=64MB
+2022-09-11 09:15:47,694 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=localhost:16609 sessionTimeout=60000 watcher=org.apache.zookeeper.server.ClientSSLReloadTest$$Lambda$426/0x0000000800ec78e0@4c36250e
+2022-09-11 09:15:47,720 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:15:47,732 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:15:47,737 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:16609.
+2022-09-11 09:15:47,737 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:15:48,026 [myid:] - INFO  [nioEventLoopGroup-8-1:o.a.z.ClientCnxnSocketNetty$ZKClientPipelineFactory@454] - SSL handler added for channel: [id: 0xbc34eb48]
+2022-09-11 09:15:48,053 [myid:] - INFO  [nioEventLoopGroup-8-1:o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:51623, server: localhost/127.0.0.1:16609
+2022-09-11 09:15:48,055 [myid:] - INFO  [nioEventLoopGroup-8-1:o.a.z.ClientCnxnSocketNetty$1@184] - channel is connected: [id: 0xbc34eb48, L:/127.0.0.1:51623 - R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:48,584 [myid:] - INFO  [nioEventLoopGroup-7-1:o.a.z.s.a.X509AuthenticationProvider@175] - Authenticated Id 'CN=org.apache.zookeeper.common.X509TestContext Zookeeper Test' for Scheme 'x509'
+2022-09-11 09:15:48,597 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:15:48,645 [myid:] - INFO  [nioEventLoopGroup-8-1:o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:16609, session id = 0x10000e00d1f0000, negotiated timeout = 60000
+2022-09-11 09:15:48,679 [myid:] - INFO  [main:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:48,685 [myid:] - INFO  [nioEventLoopGroup-8-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@469] - channel is disconnected: [id: 0xbc34eb48, L:/127.0.0.1:51623 ! R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:48,685 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e00d1f0000
+2022-09-11 09:15:48,685 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e00d1f0000 closed
+2022-09-11 09:15:48,685 [myid:] - INFO  [nioEventLoopGroup-8-1:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+[INFO] Updating keyStore & trustStore files !!!!
+2022-09-11 09:15:53,706 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=localhost:16609 sessionTimeout=60000 watcher=org.apache.zookeeper.server.ClientSSLReloadTest$$Lambda$448/0x0000000800f18220@26be6ca7
+2022-09-11 09:15:53,707 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:15:53,708 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:15:53,709 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:16609.
+2022-09-11 09:15:53,709 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:15:53,779 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientPipelineFactory@454] - SSL handler added for channel: [id: 0x587b9e18]
+2022-09-11 09:15:53,787 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:51720, server: localhost/127.0.0.1:16609
+2022-09-11 09:15:53,788 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$1@184] - channel is connected: [id: 0x587b9e18, L:/127.0.0.1:51720 - R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:53,848 [myid:] - ERROR [nioEventLoopGroup-7-2:o.a.z.s.NettyServerCnxnFactory$CertificateVerifier@470] - Unsuccessful handshake with session 0x0
+2022-09-11 09:15:53,851 [myid:] - WARN  [nioEventLoopGroup-7-2:o.a.z.s.NettyServerCnxnFactory$CnxnChannelHandler@306] - Exception caught
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:358)
+	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:293)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:204)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736)
+	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482)
+	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:295)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1342)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+2022-09-11 09:15:53,859 [myid:] - ERROR [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@522] - Unexpected throwable
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:654)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1277)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1264)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1209)
+	at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1548)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1394)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:318)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:267)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144)
+	at org.apache.zookeeper.common.ZKTrustManager.checkServerTrusted(ZKTrustManager.java:115)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:632)
+	... 31 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:135)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:224)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:144)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:83)
+	at java.base/java.security.cert.CertPathValidator.validate(CertPathValidator.java:309)
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:313)
+	... 37 common frames omitted
+Caused by: java.security.SignatureException: Signature does not match.
+	at java.base/sun.security.x509.X509CertImpl.verify(X509CertImpl.java:448)
+	at java.base/sun.security.provider.certpath.BasicChecker.verifySignature(BasicChecker.java:166)
+	at java.base/sun.security.provider.certpath.BasicChecker.check(BasicChecker.java:147)
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:125)
+	... 42 common frames omitted
+2022-09-11 09:15:53,862 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:53,862 [myid:localhost:16609] - WARN  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1285] - Session 0x0 for server localhost/127.0.0.1:16609, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: channel for sessionid 0x0 is lost
+	at org.apache.zookeeper.ClientCnxnSocketNetty.doTransport(ClientCnxnSocketNetty.java:285)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:15:53,863 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@469] - channel is disconnected: [id: 0x587b9e18, L:/127.0.0.1:51720 ! R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:55,534 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/[0:0:0:0:0:0:0:1]:16609.
+2022-09-11 09:15:55,535 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:15:55,602 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientPipelineFactory@454] - SSL handler added for channel: [id: 0xfc6a5817]
+2022-09-11 09:15:55,603 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /[0:0:0:0:0:0:0:1]:51749, server: localhost/[0:0:0:0:0:0:0:1]:16609
+2022-09-11 09:15:55,615 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$1@184] - channel is connected: [id: 0xfc6a5817, L:/[0:0:0:0:0:0:0:1]:51749 - R:localhost/[0:0:0:0:0:0:0:1]:16609]
+2022-09-11 09:15:55,722 [myid:] - ERROR [nioEventLoopGroup-7-3:o.a.z.s.NettyServerCnxnFactory$CertificateVerifier@470] - Unsuccessful handshake with session 0x0
+2022-09-11 09:15:55,724 [myid:] - WARN  [nioEventLoopGroup-7-3:o.a.z.s.NettyServerCnxnFactory$CnxnChannelHandler@306] - Exception caught
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:358)
+	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:293)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:204)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736)
+	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482)
+	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:295)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1342)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+2022-09-11 09:15:55,735 [myid:] - ERROR [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@522] - Unexpected throwable
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:654)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1277)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1264)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1209)
+	at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1548)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1394)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:318)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:267)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144)
+	at org.apache.zookeeper.common.ZKTrustManager.checkServerTrusted(ZKTrustManager.java:115)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:632)
+	... 31 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:135)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:224)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:144)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:83)
+	at java.base/java.security.cert.CertPathValidator.validate(CertPathValidator.java:309)
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:313)
+	... 37 common frames omitted
+Caused by: java.security.SignatureException: Signature does not match.
+	at java.base/sun.security.x509.X509CertImpl.verify(X509CertImpl.java:414)
+	at java.base/sun.security.provider.certpath.BasicChecker.verifySignature(BasicChecker.java:166)
+	at java.base/sun.security.provider.certpath.BasicChecker.check(BasicChecker.java:147)
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:125)
+	... 42 common frames omitted
+2022-09-11 09:15:55,737 [myid:localhost:16609] - WARN  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1285] - Session 0x0 for server localhost/[0:0:0:0:0:0:0:1]:16609, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: channel for sessionid 0x0 is lost
+	at org.apache.zookeeper.ClientCnxnSocketNetty.doTransport(ClientCnxnSocketNetty.java:285)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:15:55,737 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:55,739 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@469] - channel is disconnected: [id: 0xfc6a5817, L:/[0:0:0:0:0:0:0:1]:51749 ! R:localhost/[0:0:0:0:0:0:0:1]:16609]
+2022-09-11 09:15:56,912 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/[0:0:0:0:0:0:0:1]:16609.
+2022-09-11 09:15:56,913 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:15:57,027 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientPipelineFactory@454] - SSL handler added for channel: [id: 0x0065d04a]
+2022-09-11 09:15:57,030 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /[0:0:0:0:0:0:0:1]:51995, server: localhost/[0:0:0:0:0:0:0:1]:16609
+2022-09-11 09:15:57,030 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$1@184] - channel is connected: [id: 0x0065d04a, L:/[0:0:0:0:0:0:0:1]:51995 - R:localhost/[0:0:0:0:0:0:0:1]:16609]
+2022-09-11 09:15:57,146 [myid:] - ERROR [nioEventLoopGroup-7-4:o.a.z.s.NettyServerCnxnFactory$CertificateVerifier@470] - Unsuccessful handshake with session 0x0
+2022-09-11 09:15:57,147 [myid:] - ERROR [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@522] - Unexpected throwable
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:654)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1277)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1264)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1209)
+	at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1548)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1394)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:318)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:267)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144)
+	at org.apache.zookeeper.common.ZKTrustManager.checkServerTrusted(ZKTrustManager.java:115)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:632)
+	... 31 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:135)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:224)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:144)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:83)
+	at java.base/java.security.cert.CertPathValidator.validate(CertPathValidator.java:309)
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:313)
+	... 37 common frames omitted
+Caused by: java.security.SignatureException: Signature does not match.
+	at java.base/sun.security.x509.X509CertImpl.verify(X509CertImpl.java:414)
+	at java.base/sun.security.provider.certpath.BasicChecker.verifySignature(BasicChecker.java:166)
+	at java.base/sun.security.provider.certpath.BasicChecker.check(BasicChecker.java:147)
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:125)
+	... 42 common frames omitted
+2022-09-11 09:15:57,147 [myid:localhost:16609] - WARN  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1285] - Session 0x0 for server localhost/[0:0:0:0:0:0:0:1]:16609, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: channel for sessionid 0x0 is lost
+	at org.apache.zookeeper.ClientCnxnSocketNetty.doTransport(ClientCnxnSocketNetty.java:285)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:15:57,147 [myid:] - WARN  [nioEventLoopGroup-7-4:o.a.z.s.NettyServerCnxnFactory$CnxnChannelHandler@306] - Exception caught
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:358)
+	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:293)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:204)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736)
+	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482)
+	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:295)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1342)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+2022-09-11 09:15:57,147 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:57,151 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@469] - channel is disconnected: [id: 0x0065d04a, L:/[0:0:0:0:0:0:0:1]:51995 ! R:localhost/[0:0:0:0:0:0:0:1]:16609]
+2022-09-11 09:15:58,709 [myid:] - ERROR [main:o.a.z.s.ClientSSLReloadTest@170] - Unable to connect to zk server
+2022-09-11 09:15:58,946 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:16609.
+2022-09-11 09:15:58,947 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:15:59,012 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientPipelineFactory@454] - SSL handler added for channel: [id: 0xebcb892c]
+2022-09-11 09:15:59,013 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:52114, server: localhost/127.0.0.1:16609
+2022-09-11 09:15:59,014 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$1@184] - channel is connected: [id: 0xebcb892c, L:/127.0.0.1:52114 - R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:59,035 [myid:] - ERROR [nioEventLoopGroup-7-5:o.a.z.s.NettyServerCnxnFactory$CertificateVerifier@470] - Unsuccessful handshake with session 0x0
+2022-09-11 09:15:59,036 [myid:] - ERROR [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@522] - Unexpected throwable
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:654)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1277)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run(SSLEngineImpl.java:1264)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/sun.security.ssl.SSLEngineImpl$DelegatedTask.run(SSLEngineImpl.java:1209)
+	at io.netty.handler.ssl.SslHandler.runDelegatedTasks(SslHandler.java:1548)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1394)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+Caused by: sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:318)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:267)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:285)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:144)
+	at org.apache.zookeeper.common.ZKTrustManager.checkServerTrusted(ZKTrustManager.java:115)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:632)
+	... 31 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: signature check failed
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:135)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:224)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:144)
+	at java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:83)
+	at java.base/java.security.cert.CertPathValidator.validate(CertPathValidator.java:309)
+	at java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:313)
+	... 37 common frames omitted
+Caused by: java.security.SignatureException: Signature does not match.
+	at java.base/sun.security.x509.X509CertImpl.verify(X509CertImpl.java:414)
+	at java.base/sun.security.provider.certpath.BasicChecker.verifySignature(BasicChecker.java:166)
+	at java.base/sun.security.provider.certpath.BasicChecker.check(BasicChecker.java:147)
+	at java.base/sun.security.provider.certpath.PKIXMasterCertPathValidator.validate(PKIXMasterCertPathValidator.java:125)
+	... 42 common frames omitted
+2022-09-11 09:15:59,036 [myid:] - WARN  [nioEventLoopGroup-7-5:o.a.z.s.NettyServerCnxnFactory$CnxnChannelHandler@306] - Exception caught
+io.netty.handler.codec.DecoderException: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:480)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: javax.net.ssl.SSLHandshakeException: Received fatal alert: bad_certificate
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:358)
+	at java.base/sun.security.ssl.Alert$AlertConsumer.consume(Alert.java:293)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:204)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLEngineImpl.decode(SSLEngineImpl.java:736)
+	at java.base/sun.security.ssl.SSLEngineImpl.readRecord(SSLEngineImpl.java:691)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:506)
+	at java.base/sun.security.ssl.SSLEngineImpl.unwrap(SSLEngineImpl.java:482)
+	at java.base/javax.net.ssl.SSLEngine.unwrap(SSLEngine.java:679)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$3.unwrap(SslHandler.java:295)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1342)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1235)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:510)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:449)
+	... 17 common frames omitted
+2022-09-11 09:15:59,037 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:59,037 [myid:] - INFO  [nioEventLoopGroup-9-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@469] - channel is disconnected: [id: 0xebcb892c, L:/127.0.0.1:52114 ! R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:59,042 [myid:] - INFO  [main:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:59,042 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x0 closed
+2022-09-11 09:15:59,043 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=localhost:16609 sessionTimeout=60000 watcher=org.apache.zookeeper.server.ClientSSLReloadTest$$Lambda$449/0x0000000800f19070@53499d85
+2022-09-11 09:15:59,044 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x0
+2022-09-11 09:15:59,044 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:15:59,044 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:15:59,045 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:16609.
+2022-09-11 09:15:59,045 [myid:localhost:16609] - INFO  [main-SendThread(localhost:16609):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:15:59,049 [myid:] - INFO  [nioEventLoopGroup-10-1:o.a.z.ClientCnxnSocketNetty$ZKClientPipelineFactory@454] - SSL handler added for channel: [id: 0x96e6caaa]
+2022-09-11 09:15:59,050 [myid:] - INFO  [nioEventLoopGroup-10-1:o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:52115, server: localhost/127.0.0.1:16609
+2022-09-11 09:15:59,051 [myid:] - INFO  [nioEventLoopGroup-10-1:o.a.z.ClientCnxnSocketNetty$1@184] - channel is connected: [id: 0x96e6caaa, L:/127.0.0.1:52115 - R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:59,162 [myid:] - INFO  [nioEventLoopGroup-7-6:o.a.z.s.a.X509AuthenticationProvider@175] - Authenticated Id 'CN=org.apache.zookeeper.common.X509TestContext Zookeeper Test' for Scheme 'x509'
+2022-09-11 09:15:59,196 [myid:] - INFO  [nioEventLoopGroup-10-1:o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:16609, session id = 0x10000e00d1f0001, negotiated timeout = 60000
+2022-09-11 09:15:59,227 [myid:] - INFO  [main:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:59,234 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e00d1f0001
+2022-09-11 09:15:59,234 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e00d1f0001 closed
+2022-09-11 09:15:59,235 [myid:] - INFO  [main:o.a.z.s.e.ZooKeeperServerEmbeddedImpl@207] - Stopping ZK Server
+2022-09-11 09:15:59,235 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@672] - shutdown called /[0:0:0:0:0:0:0:0]:16608
+2022-09-11 09:15:59,238 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:15:59,244 [myid:] - INFO  [nioEventLoopGroup-10-1:o.a.z.ClientCnxnSocketNetty$ZKClientHandler@469] - channel is disconnected: [id: 0x96e6caaa, L:/127.0.0.1:52115 ! R:localhost/127.0.0.1:16609]
+2022-09-11 09:15:59,245 [myid:] - INFO  [zkservermainrunner:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:15:59,245 [myid:] - INFO  [zkservermainrunner:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:15:59,246 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:15:59,246 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:15:59,246 [myid:] - INFO  [zkservermainrunner:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:15:59,246 [myid:] - INFO  [zkservermainrunner:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:15:59,247 [myid:] - INFO  [zkservermainrunner:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:15:59,247 [myid:] - INFO  [ProcessThread(sid:0 cport:16608)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:15:59,247 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:15:59,247 [myid:] - INFO  [zkservermainrunner:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:15:59,248 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:15:59,249 [myid:] - INFO  [zkservermainrunner:o.a.z.s.NettyServerCnxnFactory@672] - shutdown called /[0:0:0:0:0:0:0:0]:16609
+2022-09-11 09:15:59,250 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:15:59,250 [myid:] - INFO  [FileChangeWatcher:o.a.z.c.FileChangeWatcher$WatcherThread@204] - FileChangeWatcher thread finished
+2022-09-11 09:15:59,250 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@668] - already shutdown /[0:0:0:0:0:0:0:0]:16608
+2022-09-11 09:15:59,250 [myid:] - INFO  [main:o.a.z.s.NettyServerCnxnFactory@672] - shutdown called /[0:0:0:0:0:0:0:0]:16609
+2022-09-11 09:15:59,251 [myid:] - INFO  [zkservermainrunner:o.a.z.s.e.ZooKeeperServerEmbeddedImpl$4@160] - ZK server died. Requesting stop on JVM
+2022-09-11 09:15:59,258 [myid:] - INFO  [nioEventLoopGroup-10-1:o.a.z.ClientCnxnSocketNetty@249] - channel is told closing
+2022-09-11 09:15:59,317 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.ClientSSLReloadTest.certficateReloadTest() throws java.lang.Exception]

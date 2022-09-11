@@ -1,0 +1,5 @@
+2022-09-11 09:14:32,598 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@47] - ACL digest algorithm is: SHA1
+2022-09-11 09:14:32,608 [myid:] - INFO  [main:o.a.z.s.a.DigestAuthenticationProvider@61] - zookeeper.DigestAuthenticationProvider.enabled = true
+2022-09-11 09:14:32,632 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-09-11 09:14:32,639 [myid:] - WARN  [main:o.a.z.s.a.X509AuthenticationProvider@87] - keystore not specified for client connection
+2022-09-11 09:14:32,639 [myid:] - WARN  [main:o.a.z.s.a.X509AuthenticationProvider@103] - Truststore not specified for client connection

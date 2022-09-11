@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.zookeeper.common.X509UtilTest" time="45.532" tests="384" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="build.test.dir" value="/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TW"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/surefirebooter2289454539279348973.jar /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire 2022-09-11T09-05-55_015-jvmRun2 surefire5473435875893236917tmp surefire_2874166490810045510316tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/linxiangling"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="zookeeper.DigestAuthenticationProvider.superDigest" value="super:D/InIHSb7yEEbrWz8b9l71RjZJU="/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="test.junit.threads" value="8"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/surefirebooter2289454539279348973.jar"/>
+    <property name="zookeeper.junit.threadid" value="2"/>
+    <property name="user.script" value="Hant"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.2.1+0"/>
+    <property name="user.name" value="linxiangling"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/linxiangling/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="user.dir" value="/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="junit.jupiter.extensions.autodetection.enabled" value="true"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="18.0.2.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="2.242"/>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="1.191"/>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.717"/>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.45"/>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.902"/>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.92"/>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.238"/>
+  <testcase name="testLoadPEMTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.262"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.013"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.239"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.166"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.135"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testCreateSSLContextWithoutKeyStorePassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.124"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.156"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.155"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.135"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.206"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.153"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.16"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.139"/>
+  <testcase name="testLoadPKCS12TrustStore{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.143"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.068"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.085"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.03"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.037"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.036"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.032"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.068"/>
+  <testcase name="testLoadPKCS12TrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.041"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.032"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.07"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.054"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.062"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.079"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.052"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.114"/>
+  <testcase name="testCreateSSLContext_withWrongKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.105"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="1.206"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.404"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.427"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.468"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.559"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.355"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.544"/>
+  <testcase name="testClientRenegotiationFails{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.583"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.236"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.322"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.205"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.256"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.249"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.253"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.273"/>
+  <testcase name="testCRLEnabled{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.233"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.119"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.114"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.055"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.131"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.087"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.081"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.134"/>
+  <testcase name="testCreateSSLContextWithoutKeyStoreLocation{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.101"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.227"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.195"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.233"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.19"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.251"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.214"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.259"/>
+  <testcase name="testLoadPKCS12KeyStore{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.286"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.057"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.089"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.109"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.097"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.116"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.144"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.072"/>
+  <testcase name="testLoadJKSTrustStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.088"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.087"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.094"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.095"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.071"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.074"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.085"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.078"/>
+  <testcase name="testLoadPKCS12TrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.131"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.147"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.117"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.099"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.11"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.147"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.083"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.09"/>
+  <testcase name="testCreateSSLServerSocketWithPort{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.104"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.174"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.125"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.138"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.16"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.168"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.266"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.181"/>
+  <testcase name="testCreateSSLContextWithCustomCipherSuites{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.127"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.129"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.138"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.114"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.112"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.178"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.173"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.082"/>
+  <testcase name="testCRLDisabled{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.059"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.007"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testCreateSSLContext_invalidCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.071"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.28"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.162"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.18"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.156"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.22"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.253"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.255"/>
+  <testcase name="testCreateSSLContext_withWrongTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.174"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.232"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.22"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.208"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.155"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.266"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.199"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.161"/>
+  <testcase name="testCreateSSLContextWithoutCustomProtocol{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.213"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.148"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.225"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.171"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.176"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.201"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.24"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.136"/>
+  <testcase name="testOCSPEnabled{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.168"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.012"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.012"/>
+  <testcase name="testGetDefaultCipherSuitesJava8{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava9{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.057"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.057"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.138"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.045"/>
+  <testcase name="testLoadJKSKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.12"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.108"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.084"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.146"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.109"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.102"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.045"/>
+  <testcase name="testLoadJKSKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.077"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.068"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.099"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testCreateSSLContext_validCustomSSLContextClass{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.012"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.008"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.018"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.015"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.009"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.149"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.084"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.095"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.081"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.068"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.157"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.077"/>
+  <testcase name="testLoadJKSKeyStore{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.114"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.338"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.211"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.271"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.174"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.148"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.192"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.135"/>
+  <testcase name="testCreateSSLContext_withKeyStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.185"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.107"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.067"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.048"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.111"/>
+  <testcase name="testLoadJKSTrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.071"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.096"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.074"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.132"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.087"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.096"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.203"/>
+  <testcase name="testLoadJKSTrustStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.124"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.194"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.08"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.06"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.043"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.149"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.126"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.187"/>
+  <testcase name="testCreateSSLContextWithCustomProtocol{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.08"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.107"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.168"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.067"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.069"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.105"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.031"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.096"/>
+  <testcase name="testLoadJKSKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.049"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.061"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.015"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.069"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.012"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.064"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.053"/>
+  <testcase name="testLoadPKCS12TrustStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testGetDefaultCipherSuitesUnknownVersion{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.012"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.499"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.517"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.401"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.724"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.669"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.47"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.385"/>
+  <testcase name="testGetSslHandshakeDetectionTimeoutMillisProperty{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.398"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.039"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.028"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.037"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.031"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.039"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.087"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.051"/>
+  <testcase name="testLoadPKCS12KeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.043"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.223"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.107"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.114"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.161"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.158"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.176"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.161"/>
+  <testcase name="testCreateSSLSocket{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.132"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPEMTrustStore{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.007"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava10{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testGetDefaultCipherSuitesJava11{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.018"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.027"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.013"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.008"/>
+  <testcase name="testLoadPEMKeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.012"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.144"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.032"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.045"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMKeyStoreAutodetectStoreFileType{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.03"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.047"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.027"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.086"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.042"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.029"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.024"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.029"/>
+  <testcase name="testLoadJKSTrustStore{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.021"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.017"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.01"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.004"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.008"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testLoadPEMKeyStore{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.008"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.033"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.027"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.029"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.039"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.031"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.042"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.029"/>
+  <testcase name="testLoadPKCS12KeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.023"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.006"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.011"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.016"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testLoadPEMKeyStoreWithWrongPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.009"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.119"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.06"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.063"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.094"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.036"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.042"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.037"/>
+  <testcase name="testCreateSSLServerSocketWithoutPort{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.035"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.035"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.059"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.115"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.06"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.039"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.039"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.073"/>
+  <testcase name="testCreateSSLContext_withTrustStorePasswordFromFile{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.052"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.003"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testGetDefaultCipherSuitesNullVersion{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[1]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.02"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[2]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[3]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.019"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[4]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.001"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[5]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.027"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[6]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.005"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[7]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.052"/>
+  <testcase name="testLoadPKCS12KeyStoreNullPassword{X509KeyType, X509KeyType, String, Integer}[8]" classname="org.apache.zookeeper.common.X509UtilTest" time="0.002"/>
+</testsuite>

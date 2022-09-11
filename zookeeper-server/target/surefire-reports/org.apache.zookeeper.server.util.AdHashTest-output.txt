@@ -1,0 +1,2 @@
+2022-09-11 09:14:31,990 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.util.AdHashTest.testAdHash() throws java.lang.Exception]
+2022-09-11 09:14:32,032 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.util.AdHashTest.testAdHash() throws java.lang.Exception]

@@ -1,0 +1,6 @@
+2022-09-11 09:11:53,254 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.test.SessionTrackerCheckTest.testLearnerSessionTracker() throws java.lang.Exception]
+2022-09-11 09:11:53,348 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.test.SessionTrackerCheckTest.testLearnerSessionTracker() throws java.lang.Exception]
+2022-09-11 09:11:53,375 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.test.SessionTrackerCheckTest.testLeaderSessionTracker() throws java.lang.Exception]
+2022-09-11 09:11:53,377 [myid:] - INFO  [main:o.a.z.s.q.LeaderSessionTracker@89] - Tracking global session 0x300000000000001
+2022-09-11 09:11:53,378 [myid:] - INFO  [main:o.a.z.s.q.LeaderSessionTracker@89] - Tracking global session 0x20000dc7da90000
+2022-09-11 09:11:53,380 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.test.SessionTrackerCheckTest.testLeaderSessionTracker() throws java.lang.Exception]

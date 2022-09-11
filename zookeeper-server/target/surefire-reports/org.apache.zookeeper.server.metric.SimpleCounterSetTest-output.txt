@@ -1,0 +1,4 @@
+2022-09-11 09:17:19,033 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.metric.SimpleCounterSetTest.testReset()]
+2022-09-11 09:17:19,052 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.metric.SimpleCounterSetTest.testReset()]
+2022-09-11 09:17:19,059 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.metric.SimpleCounterSetTest.testValues()]
+2022-09-11 09:17:19,060 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.metric.SimpleCounterSetTest.testValues()]

@@ -1,0 +1,9 @@
+2022-09-11 09:12:41,970 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public final void org.apache.zookeeper.test.OSMXBeanTest.testGetUnix()]
+2022-09-11 09:12:42,121 [myid:] - INFO  [main:o.a.z.t.OSMXBeanTest@49] - Running in a Unix or Linux system!
+2022-09-11 09:12:42,151 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public final void org.apache.zookeeper.test.OSMXBeanTest.testGetUnix()]
+2022-09-11 09:12:42,173 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public final void org.apache.zookeeper.test.OSMXBeanTest.testGetMaxFileDescriptorCount()]
+2022-09-11 09:12:42,180 [myid:] - INFO  [main:o.a.z.t.OSMXBeanTest@66] - max fdcount is: 10240
+2022-09-11 09:12:42,182 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public final void org.apache.zookeeper.test.OSMXBeanTest.testGetMaxFileDescriptorCount()]
+2022-09-11 09:12:42,185 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public final void org.apache.zookeeper.test.OSMXBeanTest.testGetOpenFileDescriptorCount()]
+2022-09-11 09:12:42,248 [myid:] - INFO  [main:o.a.z.t.OSMXBeanTest@57] - open fdcount is: 86
+2022-09-11 09:12:42,249 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public final void org.apache.zookeeper.test.OSMXBeanTest.testGetOpenFileDescriptorCount()]

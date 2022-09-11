@@ -1,0 +1,23 @@
+2022-09-11 09:17:27,850 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.DatadirCleanupManagerTest.testWithZeroPurgeInterval() throws java.lang.Exception]
+2022-09-11 09:17:27,988 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2022-09-11 09:17:27,990 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2022-09-11 09:17:27,991 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@101] - Purge task is not scheduled.
+2022-09-11 09:17:27,993 [myid:] - WARN  [main:o.a.z.s.DatadirCleanupManager@121] - Purge task not started. Ignoring shutdown!
+2022-09-11 09:17:28,003 [myid:] - WARN  [main:o.a.z.s.DatadirCleanupManager@121] - Purge task not started. Ignoring shutdown!
+2022-09-11 09:17:28,003 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.DatadirCleanupManagerTest.testWithZeroPurgeInterval() throws java.lang.Exception]
+2022-09-11 09:17:28,012 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.DatadirCleanupManagerTest.testPurgeTask() throws java.lang.Exception]
+2022-09-11 09:17:28,140 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2022-09-11 09:17:28,140 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@79] - autopurge.purgeInterval set to 1
+2022-09-11 09:17:28,142 [myid:] - INFO  [PurgeTask:o.a.z.s.DatadirCleanupManager$PurgeTask@139] - Purge task started.
+2022-09-11 09:17:28,143 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@117] - Shutting down purge task.
+2022-09-11 09:17:28,144 [myid:] - WARN  [main:o.a.z.s.DatadirCleanupManager@121] - Purge task not started. Ignoring shutdown!
+2022-09-11 09:17:28,148 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.DatadirCleanupManagerTest.testPurgeTask() throws java.lang.Exception]
+2022-09-11 09:17:28,151 [myid:] - INFO  [PurgeTask:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:17:28,164 [myid:] - INFO  [PurgeTask:o.a.z.s.DatadirCleanupManager$PurgeTask@145] - Purge task completed.
+2022-09-11 09:17:28,173 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.DatadirCleanupManagerTest.testWithNegativePurgeInterval() throws java.lang.Exception]
+2022-09-11 09:17:28,231 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2022-09-11 09:17:28,233 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@79] - autopurge.purgeInterval set to -1
+2022-09-11 09:17:28,233 [myid:] - INFO  [main:o.a.z.s.DatadirCleanupManager@101] - Purge task is not scheduled.
+2022-09-11 09:17:28,234 [myid:] - WARN  [main:o.a.z.s.DatadirCleanupManager@121] - Purge task not started. Ignoring shutdown!
+2022-09-11 09:17:28,235 [myid:] - WARN  [main:o.a.z.s.DatadirCleanupManager@121] - Purge task not started. Ignoring shutdown!
+2022-09-11 09:17:28,247 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.DatadirCleanupManagerTest.testWithNegativePurgeInterval() throws java.lang.Exception]

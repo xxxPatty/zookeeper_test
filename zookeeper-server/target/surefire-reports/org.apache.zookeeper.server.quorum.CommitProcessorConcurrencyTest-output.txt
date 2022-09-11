@@ -1,0 +1,70 @@
+2022-09-11 09:19:31,303 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noCrashOnCommittedRequestsOfUnseenRequestTest() throws java.lang.Exception]
+2022-09-11 09:19:31,385 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:31,386 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:31,522 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:32,526 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:33,528 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:34,540 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:34,542 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noCrashOnCommittedRequestsOfUnseenRequestTest() throws java.lang.Exception]
+2022-09-11 09:19:34,557 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noStarvationOfReadRequestsTest() throws java.lang.Exception]
+2022-09-11 09:19:34,558 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:34,558 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:34,565 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:34,567 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:34,568 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:34,569 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noStarvationOfReadRequestsTest() throws java.lang.Exception]
+2022-09-11 09:19:34,573 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noCrashOnOutofOrderCommittedRequestTest() throws java.lang.Exception]
+2022-09-11 09:19:34,573 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:34,574 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:34,575 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:35,578 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:36,579 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,581 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:37,582 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noCrashOnOutofOrderCommittedRequestTest() throws java.lang.Exception]
+2022-09-11 09:19:37,585 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.committedAndUncommittedOfTheSameSessionRaceTest() throws java.lang.Exception]
+2022-09-11 09:19:37,586 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:37,586 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:37,588 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,590 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:37,591 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.committedAndUncommittedOfTheSameSessionRaceTest() throws java.lang.Exception]
+2022-09-11 09:19:37,594 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noStarvationOfNonLocalCommittedRequestsTest() throws java.lang.Exception]
+2022-09-11 09:19:37,594 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:37,595 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:37,600 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,604 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,609 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,615 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,618 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,622 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,626 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,630 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,634 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,639 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:37,640 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:37,643 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.noStarvationOfNonLocalCommittedRequestsTest() throws java.lang.Exception]
+2022-09-11 09:19:37,647 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.processAsMuchUncommittedRequestsAsPossibleTest() throws java.lang.Exception]
+2022-09-11 09:19:37,648 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:37,648 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:37,652 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:38,656 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:38,657 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.processAsMuchUncommittedRequestsAsPossibleTest() throws java.lang.Exception]
+2022-09-11 09:19:38,661 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.processAllFollowingUncommittedAfterFirstCommitTest() throws java.lang.Exception]
+2022-09-11 09:19:38,661 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:38,662 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:38,663 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:38,664 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:39,167 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:39,168 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.processAllFollowingUncommittedAfterFirstCommitTest() throws java.lang.Exception]
+2022-09-11 09:19:39,171 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.processAllWritesMaxBatchSize() throws java.lang.Exception]
+2022-09-11 09:19:39,172 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@525] - Configuring CommitProcessor with readBatchSize -1
+2022-09-11 09:19:39,173 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 1
+2022-09-11 09:19:39,173 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 2
+2022-09-11 09:19:39,174 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:39,174 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 3
+2022-09-11 09:19:39,175 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:39,682 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 3
+2022-09-11 09:19:39,683 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:40,184 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@531] - Configuring CommitProcessor with commitBatchSize 3
+2022-09-11 09:19:40,184 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@419] - CommitProcessor exited loop!
+2022-09-11 09:19:40,685 [myid:] - INFO  [main:o.a.z.s.q.CommitProcessor@631] - Shutting down
+2022-09-11 09:19:40,686 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.quorum.CommitProcessorConcurrencyTest.processAllWritesMaxBatchSize() throws java.lang.Exception]

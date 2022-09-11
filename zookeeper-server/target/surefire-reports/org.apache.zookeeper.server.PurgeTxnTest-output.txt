@@ -1,0 +1,1042 @@
+2022-09-11 09:16:54,340 [myid:] - INFO  [main:o.a.z.PortAssignment@154] - Test process 8/8 using ports from 30072 - 32764.
+2022-09-11 09:16:54,379 [myid:] - INFO  [main:o.a.z.PortAssignment@87] - Assigned port 30073 from range 30072 - 32764.
+2022-09-11 09:16:54,418 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurge() throws java.lang.Exception]
+2022-09-11 09:16:54,514 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:16:54,514 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   ______                  _                                          
+2022-09-11 09:16:54,515 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  |___  /                 | |                                         
+2022-09-11 09:16:54,515 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -     / /    ___     ___   | | __   ___    ___   _ __     ___   _ __   
+2022-09-11 09:16:54,515 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -    / /    / _ \   / _ \  | |/ /  / _ \  / _ \ | '_ \   / _ \ | '__|
+2022-09-11 09:16:54,516 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -   / /__  | (_) | | (_) | |   <  |  __/ |  __/ | |_) | |  __/ | |    
+2022-09-11 09:16:54,518 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -  /_____|  \___/   \___/  |_|\_\  \___|  \___| | .__/   \___| |_|
+2022-09-11 09:16:54,518 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               | |                     
+2022-09-11 09:16:54,518 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] -                                               |_|                     
+2022-09-11 09:16:54,518 [myid:] - INFO  [main:o.a.z.ZookeeperBanner@42] - 
+2022-09-11 09:16:54,532 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:16:54,533 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:host.name=localhost
+2022-09-11 09:16:54,533 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.version=18.0.2.1
+2022-09-11 09:16:54,533 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.vendor=Homebrew
+2022-09-11 09:16:54,533 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:16:54,533 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:16:54,534 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:16:54,534 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:16:54,534 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:java.compiler=<NA>
+2022-09-11 09:16:54,535 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.name=Mac OS X
+2022-09-11 09:16:54,535 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.arch=x86_64
+2022-09-11 09:16:54,535 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.version=10.15.6
+2022-09-11 09:16:54,535 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.name=linxiangling
+2022-09-11 09:16:54,535 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.home=/Users/linxiangling
+2022-09-11 09:16:54,536 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:16:54,536 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.free=111MB
+2022-09-11 09:16:54,536 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.max=512MB
+2022-09-11 09:16:54,536 [myid:] - INFO  [main:o.a.z.Environment@98] - Server environment:os.memory.total=130MB
+2022-09-11 09:16:54,536 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@140] - zookeeper.enableEagerACLCheck = false
+2022-09-11 09:16:54,536 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@153] - zookeeper.digest.enabled = true
+2022-09-11 09:16:54,537 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@157] - zookeeper.closeSessionTxn.enabled = true
+2022-09-11 09:16:54,537 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1494] - zookeeper.flushDelay = 0 ms
+2022-09-11 09:16:54,539 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1503] - zookeeper.maxWriteQueuePollTime = 0 ms
+2022-09-11 09:16:54,539 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1512] - zookeeper.maxBatchSize=1000
+2022-09-11 09:16:54,540 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@275] - zookeeper.intBufferStartingSizeBytes = 1024
+2022-09-11 09:16:54,541 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:16:54,559 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:16:54,559 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:16:54,560 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:16:54,560 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:16:54,565 [myid:] - INFO  [main:o.a.z.s.BlueThrottle@141] - Weighed connection throttling is disabled
+2022-09-11 09:16:54,570 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:16:54,571 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:16:54,584 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:16:54,584 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:16:54,586 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:16:54,591 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:16:54,592 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:16:54,592 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:16:54,593 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:16:54,593 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:16:54,595 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:16:54,595 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:16:54,597 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:16:54,597 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:16:54,598 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2
+2022-09-11 09:16:54,609 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:16:54,613 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:16:54,615 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:16:54,634 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:30073
+2022-09-11 09:16:54,664 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:16:54,672 [myid:] - INFO  [main:o.a.z.s.p.SnapStream@61] - zookeeper.snapshot.compression.method = CHECKED
+2022-09-11 09:16:54,673 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.0
+2022-09-11 09:16:54,717 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 78 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:16:54,719 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.0
+2022-09-11 09:16:54,720 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 1 ms
+2022-09-11 09:16:54,734 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:16:54,735 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@75] - zookeeper.request_throttler.shutdownTimeout = 10000 ms
+2022-09-11 09:16:55,004 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 30073
+2022-09-11 09:16:55,029 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.FourLetterCommands@223] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, -720899=telnet close, 1751217000=hash, 2003003507=wchs, 2003003504=wchp, 1684632179=dirs, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2022-09-11 09:16:55,029 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.FourLetterCommands@224] - The list of enabled four letter word commands is : [[wchs, stat, wchp, dirs, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, telnet close, crst, hash, cons]]
+2022-09-11 09:16:55,029 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:53040
+2022-09-11 09:16:55,036 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:16:55,047 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-09-11 09:16:55,103 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:zookeeper.version=3.9.0-SNAPSHOT-2cd0c23454071faf0a16c58edb2414591ae5c5c3, built on 2022-09-11 01:07 UTC
+2022-09-11 09:16:55,104 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:host.name=localhost
+2022-09-11 09:16:55,105 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.version=18.0.2.1
+2022-09-11 09:16:55,106 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.vendor=Homebrew
+2022-09-11 09:16:55,106 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.home=/usr/local/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home
+2022-09-11 09:16:55,112 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.class.path=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/test-classes:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/classes:/Users/linxiangling/.m2/repository/com/github/spotbugs/spotbugs-annotations/4.0.2/spotbugs-annotations-4.0.2.jar:/Users/linxiangling/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/linxiangling/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/linxiangling/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-jute/target/zookeeper-jute-3.9.0-SNAPSHOT.jar:/Users/linxiangling/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar:/Users/linxiangling/.m2/repository/org/apache/yetus/audience-annotations/0.12.0/audience-annotations-0.12.0.jar:/Users/linxiangling/.m2/repository/io/netty/netty-handler/4.1.76.Final/netty-handler-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-common/4.1.76.Final/netty-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-resolver/4.1.76.Final/netty-resolver-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-buffer/4.1.76.Final/netty-buffer-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport/4.1.76.Final/netty-transport-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-codec/4.1.76.Final/netty-codec-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-epoll/4.1.76.Final/netty-transport-native-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.76.Final/netty-transport-native-unix-common-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.76.Final/netty-transport-classes-epoll-4.1.76.Final.jar:/Users/linxiangling/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/Users/linxiangling/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-server/9.4.43.v20210629/jetty-server-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-io/9.4.43.v20210629/jetty-io-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-servlet/9.4.43.v20210629/jetty-servlet-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-security/9.4.43.v20210629/jetty-security-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-util-ajax/9.4.43.v20210629/jetty-util-ajax-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar:/Users/linxiangling/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.60/bcprov-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.60/bcpkix-jdk15on-1.60.jar:/Users/linxiangling/.m2/repository/jline/jline/2.14.6/jline-2.14.6.jar:/Users/linxiangling/.m2/repository/io/dropwizard/metrics/metrics-core/4.1.12.1/metrics-core-4.1.12.1.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-core/2.0.0/kerb-core-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-pkix/2.0.0/kerby-pkix-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-asn1/2.0.0/kerby-asn1-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-util/2.0.0/kerby-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-simplekdc/2.0.0/kerb-simplekdc-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-client/2.0.0/kerb-client-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-common/2.0.0/kerb-common-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-crypto/2.0.0/kerb-crypto-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-util/2.0.0/kerb-util-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/token-provider/2.0.0/token-provider-2.0.0.jar:/Users/linxiangling/.m2/repository/com/nimbusds/nimbus-jose-jwt/4.41.2/nimbus-jose-jwt-4.41.2.jar:/Users/linxiangling/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar:/Users/linxiangling/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/linxiangling/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/linxiangling/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-admin/2.0.0/kerb-admin-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-server/2.0.0/kerb-server-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerb-identity/2.0.0/kerb-identity-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-xdr/2.0.0/kerby-xdr-2.0.0.jar:/Users/linxiangling/.m2/repository/org/apache/kerby/kerby-config/2.0.0/kerby-config-2.0.0.jar:/Users/linxiangling/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/linxiangling/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/Users/linxiangling/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/linxiangling/.m2/repository/org/jmockit/jmockit/1.48/jmockit-1.48.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/linxiangling/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/linxiangling/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-runner/1.6.2/junit-platform-runner-1.6.2.jar:/Users/linxiangling/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar:/Users/linxiangling/.m2/repository/org/junit/platform/junit-platform-suite-api/1.6.2/junit-platform-suite-api-1.6.2.jar:/Users/linxiangling/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.7/snappy-java-1.1.7.7.jar:/Users/linxiangling/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:
+2022-09-11 09:16:55,114 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.library.path=/Users/linxiangling/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-09-11 09:16:55,114 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.io.tmpdir=/var/folders/mp/w39sdpzd2wj4lrp979j8yy280000gn/T/
+2022-09-11 09:16:55,114 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:java.compiler=<NA>
+2022-09-11 09:16:55,115 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.name=Mac OS X
+2022-09-11 09:16:55,115 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.arch=x86_64
+2022-09-11 09:16:55,115 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.version=10.15.6
+2022-09-11 09:16:55,115 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.name=linxiangling
+2022-09-11 09:16:55,115 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.home=/Users/linxiangling
+2022-09-11 09:16:55,116 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:user.dir=/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server
+2022-09-11 09:16:55,116 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.free=100MB
+2022-09-11 09:16:55,116 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.max=512MB
+2022-09-11 09:16:55,117 [myid:] - INFO  [main:o.a.z.Environment@98] - Client environment:os.memory.total=130MB
+2022-09-11 09:16:55,121 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:30073 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@1800a575
+2022-09-11 09:16:55,129 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:16:55,145 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:16:55,151 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:16:55,151 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:16:55,152 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:53042, server: localhost/127.0.0.1:30073
+2022-09-11 09:16:55,163 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:16:55,214 [myid:] - INFO  [SyncThread:0:o.a.z.a.ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2022-09-11 09:16:55,219 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:30073, session id = 0x10000e116c20000, negotiated timeout = 30000
+2022-09-11 09:16:58,094 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x51 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.51
+2022-09-11 09:16:58,171 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.53
+2022-09-11 09:16:58,213 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 119 ms
+2022-09-11 09:17:01,387 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xa9 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.a9
+2022-09-11 09:17:01,416 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.ab
+2022-09-11 09:17:01,437 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 50 ms
+2022-09-11 09:17:03,415 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xe6 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.e6
+2022-09-11 09:17:03,446 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.e8
+2022-09-11 09:17:03,485 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 70 ms
+2022-09-11 09:17:06,485 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x138 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.138
+2022-09-11 09:17:06,528 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.13a
+2022-09-11 09:17:06,576 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 91 ms
+2022-09-11 09:17:09,691 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x18f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.18f
+2022-09-11 09:17:09,720 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.191
+2022-09-11 09:17:09,759 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 69 ms
+2022-09-11 09:17:12,593 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x1ee to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.1ee
+2022-09-11 09:17:12,621 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1f0
+2022-09-11 09:17:12,705 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 112 ms
+2022-09-11 09:17:14,974 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x23b to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.23b
+2022-09-11 09:17:15,007 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.23d
+2022-09-11 09:17:15,040 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 65 ms
+2022-09-11 09:17:17,309 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x288 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.288
+2022-09-11 09:17:17,337 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.28a
+2022-09-11 09:17:17,530 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 221 ms
+2022-09-11 09:17:19,651 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x2d6 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.2d6
+2022-09-11 09:17:19,655 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:17:19,672 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.2d8
+2022-09-11 09:17:22,366 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x332 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.332
+2022-09-11 09:17:22,386 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.334
+2022-09-11 09:17:22,548 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 182 ms
+2022-09-11 09:17:25,078 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x385 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.385
+2022-09-11 09:17:25,120 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.387
+2022-09-11 09:17:25,218 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 140 ms
+2022-09-11 09:17:27,215 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x3d7 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.3d7
+2022-09-11 09:17:27,223 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 8 ms
+2022-09-11 09:17:27,236 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.3d9
+2022-09-11 09:17:30,233 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x42f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.42f
+2022-09-11 09:17:30,264 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.431
+2022-09-11 09:17:30,412 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 179 ms
+2022-09-11 09:17:32,289 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x471 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.471
+2022-09-11 09:17:32,308 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.473
+2022-09-11 09:17:32,563 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 274 ms
+2022-09-11 09:17:35,368 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x4d1 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.4d1
+2022-09-11 09:17:35,390 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.4d3
+2022-09-11 09:17:35,762 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 394 ms
+2022-09-11 09:17:38,969 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x530 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.530
+2022-09-11 09:17:39,005 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.532
+2022-09-11 09:17:39,193 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 224 ms
+2022-09-11 09:17:41,223 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x575 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.575
+2022-09-11 09:17:41,256 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.577
+2022-09-11 09:17:41,630 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 406 ms
+2022-09-11 09:17:43,198 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x5be to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.5be
+2022-09-11 09:17:43,233 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.5c0
+2022-09-11 09:17:43,467 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 269 ms
+2022-09-11 09:17:44,774 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x5f3 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.5f3
+2022-09-11 09:17:44,795 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.5f5
+2022-09-11 09:17:45,065 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 291 ms
+2022-09-11 09:17:46,509 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x62c to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.62c
+2022-09-11 09:17:46,549 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.62e
+2022-09-11 09:17:46,814 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 305 ms
+2022-09-11 09:17:48,145 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x661 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.661
+2022-09-11 09:17:48,178 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.663
+2022-09-11 09:17:48,623 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 479 ms
+2022-09-11 09:17:49,915 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x697 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.697
+2022-09-11 09:17:49,944 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.699
+2022-09-11 09:17:50,121 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 206 ms
+2022-09-11 09:17:51,729 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x6e8 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.6e8
+2022-09-11 09:17:51,754 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.6ea
+2022-09-11 09:17:51,790 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 61 ms
+2022-09-11 09:17:54,048 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x747 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.747
+2022-09-11 09:17:54,081 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.749
+2022-09-11 09:17:54,128 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 81 ms
+2022-09-11 09:17:55,663 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x788 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.788
+2022-09-11 09:17:55,683 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.78a
+2022-09-11 09:17:55,750 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 87 ms
+2022-09-11 09:17:57,364 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x7d0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.7d0
+2022-09-11 09:17:57,367 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:17:57,383 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.7d2
+2022-09-11 09:17:57,588 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e116c20000
+2022-09-11 09:17:57,588 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e116c20000 closed
+2022-09-11 09:17:57,589 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:17:57,589 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:30073:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:17:57,590 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:17:57,591 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:17:57,592 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:17:57,592 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:17:57,592 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:17:57,592 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:17:57,593 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:17:57,593 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:17:57,593 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:17:57,593 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:17:57,593 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:17:57,602 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 30073
+2022-09-11 09:17:57,606 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:17:57,612 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:35	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.473
+Removing file: 2022年9月11日 上午9:17:35	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.473
+2022-09-11 09:17:57,613 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:30	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.3d9
+Removing file: 2022年9月11日 上午9:17:30	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.3d9
+2022-09-11 09:17:57,614 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:48	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.62e
+Removing file: 2022年9月11日 上午9:17:48	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.62e
+2022-09-11 09:17:57,615 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:03	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.ab
+Removing file: 2022年9月11日 上午9:17:03	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.ab
+2022-09-11 09:17:57,615 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:25	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.334
+Removing file: 2022年9月11日 上午9:17:25	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.334
+2022-09-11 09:17:57,616 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.13a
+Removing file: 2022年9月11日 上午9:17:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.13a
+2022-09-11 09:17:57,617 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.191
+Removing file: 2022年9月11日 上午9:17:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.191
+2022-09-11 09:17:57,618 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:43	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.577
+Removing file: 2022年9月11日 上午9:17:43	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.577
+2022-09-11 09:17:57,619 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:27	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.387
+Removing file: 2022年9月11日 上午9:17:27	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.387
+2022-09-11 09:17:57,621 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.1f0
+Removing file: 2022年9月11日 上午9:17:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.1f0
+2022-09-11 09:17:57,621 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:51	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.699
+Removing file: 2022年9月11日 上午9:17:51	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.699
+2022-09-11 09:17:57,622 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:49	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.663
+Removing file: 2022年9月11日 上午9:17:49	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.663
+2022-09-11 09:17:57,623 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:19	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.28a
+Removing file: 2022年9月11日 上午9:17:19	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.28a
+2022-09-11 09:17:57,624 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:16:58	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.1
+Removing file: 2022年9月11日 上午9:16:58	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.1
+2022-09-11 09:17:57,625 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:41	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.532
+Removing file: 2022年9月11日 上午9:17:41	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.532
+2022-09-11 09:17:57,626 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:01	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.53
+Removing file: 2022年9月11日 上午9:17:01	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.53
+2022-09-11 09:17:57,627 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:22	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.2d8
+Removing file: 2022年9月11日 上午9:17:22	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.2d8
+2022-09-11 09:17:57,627 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:38	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.4d3
+Removing file: 2022年9月11日 上午9:17:38	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.4d3
+2022-09-11 09:17:57,628 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:44	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.5c0
+Removing file: 2022年9月11日 上午9:17:44	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.5c0
+2022-09-11 09:17:57,629 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:32	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.431
+Removing file: 2022年9月11日 上午9:17:32	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.431
+2022-09-11 09:17:57,630 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:17	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.23d
+Removing file: 2022年9月11日 上午9:17:17	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.23d
+2022-09-11 09:17:57,630 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:06	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.e8
+Removing file: 2022年9月11日 上午9:17:06	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.e8
+2022-09-11 09:17:57,631 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:46	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.5f5
+Removing file: 2022年9月11日 上午9:17:46	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/log.5f5
+2022-09-11 09:17:57,631 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:17	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.288
+Removing file: 2022年9月11日 上午9:17:17	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.288
+2022-09-11 09:17:57,632 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:43	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.5be
+Removing file: 2022年9月11日 上午9:17:43	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.5be
+2022-09-11 09:17:57,632 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:32	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.471
+Removing file: 2022年9月11日 上午9:17:32	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.471
+2022-09-11 09:17:57,633 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:03	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.e6
+Removing file: 2022年9月11日 上午9:17:03	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.e6
+2022-09-11 09:17:57,634 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:25	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.385
+Removing file: 2022年9月11日 上午9:17:25	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.385
+2022-09-11 09:17:57,635 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:01	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.a9
+Removing file: 2022年9月11日 上午9:17:01	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.a9
+2022-09-11 09:17:57,636 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:19	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.2d6
+Removing file: 2022年9月11日 上午9:17:19	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.2d6
+2022-09-11 09:17:57,637 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.18f
+Removing file: 2022年9月11日 上午9:17:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.18f
+2022-09-11 09:17:57,638 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:41	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.575
+Removing file: 2022年9月11日 上午9:17:41	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.575
+2022-09-11 09:17:57,639 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:45	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.5f3
+Removing file: 2022年9月11日 上午9:17:45	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.5f3
+2022-09-11 09:17:57,639 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:48	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.661
+Removing file: 2022年9月11日 上午9:17:48	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.661
+2022-09-11 09:17:57,640 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:15	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.23b
+Removing file: 2022年9月11日 上午9:17:15	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.23b
+2022-09-11 09:17:57,641 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.1ee
+Removing file: 2022年9月11日 上午9:17:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.1ee
+2022-09-11 09:17:57,642 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:46	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.62c
+Removing file: 2022年9月11日 上午9:17:46	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.62c
+2022-09-11 09:17:57,644 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:30	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.42f
+Removing file: 2022年9月11日 上午9:17:30	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.42f
+2022-09-11 09:17:57,645 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:27	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.3d7
+Removing file: 2022年9月11日 上午9:17:27	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.3d7
+2022-09-11 09:17:57,646 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:51	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.6e8
+Removing file: 2022年9月11日 上午9:17:51	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.6e8
+2022-09-11 09:17:57,647 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:39	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.530
+Removing file: 2022年9月11日 上午9:17:39	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.530
+2022-09-11 09:17:57,648 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:22	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.332
+Removing file: 2022年9月11日 上午9:17:22	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.332
+2022-09-11 09:17:57,649 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:06	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.138
+Removing file: 2022年9月11日 上午9:17:06	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.138
+2022-09-11 09:17:57,650 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:35	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.4d1
+Removing file: 2022年9月11日 上午9:17:35	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.4d1
+2022-09-11 09:17:57,651 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:50	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.697
+Removing file: 2022年9月11日 上午9:17:50	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.697
+2022-09-11 09:17:57,652 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:16:54	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:16:54	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.0
+2022-09-11 09:17:57,653 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:16:58	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.51
+Removing file: 2022年9月11日 上午9:16:58	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test9596093851115408673.junit.dir/version-2/snapshot.51
+2022-09-11 09:17:57,654 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:17:57,669 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurge() throws java.lang.Exception]
+2022-09-11 09:17:57,678 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeTxnLogWithoutDataDir() throws java.lang.Exception]
+2022-09-11 09:17:57,951 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:17:57,957 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.3
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.3
+2022-09-11 09:17:57,958 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.4
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.4
+2022-09-11 09:17:57,960 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.5
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.5
+2022-09-11 09:17:57,961 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.2
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.2
+2022-09-11 09:17:57,962 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.9
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.9
+2022-09-11 09:17:57,963 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.7
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.7
+2022-09-11 09:17:57,964 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.0
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.0
+2022-09-11 09:17:57,965 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.1
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.1
+2022-09-11 09:17:57,966 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.6
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.6
+2022-09-11 09:17:57,967 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.8
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/log.8
+2022-09-11 09:17:57,969 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.5
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.5
+2022-09-11 09:17:57,970 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.2
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.2
+2022-09-11 09:17:57,971 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.3
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.3
+2022-09-11 09:17:57,972 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.4
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.4
+2022-09-11 09:17:57,974 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.8
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.8
+2022-09-11 09:17:57,984 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.1
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.1
+2022-09-11 09:17:57,985 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.6
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.6
+2022-09-11 09:17:57,986 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.7
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.7
+2022-09-11 09:17:57,986 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.0
+2022-09-11 09:17:57,987 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.9
+Removing file: 2022年9月11日 上午9:17:57	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test1427650823353100012.junit.dir/dataLogDir/version-2/snapshot.9
+2022-09-11 09:17:58,101 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeTxnLogWithoutDataDir() throws java.lang.Exception]
+2022-09-11 09:17:58,106 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testFindNValidSnapshots() throws java.lang.Exception]
+2022-09-11 09:17:58,110 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:17:58,428 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testFindNValidSnapshots() throws java.lang.Exception]
+2022-09-11 09:17:58,431 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesEqualsToRetain() throws java.lang.Exception]
+2022-09-11 09:17:58,438 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:17:58,443 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesEqualsToRetain() throws java.lang.Exception]
+2022-09-11 09:17:58,447 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeDoesNotDeleteOverlappingLogFile() throws java.lang.Exception]
+2022-09-11 09:17:58,449 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:17:58,450 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:17:58,451 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:17:58,451 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:17:58,451 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:17:58,451 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:17:58,451 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:17:58,452 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:17:58,452 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:17:58,452 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:17:58,452 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:17:58,452 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:17:58,452 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:17:58,453 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:17:58,453 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:17:58,453 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:17:58,453 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:17:58,453 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:17:58,454 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:17:58,454 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2
+2022-09-11 09:17:58,454 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:17:58,454 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:17:58,455 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:17:58,455 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:30073
+2022-09-11 09:17:58,476 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:17:58,476 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.0
+2022-09-11 09:17:58,477 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 1 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:17:58,478 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.0
+2022-09-11 09:17:58,483 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 5 ms
+2022-09-11 09:17:58,485 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:17:58,485 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 30073
+2022-09-11 09:17:58,488 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:54254
+2022-09-11 09:17:58,488 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:17:58,489 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:30073 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@64c63c79
+2022-09-11 09:17:58,489 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:17:58,490 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:17:58,493 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:17:58,493 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:17:58,494 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:54256, server: localhost/127.0.0.1:30073
+2022-09-11 09:17:58,495 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:17:58,512 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:30073, session id = 0x10000e20fd00000, negotiated timeout = 30000
+2022-09-11 09:18:00,305 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:18:00,972 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x65 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.65
+2022-09-11 09:18:00,973 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:03,343 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xc9 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.c9
+2022-09-11 09:18:03,345 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:05,748 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x12d to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.12d
+2022-09-11 09:18:05,770 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 23 ms
+2022-09-11 09:18:08,002 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e20fd00000
+2022-09-11 09:18:08,002 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e20fd00000 closed
+2022-09-11 09:18:08,002 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:18:08,003 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:30073:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:18:08,003 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:18:08,003 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:18:08,003 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:18:08,004 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:18:08,004 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:18:08,004 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:18:08,004 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:18:08,004 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:18:08,004 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:18:08,004 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:18:08,004 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:18:08,010 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 30073
+2022-09-11 09:18:08,011 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:08,013 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:17:58	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:17:58	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.0
+2022-09-11 09:18:08,013 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:08,014 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:08,014 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:08,014 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:18:08,014 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:18:08,015 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:18:08,015 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:18:08,015 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:18:08,015 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:18:08,015 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:18:08,015 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:18:08,015 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:18:08,016 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:18:08,016 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:18:08,016 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:18:08,016 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:18:08,016 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:18:08,016 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:18:08,017 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:18:08,017 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2
+2022-09-11 09:18:08,017 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:18:08,017 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:18:08,017 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:18:08,018 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:30073
+2022-09-11 09:18:08,019 [myid:] - INFO  [main:o.a.z.s.p.FileSnap@85] - Reading snapshot /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.12d
+2022-09-11 09:18:08,024 [myid:] - INFO  [main:o.a.z.s.DataTree@1705] - The digest in the snapshot has digest version of 2, with zxid as 0x12d, and digest value as 607574811967
+2022-09-11 09:18:08,031 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@372] - 101 txns loaded in 4 ms
+2022-09-11 09:18:08,032 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 12 ms, highest zxid is 0x192, digest is 803127827617
+2022-09-11 09:18:08,032 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x192 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4298192357213113254.junit.dir/version-2/snapshot.192
+2022-09-11 09:18:08,033 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 1 ms
+2022-09-11 09:18:08,036 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:18:08,038 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:30073 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@6bffbc6d
+2022-09-11 09:18:08,038 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:18:08,039 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:18:08,041 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:18:08,041 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:18:08,041 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:54422, server: localhost/127.0.0.1:30073
+2022-09-11 09:18:08,043 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.193
+2022-09-11 09:18:08,068 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:30073, session id = 0x10000e235190000, negotiated timeout = 30000
+2022-09-11 09:18:08,072 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:18:08,073 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:18:08,073 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:30073:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:18:08,074 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:18:08,075 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:18:08,076 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:18:08,076 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:18:08,076 [myid:127.0.0.1:30073] - WARN  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1285] - Session 0x10000e235190000 for server localhost/127.0.0.1:30073, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000e235190000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:18:08,076 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:18:08,077 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:18:08,077 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:18:08,077 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:18:08,077 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:18:08,077 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:18:08,090 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeDoesNotDeleteOverlappingLogFile() throws java.lang.Exception]
+2022-09-11 09:18:08,094 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeTxnLogWhenRecentSnapshotsAreAllInvalid() throws java.lang.Exception]
+2022-09-11 09:18:08,216 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:08,219 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.3
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.3
+2022-09-11 09:18:08,224 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.2
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.2
+2022-09-11 09:18:08,225 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.0
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.0
+2022-09-11 09:18:08,228 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.1
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataLogDir/version-2/log.1
+2022-09-11 09:18:08,229 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.2
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.2
+2022-09-11 09:18:08,229 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.3
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.3
+2022-09-11 09:18:08,230 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.1
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.1
+2022-09-11 09:18:08,231 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test715038916803461389.junit.dir/dataDir/version-2/snapshot.0
+2022-09-11 09:18:08,234 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeTxnLogWhenRecentSnapshotsAreAllInvalid() throws java.lang.Exception]
+2022-09-11 09:18:08,238 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesGreaterThanToRetain() throws java.lang.Exception]
+2022-09-11 09:18:08,267 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:08,269 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test8605160747680788327.junit.dir/version-2/log.1
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test8605160747680788327.junit.dir/version-2/log.1
+2022-09-11 09:18:08,269 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test8605160747680788327.junit.dir/version-2/snapshot.2
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test8605160747680788327.junit.dir/version-2/snapshot.2
+2022-09-11 09:18:08,270 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test8605160747680788327.junit.dir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test8605160747680788327.junit.dir/version-2/snapshot.0
+2022-09-11 09:18:08,273 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesGreaterThanToRetain() throws java.lang.Exception]
+2022-09-11 09:18:08,276 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesEqualsToRetainWithPrecedingLog() throws java.lang.Exception]
+2022-09-11 09:18:08,283 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:08,286 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesEqualsToRetainWithPrecedingLog() throws java.lang.Exception]
+2022-09-11 09:18:08,288 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeWhenLogRollingInProgress() throws java.lang.Exception]
+2022-09-11 09:18:08,290 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:08,290 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:08,291 [myid:] - INFO  [main:o.a.z.s.w.WatchManagerFactory@42] - Using org.apache.zookeeper.server.watch.WatchManager as watch manager
+2022-09-11 09:18:08,291 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@132] - zookeeper.snapshotSizeFactor = 0.33
+2022-09-11 09:18:08,292 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@152] - zookeeper.commitLogCount=500
+2022-09-11 09:18:08,292 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1306] - minSessionTimeout set to 6000 ms
+2022-09-11 09:18:08,292 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1315] - maxSessionTimeout set to 60000 ms
+2022-09-11 09:18:08,292 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getData response cache size is initialized with value 400.
+2022-09-11 09:18:08,293 [myid:] - INFO  [main:o.a.z.s.ResponseCache@45] - getChildren response cache size is initialized with value 400.
+2022-09-11 09:18:08,293 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@109] - zookeeper.pathStats.slotCapacity = 60
+2022-09-11 09:18:08,294 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@110] - zookeeper.pathStats.slotDuration = 15
+2022-09-11 09:18:08,294 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@111] - zookeeper.pathStats.maxDepth = 6
+2022-09-11 09:18:08,297 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@112] - zookeeper.pathStats.initialDelay = 5
+2022-09-11 09:18:08,297 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@113] - zookeeper.pathStats.delay = 5
+2022-09-11 09:18:08,300 [myid:] - INFO  [main:o.a.z.s.u.RequestPathMetricsCollector@114] - zookeeper.pathStats.enabled = false
+2022-09-11 09:18:08,312 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1531] - The max bytes for all large requests are set to 104857600
+2022-09-11 09:18:08,313 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@1545] - The large request threshold is set to -1
+2022-09-11 09:18:08,314 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@66] - zookeeper.enforce.auth.enabled = false
+2022-09-11 09:18:08,314 [myid:] - INFO  [main:o.a.z.s.AuthenticationHelper@67] - zookeeper.enforce.auth.schemes = []
+2022-09-11 09:18:08,314 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@376] - Created server with tickTime 3000 ms minSessionTimeout 6000 ms maxSessionTimeout 60000 ms clientPortListenBacklog -1 datadir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2 snapdir /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2
+2022-09-11 09:18:08,314 [myid:] - INFO  [main:o.a.z.s.ServerCnxnFactory@169] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-09-11 09:18:08,314 [myid:] - WARN  [main:o.a.z.s.ServerCnxnFactory@309] - maxCnxns is not configured, using default value 0.
+2022-09-11 09:18:08,315 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@652] - Configuring NIO connection handler with 10s sessionless connection timeout, 1 selector thread(s), 8 worker threads, and 64 kB direct buffers.
+2022-09-11 09:18:08,316 [myid:] - INFO  [main:o.a.z.s.NIOServerCnxnFactory@660] - binding to port 0.0.0.0/0.0.0.0:30073
+2022-09-11 09:18:08,327 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@260] - Initialize file found, an empty database will not block voting participation
+2022-09-11 09:18:08,328 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.0
+2022-09-11 09:18:08,328 [myid:] - INFO  [main:o.a.z.s.ZKDatabase@289] - Snapshot loaded in 11 ms, highest zxid is 0x0, digest is 1371985504
+2022-09-11 09:18:08,329 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.0
+2022-09-11 09:18:08,339 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 10 ms
+2022-09-11 09:18:08,340 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@138] - PrepRequestProcessor (sid:0) started, reconfigEnabled=false
+2022-09-11 09:18:08,341 [myid:] - INFO  [main:o.a.z.c.FourLetterWordMain@94] - connecting to 127.0.0.1 30073
+2022-09-11 09:18:08,346 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.NIOServerCnxn@525] - Processing stat command from /127.0.0.1:54429
+2022-09-11 09:18:08,346 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.c.StatCommand@52] - Stat command output
+2022-09-11 09:18:08,347 [myid:] - INFO  [main:o.a.z.ZooKeeper@657] - Initiating client connection, connectString=127.0.0.1:30073 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@55493582
+2022-09-11 09:18:08,348 [myid:] - INFO  [main:o.a.z.ClientCnxnSocket@233] - jute.maxbuffer value is 1048575 Bytes
+2022-09-11 09:18:08,348 [myid:] - INFO  [main:o.a.z.ClientCnxn@1720] - zookeeper.request.timeout value is 0. feature enabled=false
+2022-09-11 09:18:08,350 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:18:08,350 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:18:08,351 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:54430, server: localhost/127.0.0.1:30073
+2022-09-11 09:18:08,352 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1
+2022-09-11 09:18:08,372 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1431] - Session establishment complete on server localhost/127.0.0.1:30073, session id = 0x10000e236490000, negotiated timeout = 30000
+2022-09-11 09:18:08,602 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xe to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.e
+2022-09-11 09:18:08,624 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.11
+2022-09-11 09:18:08,626 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 24 ms
+2022-09-11 09:18:08,820 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x1f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1f
+2022-09-11 09:18:08,820 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.21
+2022-09-11 09:18:08,821 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 0 ms
+2022-09-11 09:18:09,119 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x34 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.34
+2022-09-11 09:18:09,138 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.36
+2022-09-11 09:18:09,140 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 20 ms
+2022-09-11 09:18:09,307 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:18:09,308 [myid:] - INFO  [SessionTracker:o.a.z.s.SessionTrackerImpl@176] - SessionTrackerImpl exited loop!
+2022-09-11 09:18:09,351 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x47 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.47
+2022-09-11 09:18:09,351 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.49
+2022-09-11 09:18:09,352 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 1 ms
+2022-09-11 09:18:09,728 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:18:09,728 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:18:09,729 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:54443, server: localhost/127.0.0.1:30073
+2022-09-11 09:18:09,729 [myid:] - INFO  [NIOWorkerThread-1:o.a.z.s.ZooKeeperServer@1424] - Refusing session request for client /127.0.0.1:54443 as it has seen zxid 0x193 our last zxid is 0x60 client must try another server
+2022-09-11 09:18:09,730 [myid:127.0.0.1:30073] - WARN  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1285] - Session 0x10000e235190000 for server localhost/127.0.0.1:30073, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000e235190000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:18:09,760 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.65
+2022-09-11 09:18:09,760 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x63 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.63
+2022-09-11 09:18:09,806 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 46 ms
+2022-09-11 09:18:09,916 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.75
+2022-09-11 09:18:09,916 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x72 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.72
+2022-09-11 09:18:09,935 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 19 ms
+2022-09-11 09:18:10,150 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.8c
+2022-09-11 09:18:10,150 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x8a to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.8a
+2022-09-11 09:18:10,152 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:10,563 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xa4 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.a4
+2022-09-11 09:18:10,586 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.a6
+2022-09-11 09:18:10,596 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 33 ms
+2022-09-11 09:18:10,763 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xb4 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.b4
+2022-09-11 09:18:10,787 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.b7
+2022-09-11 09:18:10,807 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 43 ms
+2022-09-11 09:18:11,077 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xcb to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.cb
+2022-09-11 09:18:11,098 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.ce
+2022-09-11 09:18:11,119 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 41 ms
+2022-09-11 09:18:11,372 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xe5 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.e5
+2022-09-11 09:18:11,391 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.e8
+2022-09-11 09:18:11,392 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 20 ms
+2022-09-11 09:18:11,599 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.101
+2022-09-11 09:18:11,600 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0xff to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.ff
+2022-09-11 09:18:11,621 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 21 ms
+2022-09-11 09:18:11,701 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:18:11,701 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:18:11,702 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:54527, server: localhost/127.0.0.1:30073
+2022-09-11 09:18:11,702 [myid:] - INFO  [NIOWorkerThread-2:o.a.z.s.ZooKeeperServer@1424] - Refusing session request for client /127.0.0.1:54527 as it has seen zxid 0x193 our last zxid is 0x105 client must try another server
+2022-09-11 09:18:11,703 [myid:127.0.0.1:30073] - WARN  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1285] - Session 0x10000e235190000 for server localhost/127.0.0.1:30073, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000e235190000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:18:11,917 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.116
+2022-09-11 09:18:11,918 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x114 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.114
+2022-09-11 09:18:12,012 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 94 ms
+2022-09-11 09:18:12,172 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x124 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.124
+2022-09-11 09:18:12,191 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.127
+2022-09-11 09:18:12,208 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 35 ms
+2022-09-11 09:18:12,451 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x138 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.138
+2022-09-11 09:18:12,472 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.13a
+2022-09-11 09:18:12,535 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 84 ms
+2022-09-11 09:18:12,829 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x151 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.151
+2022-09-11 09:18:12,848 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.153
+2022-09-11 09:18:12,875 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 45 ms
+2022-09-11 09:18:13,020 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.167
+2022-09-11 09:18:13,020 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x165 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.165
+2022-09-11 09:18:13,022 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:13,085 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:18:13,085 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:18:13,085 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:54566, server: localhost/127.0.0.1:30073
+2022-09-11 09:18:13,086 [myid:] - INFO  [NIOWorkerThread-2:o.a.z.s.ZooKeeperServer@1424] - Refusing session request for client /127.0.0.1:54566 as it has seen zxid 0x193 our last zxid is 0x168 client must try another server
+2022-09-11 09:18:13,086 [myid:127.0.0.1:30073] - WARN  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1285] - Session 0x10000e235190000 for server localhost/127.0.0.1:30073, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000e235190000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:18:13,305 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.17a
+2022-09-11 09:18:13,306 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x178 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.178
+2022-09-11 09:18:13,308 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:13,586 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x18c to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.18c
+2022-09-11 09:18:13,607 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.18e
+2022-09-11 09:18:13,656 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 69 ms
+2022-09-11 09:18:13,909 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x1a7 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1a7
+2022-09-11 09:18:13,921 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 12 ms
+2022-09-11 09:18:13,930 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1a9
+2022-09-11 09:18:14,195 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1162] - Opening socket connection to server localhost/127.0.0.1:30073.
+2022-09-11 09:18:14,195 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1164] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+2022-09-11 09:18:14,196 [myid:127.0.0.1:30073] - INFO  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@996] - Socket connection established, initiating session, client: /127.0.0.1:54583, server: localhost/127.0.0.1:30073
+2022-09-11 09:18:14,198 [myid:] - INFO  [NIOWorkerThread-5:o.a.z.s.ZooKeeperServer@1096] - Invalid session 0x10000e235190000 for client /127.0.0.1:54583, probably expired
+2022-09-11 09:18:14,200 [myid:127.0.0.1:30073] - WARN  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1416] - Unable to reconnect to ZooKeeper service, session 0x10000e235190000 has expired
+2022-09-11 09:18:14,201 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e235190000
+2022-09-11 09:18:14,201 [myid:127.0.0.1:30073] - WARN  [main-SendThread(127.0.0.1:30073):o.a.z.ClientCnxn$SendThread@1285] - Session 0x10000e235190000 for server localhost/127.0.0.1:30073, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x10000e235190000 has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1417)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:148)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1274)
+2022-09-11 09:18:14,270 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x1c3 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1c3
+2022-09-11 09:18:14,288 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1c6
+2022-09-11 09:18:14,313 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 43 ms
+2022-09-11 09:18:14,464 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1dc
+2022-09-11 09:18:14,465 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x1da to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1da
+2022-09-11 09:18:14,466 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:14,741 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x1ef to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1ef
+2022-09-11 09:18:14,759 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.1f2
+2022-09-11 09:18:14,842 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 101 ms
+2022-09-11 09:18:15,215 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.20f
+2022-09-11 09:18:15,215 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x20d to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.20d
+2022-09-11 09:18:15,246 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 31 ms
+2022-09-11 09:18:15,503 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x221 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.221
+2022-09-11 09:18:15,523 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.223
+2022-09-11 09:18:15,551 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 49 ms
+2022-09-11 09:18:15,955 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x23b to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.23b
+2022-09-11 09:18:15,984 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.23e
+2022-09-11 09:18:16,031 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 75 ms
+2022-09-11 09:18:16,271 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.24f
+2022-09-11 09:18:16,271 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x24d to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.24d
+2022-09-11 09:18:16,368 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 97 ms
+2022-09-11 09:18:16,562 [myid:] - INFO  [Thread-0:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:16,567 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1dc
+Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1dc
+2022-09-11 09:18:16,590 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1a9
+Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1a9
+2022-09-11 09:18:16,604 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.101
+Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.101
+2022-09-11 09:18:16,626 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.13a
+Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.13a
+2022-09-11 09:18:16,639 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.153
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.153
+2022-09-11 09:18:16,654 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.11
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.11
+2022-09-11 09:18:16,684 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.18e
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.18e
+2022-09-11 09:18:16,710 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.17a
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.17a
+2022-09-11 09:18:16,722 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x262 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.262
+2022-09-11 09:18:16,751 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.265
+2022-09-11 09:18:16,753 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.21
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.21
+2022-09-11 09:18:16,799 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.75
+Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.75
+2022-09-11 09:18:16,815 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1
+2022-09-11 09:18:16,830 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.b7
+Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.b7
+2022-09-11 09:18:16,846 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 124 ms
+2022-09-11 09:18:16,846 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.a6
+Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.a6
+2022-09-11 09:18:16,847 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.167
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.167
+2022-09-11 09:18:16,848 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.36
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.36
+2022-09-11 09:18:16,849 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.65
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.65
+2022-09-11 09:18:16,849 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.8c
+Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.8c
+2022-09-11 09:18:16,850 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.116
+Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.116
+2022-09-11 09:18:16,851 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.49
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.49
+2022-09-11 09:18:16,852 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.127
+Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.127
+2022-09-11 09:18:16,852 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:15	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1f2
+Removing file: 2022年9月11日 上午9:18:15	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1f2
+2022-09-11 09:18:16,853 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1c6
+Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.1c6
+2022-09-11 09:18:16,854 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.e8
+Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.e8
+2022-09-11 09:18:16,855 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.ce
+Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/log.ce
+2022-09-11 09:18:16,855 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1da
+Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1da
+2022-09-11 09:18:16,856 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.47
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.47
+2022-09-11 09:18:16,856 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.151
+Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.151
+2022-09-11 09:18:16,857 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.cb
+Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.cb
+2022-09-11 09:18:16,857 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.ff
+Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.ff
+2022-09-11 09:18:16,864 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.e
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.e
+2022-09-11 09:18:16,865 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.63
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.63
+2022-09-11 09:18:16,866 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:15	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.20d
+Removing file: 2022年9月11日 上午9:18:15	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.20d
+2022-09-11 09:18:16,866 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1f
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1f
+2022-09-11 09:18:16,867 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1a7
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1a7
+2022-09-11 09:18:16,868 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.72
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.72
+2022-09-11 09:18:16,870 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.8a
+Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.8a
+2022-09-11 09:18:16,872 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.e5
+Removing file: 2022年9月11日 上午9:18:11	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.e5
+2022-09-11 09:18:16,874 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.165
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.165
+2022-09-11 09:18:16,875 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.138
+Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.138
+2022-09-11 09:18:16,876 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.114
+Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.114
+2022-09-11 09:18:16,876 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.178
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.178
+2022-09-11 09:18:16,877 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.a4
+Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.a4
+2022-09-11 09:18:16,877 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.18c
+Removing file: 2022年9月11日 上午9:18:13	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.18c
+2022-09-11 09:18:16,878 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.124
+Removing file: 2022年9月11日 上午9:18:12	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.124
+2022-09-11 09:18:16,879 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.b4
+Removing file: 2022年9月11日 上午9:18:10	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.b4
+2022-09-11 09:18:16,879 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.34
+Removing file: 2022年9月11日 上午9:18:09	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.34
+2022-09-11 09:18:16,880 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:18:08	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.0
+2022-09-11 09:18:16,881 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1c3
+Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1c3
+2022-09-11 09:18:16,881 [myid:] - INFO  [Thread-0:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1ef
+Removing file: 2022年9月11日 上午9:18:14	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.1ef
+2022-09-11 09:18:17,342 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.282
+2022-09-11 09:18:17,342 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x27f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.27f
+2022-09-11 09:18:17,426 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 83 ms
+2022-09-11 09:18:17,728 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.29d
+2022-09-11 09:18:17,728 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x29b to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.29b
+2022-09-11 09:18:17,821 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 93 ms
+2022-09-11 09:18:18,044 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.2b2
+2022-09-11 09:18:18,044 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x2b0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.2b0
+2022-09-11 09:18:18,160 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 115 ms
+2022-09-11 09:18:18,193 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.2c5
+2022-09-11 09:18:18,194 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x2c2 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.2c2
+2022-09-11 09:18:18,324 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 130 ms
+2022-09-11 09:18:18,461 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.2da
+2022-09-11 09:18:18,461 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x2d8 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.2d8
+2022-09-11 09:18:18,464 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:18,742 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.2ed
+2022-09-11 09:18:18,743 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x2eb to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.2eb
+2022-09-11 09:18:18,745 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:19,041 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x302 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.302
+2022-09-11 09:18:19,061 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.304
+2022-09-11 09:18:19,138 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 97 ms
+2022-09-11 09:18:19,206 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.317
+2022-09-11 09:18:19,206 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x315 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.315
+2022-09-11 09:18:19,208 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:19,447 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x32a to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.32a
+2022-09-11 09:18:19,460 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 12 ms
+2022-09-11 09:18:19,468 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.32d
+2022-09-11 09:18:19,831 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.349
+2022-09-11 09:18:19,831 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x347 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.347
+2022-09-11 09:18:19,834 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:20,070 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.35d
+2022-09-11 09:18:20,070 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x35b to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.35b
+2022-09-11 09:18:20,072 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:20,217 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.370
+2022-09-11 09:18:20,217 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x36d to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.36d
+2022-09-11 09:18:20,219 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:20,356 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x37f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.37f
+2022-09-11 09:18:20,374 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.383
+2022-09-11 09:18:20,463 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 107 ms
+2022-09-11 09:18:20,589 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.395
+2022-09-11 09:18:20,589 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x393 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.393
+2022-09-11 09:18:20,591 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:20,861 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.3ad
+2022-09-11 09:18:20,861 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x3ab to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.3ab
+2022-09-11 09:18:20,863 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 2 ms
+2022-09-11 09:18:21,078 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.3c9
+2022-09-11 09:18:21,078 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x3c6 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.3c6
+2022-09-11 09:18:21,081 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:21,283 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.3e3
+2022-09-11 09:18:21,283 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x3e1 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.3e1
+2022-09-11 09:18:21,286 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:21,396 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x3f0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.3f0
+2022-09-11 09:18:21,414 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.3f4
+2022-09-11 09:18:21,505 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 110 ms
+2022-09-11 09:18:21,701 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.40b
+2022-09-11 09:18:21,701 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x409 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.409
+2022-09-11 09:18:21,704 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:21,943 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x422 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.422
+2022-09-11 09:18:21,962 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.425
+2022-09-11 09:18:22,079 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 136 ms
+2022-09-11 09:18:22,257 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.43c
+2022-09-11 09:18:22,258 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x43a to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.43a
+2022-09-11 09:18:22,401 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 143 ms
+2022-09-11 09:18:22,539 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x44b to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.44b
+2022-09-11 09:18:22,556 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.44d
+2022-09-11 09:18:22,559 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 20 ms
+2022-09-11 09:18:22,886 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x45f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.45f
+2022-09-11 09:18:22,903 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.462
+2022-09-11 09:18:22,927 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 41 ms
+2022-09-11 09:18:23,093 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.473
+2022-09-11 09:18:23,093 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x470 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.470
+2022-09-11 09:18:23,247 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 154 ms
+2022-09-11 09:18:23,499 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.490
+2022-09-11 09:18:23,499 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x48e to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.48e
+2022-09-11 09:18:23,519 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 20 ms
+2022-09-11 09:18:23,949 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.4ae
+2022-09-11 09:18:23,950 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x4ac to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.4ac
+2022-09-11 09:18:24,189 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 239 ms
+2022-09-11 09:18:24,244 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x4bd to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.4bd
+2022-09-11 09:18:24,256 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 12 ms
+2022-09-11 09:18:24,263 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.4bf
+2022-09-11 09:18:24,477 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.4d8
+2022-09-11 09:18:24,478 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x4d6 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.4d6
+2022-09-11 09:18:24,481 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:24,618 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x4e5 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.4e5
+2022-09-11 09:18:24,641 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.4e9
+2022-09-11 09:18:24,745 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 127 ms
+2022-09-11 09:18:24,859 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x4fb to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.4fb
+2022-09-11 09:18:24,884 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.4fe
+2022-09-11 09:18:24,945 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 86 ms
+2022-09-11 09:18:25,054 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x512 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.512
+2022-09-11 09:18:25,074 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.516
+2022-09-11 09:18:25,099 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 45 ms
+2022-09-11 09:18:25,204 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x524 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.524
+2022-09-11 09:18:25,223 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.528
+2022-09-11 09:18:25,268 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 64 ms
+2022-09-11 09:18:25,433 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.544
+2022-09-11 09:18:25,433 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x542 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.542
+2022-09-11 09:18:25,437 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:25,815 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.561
+2022-09-11 09:18:25,815 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x55f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.55f
+2022-09-11 09:18:25,818 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:26,123 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x575 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.575
+2022-09-11 09:18:26,142 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.577
+2022-09-11 09:18:26,228 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 105 ms
+2022-09-11 09:18:26,476 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.58e
+2022-09-11 09:18:26,476 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x58c to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.58c
+2022-09-11 09:18:26,479 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:26,780 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.5a4
+2022-09-11 09:18:26,780 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x5a2 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.5a2
+2022-09-11 09:18:26,785 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 5 ms
+2022-09-11 09:18:27,116 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x5b9 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.5b9
+2022-09-11 09:18:27,136 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.5bb
+2022-09-11 09:18:27,377 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 261 ms
+2022-09-11 09:18:27,462 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.5d5
+2022-09-11 09:18:27,462 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x5d3 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.5d3
+2022-09-11 09:18:27,639 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 177 ms
+2022-09-11 09:18:27,878 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x5e8 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.5e8
+2022-09-11 09:18:27,889 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 11 ms
+2022-09-11 09:18:27,900 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.5ea
+2022-09-11 09:18:28,252 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.600
+2022-09-11 09:18:28,252 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x5fe to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.5fe
+2022-09-11 09:18:28,257 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 5 ms
+2022-09-11 09:18:28,646 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.61c
+2022-09-11 09:18:28,646 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x61a to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.61a
+2022-09-11 09:18:28,650 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 5 ms
+2022-09-11 09:18:28,879 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.638
+2022-09-11 09:18:28,880 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x635 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.635
+2022-09-11 09:18:28,883 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:29,197 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.656
+2022-09-11 09:18:29,197 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x654 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.654
+2022-09-11 09:18:29,279 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 82 ms
+2022-09-11 09:18:29,637 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x66f to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.66f
+2022-09-11 09:18:29,641 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:29,651 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.671
+2022-09-11 09:18:29,923 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.684
+2022-09-11 09:18:29,923 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x682 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.682
+2022-09-11 09:18:30,045 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 122 ms
+2022-09-11 09:18:30,266 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.69f
+2022-09-11 09:18:30,266 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x69d to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.69d
+2022-09-11 09:18:30,289 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 23 ms
+2022-09-11 09:18:30,553 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x6b7 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.6b7
+2022-09-11 09:18:30,567 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 14 ms
+2022-09-11 09:18:30,572 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.6b9
+2022-09-11 09:18:30,815 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x6cd to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.6cd
+2022-09-11 09:18:30,842 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.6d0
+2022-09-11 09:18:30,956 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 142 ms
+2022-09-11 09:18:31,100 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x6df to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.6df
+2022-09-11 09:18:31,121 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.6e2
+2022-09-11 09:18:31,150 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 50 ms
+2022-09-11 09:18:31,297 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x6f0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.6f0
+2022-09-11 09:18:31,304 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 7 ms
+2022-09-11 09:18:31,313 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.6f2
+2022-09-11 09:18:31,640 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.70b
+2022-09-11 09:18:31,640 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x709 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.709
+2022-09-11 09:18:31,644 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:31,902 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x722 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.722
+2022-09-11 09:18:31,920 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.726
+2022-09-11 09:18:31,949 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 47 ms
+2022-09-11 09:18:32,148 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.73f
+2022-09-11 09:18:32,148 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x73d to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.73d
+2022-09-11 09:18:32,199 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 51 ms
+2022-09-11 09:18:32,328 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.754
+2022-09-11 09:18:32,328 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x752 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.752
+2022-09-11 09:18:32,332 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:32,538 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x76d to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.76d
+2022-09-11 09:18:32,557 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.771
+2022-09-11 09:18:32,558 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 20 ms
+2022-09-11 09:18:32,739 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.78e
+2022-09-11 09:18:32,739 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x78b to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.78b
+2022-09-11 09:18:32,743 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:32,932 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x7a3 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.7a3
+2022-09-11 09:18:32,955 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 22 ms
+2022-09-11 09:18:32,963 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.7a7
+2022-09-11 09:18:33,141 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.7ba
+2022-09-11 09:18:33,141 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x7b8 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.7b8
+2022-09-11 09:18:33,145 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:33,330 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.7d3
+2022-09-11 09:18:33,330 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x7d0 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.7d0
+2022-09-11 09:18:33,334 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 3 ms
+2022-09-11 09:18:33,569 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.7f0
+2022-09-11 09:18:33,570 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x7ee to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.7ee
+2022-09-11 09:18:33,574 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 4 ms
+2022-09-11 09:18:33,952 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.80c
+2022-09-11 09:18:33,952 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x80a to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.80a
+2022-09-11 09:18:33,956 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 5 ms
+2022-09-11 09:18:34,264 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.825
+2022-09-11 09:18:34,264 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x823 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.823
+2022-09-11 09:18:34,289 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 25 ms
+2022-09-11 09:18:34,658 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x83a to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.83a
+2022-09-11 09:18:34,673 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 16 ms
+2022-09-11 09:18:34,681 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.83d
+2022-09-11 09:18:35,079 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x857 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.857
+2022-09-11 09:18:35,100 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.85a
+2022-09-11 09:18:35,273 [myid:] - WARN  [SyncThread:0:o.a.z.s.SyncRequestProcessor@188] - Too busy to snap, skipping
+2022-09-11 09:18:35,296 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.872
+2022-09-11 09:18:35,409 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 330 ms
+2022-09-11 09:18:35,626 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.888
+2022-09-11 09:18:35,626 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x886 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.886
+2022-09-11 09:18:35,662 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 36 ms
+2022-09-11 09:18:35,854 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x89a to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.89a
+2022-09-11 09:18:35,854 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.89d
+2022-09-11 09:18:35,896 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 42 ms
+2022-09-11 09:18:36,299 [myid:] - INFO  [SyncThread:0:o.a.z.s.p.FileTxnLog@285] - Creating new log file: log.8bb
+2022-09-11 09:18:36,300 [myid:] - INFO  [Snapshot Thread:o.a.z.s.p.FileTxnSnapLog@479] - Snapshotting: 0x8b9 to /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test4926940649514646342.junit.dir/version-2/snapshot.8b9
+2022-09-11 09:18:36,328 [myid:] - INFO  [Snapshot Thread:o.a.z.s.ZooKeeperServer@558] - Snapshot taken in 29 ms
+2022-09-11 09:18:37,636 [myid:] - INFO  [main-EventThread:o.a.z.ClientCnxn$EventThread@553] - EventThread shut down for session: 0x10000e236490000
+2022-09-11 09:18:37,636 [myid:] - INFO  [main:o.a.z.ZooKeeper@1288] - Session: 0x10000e236490000 closed
+2022-09-11 09:18:37,636 [myid:] - INFO  [ConnnectionExpirer:o.a.z.s.NIOServerCnxnFactory$ConnectionExpirerThread@564] - ConnnectionExpirerThread interrupted
+2022-09-11 09:18:37,637 [myid:] - INFO  [NIOServerCxnFactory.AcceptThread:0.0.0.0/0.0.0.0:30073:o.a.z.s.NIOServerCnxnFactory$AcceptThread@195] - accept thread exitted run method
+2022-09-11 09:18:37,637 [myid:] - INFO  [NIOServerCxnFactory.SelectorThread-0:o.a.z.s.NIOServerCnxnFactory$SelectorThread@397] - selector thread exitted run method
+2022-09-11 09:18:37,637 [myid:] - INFO  [main:o.a.z.s.ZooKeeperServer@850] - shutting down
+2022-09-11 09:18:37,638 [myid:] - INFO  [main:o.a.z.s.RequestThrottler@258] - Shutting down
+2022-09-11 09:18:37,638 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@219] - Draining request throttler queue
+2022-09-11 09:18:37,638 [myid:] - INFO  [RequestThrottler:o.a.z.s.RequestThrottler@195] - RequestThrottler shutdown. Dropped 0 requests
+2022-09-11 09:18:37,638 [myid:] - INFO  [main:o.a.z.s.SessionTrackerImpl@253] - Shutting down
+2022-09-11 09:18:37,638 [myid:] - INFO  [main:o.a.z.s.PrepRequestProcessor@1064] - Shutting down
+2022-09-11 09:18:37,638 [myid:] - INFO  [main:o.a.z.s.SyncRequestProcessor@255] - Shutting down
+2022-09-11 09:18:37,638 [myid:] - INFO  [ProcessThread(sid:0 cport:30073)::o.a.z.s.PrepRequestProcessor@162] - PrepRequestProcessor exited loop!
+2022-09-11 09:18:37,638 [myid:] - INFO  [SyncThread:0:o.a.z.s.SyncRequestProcessor@224] - SyncRequestProcessor exited!
+2022-09-11 09:18:37,638 [myid:] - INFO  [main:o.a.z.s.FinalRequestProcessor@681] - shutdown of request processor complete
+2022-09-11 09:18:37,761 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeWhenLogRollingInProgress() throws java.lang.Exception]
+2022-09-11 09:18:37,763 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesLessThanToRetain() throws java.lang.Exception]
+2022-09-11 09:18:37,811 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:37,812 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test16777181190180437044.junit.dir/version-2/log.1
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test16777181190180437044.junit.dir/version-2/log.1
+2022-09-11 09:18:37,812 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test16777181190180437044.junit.dir/version-2/snapshot.2
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test16777181190180437044.junit.dir/version-2/snapshot.2
+2022-09-11 09:18:37,813 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test16777181190180437044.junit.dir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test16777181190180437044.junit.dir/version-2/snapshot.0
+2022-09-11 09:18:37,815 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testSnapFilesLessThanToRetain() throws java.lang.Exception]
+2022-09-11 09:18:37,818 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeTxnLogWithDataDir() throws java.lang.Exception]
+2022-09-11 09:18:38,115 [myid:] - INFO  [main:o.a.z.s.p.FileTxnSnapLog@124] - zookeeper.snapshot.trust.empty : false
+2022-09-11 09:18:38,117 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.3
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.3
+2022-09-11 09:18:38,118 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.4
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.4
+2022-09-11 09:18:38,118 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.5
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.5
+2022-09-11 09:18:38,119 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.2
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.2
+2022-09-11 09:18:38,119 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.9
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.9
+2022-09-11 09:18:38,120 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.7
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.7
+2022-09-11 09:18:38,120 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.0
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.0
+2022-09-11 09:18:38,120 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.1
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.1
+2022-09-11 09:18:38,121 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.6
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.6
+2022-09-11 09:18:38,121 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.8
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataLogDir/version-2/log.8
+2022-09-11 09:18:38,122 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.5
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.5
+2022-09-11 09:18:38,123 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.2
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.2
+2022-09-11 09:18:38,123 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.3
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.3
+2022-09-11 09:18:38,124 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.4
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.4
+2022-09-11 09:18:38,124 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.8
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.8
+2022-09-11 09:18:38,125 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.1
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.1
+2022-09-11 09:18:38,127 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.6
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.6
+2022-09-11 09:18:38,127 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.7
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.7
+2022-09-11 09:18:38,130 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.0
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.0
+2022-09-11 09:18:38,131 [myid:] - INFO  [main:o.a.z.s.PurgeTxnLog@157] - Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.9
+Removing file: 2022年9月11日 上午9:18:37	/Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/test6930553740454543674.junit.dir/dataDir/version-2/snapshot.9
+2022-09-11 09:18:38,136 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.PurgeTxnTest.testPurgeTxnLogWithDataDir() throws java.lang.Exception]

@@ -1,0 +1,9 @@
+2022-09-11 09:14:40,818 [myid:] - INFO  [main:o.a.z.s.u.MessageTracker@110] - No buffered timestamps for messages receivedBuffer from 127.0.0.1
+2022-09-11 09:14:40,825 [myid:] - INFO  [main:o.a.z.s.u.MessageTracker@110] - No buffered timestamps for messages sentBuffer to 127.0.0.1
+2022-09-11 09:14:40,826 [myid:] - INFO  [main:o.a.z.s.u.MessageTracker@110] - No buffered timestamps for messages receivedBuffer from 127.0.0.1
+2022-09-11 09:14:40,827 [myid:] - WARN  [main:o.a.z.s.u.MessageTracker@112] - Last 1 timestamps for messages sentBuffer to 127.0.0.1:
+2022-09-11 09:14:40,828 [myid:] - WARN  [main:o.a.z.s.u.MessageTracker@114] - sentBuffer to 127.0.0.1  TimeStamp: 2022-09-11 09:14:40,814
+2022-09-11 09:14:40,828 [myid:] - WARN  [main:o.a.z.s.u.MessageTracker@112] - Last 1 timestamps for messages receivedBuffer from 127.0.0.1:
+2022-09-11 09:14:40,829 [myid:] - WARN  [main:o.a.z.s.u.MessageTracker@114] - receivedBuffer from 127.0.0.1  TimeStamp: 2022-09-11 09:14:40,814
+2022-09-11 09:14:40,829 [myid:] - WARN  [main:o.a.z.s.u.MessageTracker@112] - Last 1 timestamps for messages sentBuffer to 127.0.0.1:
+2022-09-11 09:14:40,830 [myid:] - WARN  [main:o.a.z.s.u.MessageTracker@114] - sentBuffer to 127.0.0.1  TimeStamp: 2022-09-11 09:14:40,814

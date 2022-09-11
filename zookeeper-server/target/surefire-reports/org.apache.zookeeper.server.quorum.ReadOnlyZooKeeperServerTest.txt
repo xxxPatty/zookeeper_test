@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.384 s - in org.apache.zookeeper.server.quorum.ReadOnlyZooKeeperServerTest

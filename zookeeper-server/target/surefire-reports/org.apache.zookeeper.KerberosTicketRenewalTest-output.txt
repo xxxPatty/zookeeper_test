@@ -1,0 +1,141 @@
+2022-09-11 09:22:02,907 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@225] - Configuration:
+2022-09-11 09:22:02,914 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@226] - ---------------------------------------------------------------
+2022-09-11 09:22:02,915 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.renewable.lifetime: 604800000
+2022-09-11 09:22:02,919 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   instance: DefaultKrbServer
+2022-09-11 09:22:02,920 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   debug: false
+2022-09-11 09:22:02,923 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.bind.address: localhost
+2022-09-11 09:22:02,925 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.ticket.lifetime: 5000
+2022-09-11 09:22:02,927 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   transport: TCP
+2022-09-11 09:22:02,927 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.name: EXAMPLE
+2022-09-11 09:22:02,927 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.domain: COM
+2022-09-11 09:22:02,928 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.port: 0
+2022-09-11 09:22:02,928 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   min.ticket.lifetime: 5000
+2022-09-11 09:22:02,928 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@230] - ---------------------------------------------------------------
+2022-09-11 09:22:03,361 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@284] - MiniKdc stated.
+2022-09-11 09:22:03,473 [myid:] - INFO  [main:o.a.z.c.X509Util@79] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/1abf8cc5-31b5-4524-825d-ef07efa66873 refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+2022-09-11 09:22:03,815 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:22:03,821 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+2022-09-11 09:22:04,118 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662859324115,zkclient/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+principal is zkclient/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:22:04,191 [myid:] - INFO  [main:o.a.z.Login@320] - ClientUsingKerberos successfully logged in.
+2022-09-11 09:22:04,196 [myid:] - INFO  [Thread-1:o.a.z.Login$1@133] - TGT refresh thread started.
+2022-09-11 09:22:04,217 [myid:] - INFO  [Thread-1:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:22:04 CST 2022
+2022-09-11 09:22:04,217 [myid:] - INFO  [Thread-1:o.a.z.Login@343] - TGT expires:                  Sun Sep 11 09:22:09 CST 2022
+2022-09-11 09:22:04,218 [myid:] - INFO  [Thread-1:o.a.z.Login$1@199] - TGT refresh sleeping until: Sun Sep 11 09:22:08 CST 2022
+2022-09-11 09:22:04,231 [myid:] - WARN  [Thread-1:o.a.z.Login$1@203] - TGT renewal thread has been interrupted and will exit.
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/1abf8cc5-31b5-4524-825d-ef07efa66873 refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+2022-09-11 09:22:04,300 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:22:04,301 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+2022-09-11 09:22:04,317 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662859324316,zkclient/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+principal is zkclient/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:22:04,324 [myid:] - INFO  [main:o.a.z.Login@320] - ClientUsingKerberos successfully logged in.
+2022-09-11 09:22:04,325 [myid:] - INFO  [Thread-2:o.a.z.Login$1@133] - TGT refresh thread started.
+2022-09-11 09:22:04,325 [myid:] - INFO  [Thread-2:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:22:04 CST 2022
+2022-09-11 09:22:04,326 [myid:] - INFO  [Thread-2:o.a.z.Login@343] - TGT expires:                  Sun Sep 11 09:22:09 CST 2022
+2022-09-11 09:22:04,326 [myid:] - INFO  [Thread-2:o.a.z.Login$1@199] - TGT refresh sleeping until: Sun Sep 11 09:22:08 CST 2022
+2022-09-11 09:22:08,072 [myid:] - INFO  [Thread-2:o.a.z.Login@429] - Initiating logout for zkclient/localhost@EXAMPLE.COM
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2022-09-11 09:22:08,072 [myid:] - INFO  [Thread-2:o.a.z.Login@438] - Initiating re-login for zkclient/localhost@EXAMPLE.COM
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/1abf8cc5-31b5-4524-825d-ef07efa66873 refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+2022-09-11 09:22:08,079 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:22:08,080 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+2022-09-11 09:22:08,095 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662859328094,zkclient/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+principal is zkclient/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:22:08,099 [myid:] - INFO  [Thread-2:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:22:08 CST 2022
+2022-09-11 09:22:08,099 [myid:] - INFO  [Thread-2:o.a.z.Login@343] - TGT expires:                  Sun Sep 11 09:22:13 CST 2022
+2022-09-11 09:22:08,100 [myid:] - INFO  [Thread-2:o.a.z.Login$1@199] - TGT refresh sleeping until: Sun Sep 11 09:22:12 CST 2022
+2022-09-11 09:22:08,186 [myid:] - WARN  [Thread-2:o.a.z.Login$1@203] - TGT renewal thread has been interrupted and will exit.
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/1abf8cc5-31b5-4524-825d-ef07efa66873 refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+2022-09-11 09:22:08,196 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:22:08,197 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+2022-09-11 09:22:08,213 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662859328212,zkclient/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+principal is zkclient/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:22:08,217 [myid:] - INFO  [main:o.a.z.Login@320] - ClientUsingKerberos successfully logged in.
+2022-09-11 09:22:08,217 [myid:] - INFO  [Thread-3:o.a.z.Login$1@133] - TGT refresh thread started.
+2022-09-11 09:22:08,218 [myid:] - INFO  [Thread-3:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:22:08 CST 2022
+2022-09-11 09:22:08,218 [myid:] - INFO  [Thread-3:o.a.z.Login@343] - TGT expires:                  Sun Sep 11 09:22:13 CST 2022
+2022-09-11 09:22:08,218 [myid:] - INFO  [Thread-3:o.a.z.Login$1@199] - TGT refresh sleeping until: Sun Sep 11 09:22:12 CST 2022
+2022-09-11 09:22:12,110 [myid:] - INFO  [Thread-3:o.a.z.Login@429] - Initiating logout for zkclient/localhost@EXAMPLE.COM
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2022-09-11 09:22:12,110 [myid:] - INFO  [Thread-3:o.a.z.Login@438] - Initiating re-login for zkclient/localhost@EXAMPLE.COM
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/1abf8cc5-31b5-4524-825d-ef07efa66873 refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+2022-09-11 09:22:12,117 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:22:12,118 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+2022-09-11 09:22:12,133 [myid:] - INFO  [pool-1-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662859332132,zkclient/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+principal is zkclient/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:22:12,136 [myid:] - INFO  [Thread-3:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:22:12 CST 2022
+2022-09-11 09:22:12,137 [myid:] - INFO  [Thread-3:o.a.z.Login@343] - TGT expires:                  Sun Sep 11 09:22:17 CST 2022
+2022-09-11 09:22:12,137 [myid:] - INFO  [Thread-3:o.a.z.Login$1@199] - TGT refresh sleeping until: Sun Sep 11 09:22:16 CST 2022
+2022-09-11 09:22:12,175 [myid:] - INFO  [main:o.a.k.k.k.s.i.DefaultInternalKdcServerImpl@102] - Default Internal kdc server stopped.
+2022-09-11 09:22:13,180 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@350] - MiniKdc stopped.
+2022-09-11 09:22:16,230 [myid:] - INFO  [Thread-3:o.a.z.Login@429] - Initiating logout for zkclient/localhost@EXAMPLE.COM
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2022-09-11 09:22:16,231 [myid:] - INFO  [Thread-3:o.a.z.Login@438] - Initiating re-login for zkclient/localhost@EXAMPLE.COM
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/1abf8cc5-31b5-4524-825d-ef07efa66873 refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+		[Krb5LoginModule] authentication failed 
+Cannot locate KDC
+2022-09-11 09:22:16,812 [myid:] - INFO  [Thread-3:o.a.z.KerberosTicketRenewalTest$TestableKerberosLogin@135] - sleep started due to failed refresh
+2022-09-11 09:22:16,863 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@225] - Configuration:
+2022-09-11 09:22:16,863 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@226] - ---------------------------------------------------------------
+2022-09-11 09:22:16,863 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.renewable.lifetime: 604800000
+2022-09-11 09:22:16,863 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   instance: DefaultKrbServer
+2022-09-11 09:22:16,864 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   debug: false
+2022-09-11 09:22:16,864 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.bind.address: localhost
+2022-09-11 09:22:16,864 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   max.ticket.lifetime: 5000
+2022-09-11 09:22:16,864 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   transport: TCP
+2022-09-11 09:22:16,865 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.name: EXAMPLE
+2022-09-11 09:22:16,865 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   org.domain: COM
+2022-09-11 09:22:16,865 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   kdc.port: 0
+2022-09-11 09:22:16,865 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@228] -   min.ticket.lifetime: 5000
+2022-09-11 09:22:16,866 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@230] - ---------------------------------------------------------------
+2022-09-11 09:22:16,872 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@284] - MiniKdc stated.
+2022-09-11 09:22:16,874 [myid:] - INFO  [main:o.a.z.KerberosTicketRenewalTest$TestableKerberosLogin@146] - continue refresh thread
+2022-09-11 09:22:16,875 [myid:] - INFO  [Thread-3:o.a.z.KerberosTicketRenewalTest$TestableKerberosLogin@138] - sleep due to failed refresh finished
+2022-09-11 09:22:16,875 [myid:] - INFO  [Thread-3:o.a.z.Login@429] - Initiating logout for zkclient/localhost@EXAMPLE.COM
+2022-09-11 09:22:16,875 [myid:] - INFO  [Thread-3:o.a.z.Login@438] - Initiating re-login for zkclient/localhost@EXAMPLE.COM
+Debug is  true storeKey false useTicketCache false useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/linxiangling/Documents/GitHub/zookeeper/zookeeper-server/target/surefire/1abf8cc5-31b5-4524-825d-ef07efa66873 refreshKrb5Config is true principal is zkclient/localhost@EXAMPLE.COM tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+2022-09-11 09:22:16,891 [myid:] - INFO  [pool-2-thread-1:o.a.k.k.k.s.r.KdcRequest@690] - The preauth data is empty.
+2022-09-11 09:22:16,892 [myid:] - INFO  [pool-2-thread-1:o.a.k.k.k.s.KdcHandler@177] - KRB error occurred while processing request: Additional pre-authentication required
+2022-09-11 09:22:16,906 [myid:] - INFO  [pool-2-thread-1:o.a.k.k.k.s.r.AsRequest@112] - AS_REQ ISSUE: authtime 1662859336905,zkclient/localhost@EXAMPLE.COM for krbtgt/EXAMPLE.COM@EXAMPLE.COM
+principal is zkclient/localhost@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+2022-09-11 09:22:16,910 [myid:] - INFO  [Thread-3:o.a.z.Login@342] - TGT valid starting at:        Sun Sep 11 09:22:16 CST 2022
+2022-09-11 09:22:16,910 [myid:] - INFO  [Thread-3:o.a.z.Login@343] - TGT expires:                  Sun Sep 11 09:22:21 CST 2022
+2022-09-11 09:22:16,911 [myid:] - INFO  [Thread-3:o.a.z.Login$1@199] - TGT refresh sleeping until: Sun Sep 11 09:22:20 CST 2022
+2022-09-11 09:22:16,976 [myid:] - WARN  [Thread-3:o.a.z.Login$1@203] - TGT renewal thread has been interrupted and will exit.
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2022-09-11 09:22:16,981 [myid:] - INFO  [main:o.a.k.k.k.s.i.DefaultInternalKdcServerImpl@102] - Default Internal kdc server stopped.
+2022-09-11 09:22:17,985 [myid:] - INFO  [main:o.a.z.s.q.a.MiniKdc@350] - MiniKdc stopped.

@@ -1,0 +1,4 @@
+2022-09-11 09:07:54,967 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.MultiOperationRecordTest.testEmptyRoundTrip() throws java.io.IOException]
+2022-09-11 09:07:55,096 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.MultiOperationRecordTest.testEmptyRoundTrip() throws java.io.IOException]
+2022-09-11 09:07:55,110 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.MultiOperationRecordTest.testRoundTrip() throws java.io.IOException]
+2022-09-11 09:07:55,162 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.MultiOperationRecordTest.testRoundTrip() throws java.io.IOException]

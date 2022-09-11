@@ -1,0 +1,6 @@
+2022-09-11 09:16:23,771 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatchesPathReportTest.testGetSessions()]
+2022-09-11 09:16:23,905 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatchesPathReportTest.testGetSessions()]
+2022-09-11 09:16:23,956 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatchesPathReportTest.testToMap()]
+2022-09-11 09:16:23,960 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatchesPathReportTest.testToMap()]
+2022-09-11 09:16:23,987 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.watch.WatchesPathReportTest.testHasSessions()]
+2022-09-11 09:16:23,992 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.watch.WatchesPathReportTest.testHasSessions()]

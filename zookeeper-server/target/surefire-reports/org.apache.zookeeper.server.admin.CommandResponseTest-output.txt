@@ -1,0 +1,4 @@
+2022-09-11 09:14:54,761 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.admin.CommandResponseTest.testMap()]
+2022-09-11 09:14:54,795 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.admin.CommandResponseTest.testMap()]
+2022-09-11 09:14:54,839 [myid:] - INFO  [main:o.a.z.ZKTestCase@77] - STARTING Optional[public void org.apache.zookeeper.server.admin.CommandResponseTest.testGetters()]
+2022-09-11 09:14:54,872 [myid:] - INFO  [main:o.a.z.ZKTestCase@82] - FINISHED Optional[public void org.apache.zookeeper.server.admin.CommandResponseTest.testGetters()]
